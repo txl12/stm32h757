@@ -37,9 +37,8 @@ h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ha
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h
+h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/ltdc.h
 h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/gpio.h
 h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/fmc.h
 h757xi_sdram_test_cm7\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 h757xi_sdram_test_cm7\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/ltdc.h
-h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/LCD.h
