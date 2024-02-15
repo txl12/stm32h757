@@ -1,0 +1,1 @@
+h757xi_sdram_test_cm7\startup_stm32h757xx_cm7.o: startup_stm32h757xx_CM7.s
