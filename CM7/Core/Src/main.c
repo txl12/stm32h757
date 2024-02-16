@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "fdcan.h"
 #include "i2c.h"
 #include "ltdc.h"
 #include "gpio.h"
@@ -133,6 +134,8 @@ HSEM notification */
   MX_FMC_Init();
   MX_LTDC_Init();
   MX_I2C2_Init();
+  MX_FDCAN1_Init();
+  MX_FDCAN2_Init();
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
   /* USER CODE END 2 */
@@ -198,7 +201,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLM = 5;
   RCC_OscInitStruct.PLL.PLLN = 192;
   RCC_OscInitStruct.PLL.PLLP = 2;
-  RCC_OscInitStruct.PLL.PLLQ = 2;
+  RCC_OscInitStruct.PLL.PLLQ = 8;
   RCC_OscInitStruct.PLL.PLLR = 2;
   RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_2;
   RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
