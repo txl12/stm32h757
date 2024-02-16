@@ -3,6 +3,7 @@
 "h757xi_sdram_test_cm7\main_1.o"
 "h757xi_sdram_test_cm7\gpio.o"
 "h757xi_sdram_test_cm7\fmc.o"
+"h757xi_sdram_test_cm7\i2c.o"
 "h757xi_sdram_test_cm7\ltdc.o"
 "h757xi_sdram_test_cm7\stm32h7xx_it_1.o"
 "h757xi_sdram_test_cm7\stm32h7xx_hal_msp_1.o"

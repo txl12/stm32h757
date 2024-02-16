@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "i2c.h"
 #include "ltdc.h"
 #include "gpio.h"
 #include "fmc.h"
@@ -74,7 +75,7 @@ void PeriphCommonClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	SCB->VTOR = 0X90000000;
+//	SCB->VTOR = 0X90020000;
 	  /* Enable I-Cache---------------------------------------------------------*/
   SCB_EnableICache();
 
@@ -109,18 +110,18 @@ int main(void)
 /* When system initialization is finished, Cortex-M7 will release Cortex-M4 by means of
 HSEM notification */
 /*HW semaphore Clock enable*/
-__HAL_RCC_HSEM_CLK_ENABLE();
-/*Take HSEM */
-HAL_HSEM_FastTake(HSEM_ID_0);
-/*Release HSEM in order to notify the CPU2(CM4)*/
-HAL_HSEM_Release(HSEM_ID_0,0);
+//__HAL_RCC_HSEM_CLK_ENABLE();
+///*Take HSEM */
+//HAL_HSEM_FastTake(HSEM_ID_0);
+///*Release HSEM in order to notify the CPU2(CM4)*/
+//HAL_HSEM_Release(HSEM_ID_0,0);
 /* wait until CPU2 wakes up from stop mode */
-timeout = 0xFFFF;
-while((__HAL_RCC_GET_FLAG(RCC_FLAG_D2CKRDY) == RESET) && (timeout-- > 0));
-if ( timeout < 0 )
-{
-Error_Handler();
-}
+//timeout = 0xFFFF;
+//while((__HAL_RCC_GET_FLAG(RCC_FLAG_D2CKRDY) == RESET) && (timeout-- > 0));
+//if ( timeout < 0 )
+//{
+//Error_Handler();
+//}
 /* USER CODE END Boot_Mode_Sequence_2 */
 
   /* USER CODE BEGIN SysInit */
@@ -131,6 +132,7 @@ Error_Handler();
   MX_GPIO_Init();
   MX_FMC_Init();
   MX_LTDC_Init();
+  MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
   /* USER CODE END 2 */
@@ -143,6 +145,8 @@ Error_Handler();
 
     /* USER CODE BEGIN 3 */
 		static uint8_t i=0;
+		static uint16_t x,y;
+
 		memset((uint8_t*)0xc0000000,i,480*2*800);
 		i+=25;
 		HAL_Delay(100);
@@ -155,6 +159,7 @@ Error_Handler();
 				memset((uint8_t*)0xc0000000,i,480*2*800);
 			i+=25;
 		HAL_Delay(100);
+				touchpad_get_xy(&x,&y);
   }
   /* USER CODE END 3 */
 }

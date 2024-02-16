@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+uint8_t touchpad_get_xy(uint16_t * x, uint16_t * y);
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -59,8 +59,16 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LTDC_DE_Pin GPIO_PIN_7
 #define LTDC_DE_GPIO_Port GPIOK
+#define LCD_TOUCH_SCL_Pin GPIO_PIN_4
+#define LCD_TOUCH_SCL_GPIO_Port GPIOH
+#define LCD_TOUCH_SDA_Pin GPIO_PIN_5
+#define LCD_TOUCH_SDA_GPIO_Port GPIOH
+#define LCD_TOUCH_RES_Pin GPIO_PIN_5
+#define LCD_TOUCH_RES_GPIO_Port GPIOJ
 #define LCD_BLK_Pin GPIO_PIN_6
 #define LCD_BLK_GPIO_Port GPIOH
+#define LCD_TOUCH_INT_Pin GPIO_PIN_12
+#define LCD_TOUCH_INT_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

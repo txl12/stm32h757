@@ -1,12 +1,12 @@
 Dependencies for Project 'H757XI_SDRAM_Test', Target 'H757XI_SDRAM_Test_CM7': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (startup_stm32h757xx_CM7.s)(0x65CE1E3F)(--cpu Cortex-M7.fp.dp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "CORE_CM7 SETA 1" --pd "STM32H757xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32h757xx_cm7.lst --xref -o h757xi_sdram_test_cm7\startup_stm32h757xx_cm7.o --depend h757xi_sdram_test_cm7\startup_stm32h757xx_cm7.d)
-F (startup_stm32h757xx_CM4.s)(0x65CE1E3F)()
+F (startup_stm32h757xx_CM7.s)(0x65CED11C)(--cpu Cortex-M7.fp.dp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "CORE_CM7 SETA 1" --pd "STM32H757xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32h757xx_cm7.lst --xref -o h757xi_sdram_test_cm7\startup_stm32h757xx_cm7.o --depend h757xi_sdram_test_cm7\startup_stm32h757xx_cm7.d)
+F (startup_stm32h757xx_CM4.s)(0x65CED11C)()
 F (../CM4/Core/Src/main.c)(0x6516EC82)()
 F (../CM4/Core/Src/stm32h7xx_it.c)(0x6516EC82)()
 F (../CM4/Core/Src/stm32h7xx_hal_msp.c)(0x6516EC82)()
-F (../CM7/Core/Src/main.c)(0x65CE2DFD)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../CM7/Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DCORE_CM7 -DSTM32H757xx -D_RTE_ -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H757xx-o h757xi_sdram_test_cm7\main_1.o --depend h757xi_sdram_test_cm7\main_1.d)
-I (../CM7/Core/Inc/main.h)(0x65CE1BEB)
+F (../CM7/Core/Src/main.c)(0x65CEE7D2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../CM7/Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DCORE_CM7 -DSTM32H757xx -D_RTE_ -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H757xx-o h757xi_sdram_test_cm7\main_1.o --depend h757xi_sdram_test_cm7\main_1.d)
+I (../CM7/Core/Inc/main.h)(0x65CED1E5)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x6587049D)
 I (../CM7/Core/Inc/stm32h7xx_hal_conf.h)(0x65CE19BE)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x6587049D)
@@ -43,14 +43,15 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x6587049D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x6587049D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x6587049D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x6587049D)
+I (../CM7/Core/Inc/i2c.h)(0x65CECE6A)
 I (../CM7/Core/Inc/ltdc.h)(0x6464EF48)
 I (../CM7/Core/Inc/gpio.h)(0x6516EC7E)
 I (../CM7/Core/Inc/fmc.h)(0x6517A1B4)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
-F (../CM7/Core/Src/gpio.c)(0x65CE1BE9)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../CM7/Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DCORE_CM7 -DSTM32H757xx -D_RTE_ -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H757xx-o h757xi_sdram_test_cm7\gpio.o --depend h757xi_sdram_test_cm7\gpio.d)
+F (../CM7/Core/Src/gpio.c)(0x65CED117)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../CM7/Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DCORE_CM7 -DSTM32H757xx -D_RTE_ -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H757xx-o h757xi_sdram_test_cm7\gpio.o --depend h757xi_sdram_test_cm7\gpio.d)
 I (../CM7/Core/Inc/gpio.h)(0x6516EC7E)
-I (../CM7/Core/Inc/main.h)(0x65CE1BEB)
+I (../CM7/Core/Inc/main.h)(0x65CED1E5)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x6587049D)
 I (../CM7/Core/Inc/stm32h7xx_hal_conf.h)(0x65CE19BE)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x6587049D)
@@ -89,7 +90,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x6587049D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x6587049D)
 F (../CM7/Core/Src/fmc.c)(0x6517A872)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../CM7/Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DCORE_CM7 -DSTM32H757xx -D_RTE_ -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H757xx-o h757xi_sdram_test_cm7\fmc.o --depend h757xi_sdram_test_cm7\fmc.d)
 I (../CM7/Core/Inc/fmc.h)(0x6517A1B4)
-I (../CM7/Core/Inc/main.h)(0x65CE1BEB)
+I (../CM7/Core/Inc/main.h)(0x65CED1E5)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x6587049D)
 I (../CM7/Core/Inc/stm32h7xx_hal_conf.h)(0x65CE19BE)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x6587049D)
@@ -126,9 +127,48 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x6587049D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x6587049D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x6587049D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x6587049D)
-F (..\CM7\Core\Src\ltdc.c)(0x65CE1E3B)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../CM7/Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DCORE_CM7 -DSTM32H757xx -D_RTE_ -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H757xx-o h757xi_sdram_test_cm7\ltdc.o --depend h757xi_sdram_test_cm7\ltdc.d)
+F (../CM7/Core/Src/i2c.c)(0x65CEED5A)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../CM7/Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DCORE_CM7 -DSTM32H757xx -D_RTE_ -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H757xx-o h757xi_sdram_test_cm7\i2c.o --depend h757xi_sdram_test_cm7\i2c.d)
+I (../CM7/Core/Inc/i2c.h)(0x65CECE6A)
+I (../CM7/Core/Inc/main.h)(0x65CED1E5)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x6587049D)
+I (../CM7/Core/Inc/stm32h7xx_hal_conf.h)(0x65CE19BE)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x6587049D)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x6587049B)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h757xx.h)(0x6587049B)
+I (../Drivers/CMSIS/Include/core_cm7.h)(0x6587049D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6587049D)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6587049D)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6587049D)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6587049D)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x6587049B)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6587049D)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5E8E3CC2)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dsi.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x6587049D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x6587049D)
+F (..\CM7\Core\Src\ltdc.c)(0x65CECE6A)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../CM7/Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DCORE_CM7 -DSTM32H757xx -D_RTE_ -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H757xx-o h757xi_sdram_test_cm7\ltdc.o --depend h757xi_sdram_test_cm7\ltdc.d)
 I (../CM7/Core/Inc/ltdc.h)(0x6464EF48)
-I (../CM7/Core/Inc/main.h)(0x65CE1BEB)
+I (../CM7/Core/Inc/main.h)(0x65CED1E5)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x6587049D)
 I (../CM7/Core/Inc/stm32h7xx_hal_conf.h)(0x65CE19BE)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x6587049D)
@@ -166,7 +206,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x6587049D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x6587049D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x6587049D)
 F (../CM7/Core/Src/stm32h7xx_it.c)(0x65CE19BE)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../CM7/Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DCORE_CM7 -DSTM32H757xx -D_RTE_ -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H757xx-o h757xi_sdram_test_cm7\stm32h7xx_it_1.o --depend h757xi_sdram_test_cm7\stm32h7xx_it_1.d)
-I (../CM7/Core/Inc/main.h)(0x65CE1BEB)
+I (../CM7/Core/Inc/main.h)(0x65CED1E5)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x6587049D)
 I (../CM7/Core/Inc/stm32h7xx_hal_conf.h)(0x65CE19BE)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x6587049D)
@@ -205,7 +245,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h)(0x6587049D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h)(0x6587049D)
 I (../CM7/Core/Inc/stm32h7xx_it.h)(0x65CE19BE)
 F (../CM7/Core/Src/stm32h7xx_hal_msp.c)(0x6516EC80)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../CM7/Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_H757XI_SDRAM_Test_CM7-ID:\app\keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DCORE_CM7 -DSTM32H757xx -D_RTE_ -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H757xx-o h757xi_sdram_test_cm7\stm32h7xx_hal_msp_1.o --depend h757xi_sdram_test_cm7\stm32h7xx_hal_msp_1.d)
-I (../CM7/Core/Inc/main.h)(0x65CE1BEB)
+I (../CM7/Core/Inc/main.h)(0x65CED1E5)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x6587049D)
 I (../CM7/Core/Inc/stm32h7xx_hal_conf.h)(0x65CE19BE)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x6587049D)
