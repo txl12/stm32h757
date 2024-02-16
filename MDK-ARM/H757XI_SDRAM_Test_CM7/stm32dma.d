@@ -1,0 +1,10 @@
+h757xi_sdram_test_cm7\stm32dma.o: ../CM7/TouchGFX/target/generated/STM32DMA.cpp
+h757xi_sdram_test_cm7\stm32dma.o: ../CM7/TouchGFX/target/generated/STM32DMA.hpp
+h757xi_sdram_test_cm7\stm32dma.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/hal/BlitOp.hpp
+h757xi_sdram_test_cm7\stm32dma.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/hal/Types.hpp
+h757xi_sdram_test_cm7\stm32dma.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+h757xi_sdram_test_cm7\stm32dma.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+h757xi_sdram_test_cm7\stm32dma.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/hal/Config.hpp
+h757xi_sdram_test_cm7\stm32dma.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/hal/DMA.hpp
+h757xi_sdram_test_cm7\stm32dma.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/hal/Atomic.hpp
+h757xi_sdram_test_cm7\stm32dma.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h

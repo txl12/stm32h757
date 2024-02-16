@@ -1,0 +1,16 @@
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/touchgfx/generated/fonts/src/cachedfont.cpp
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/touchgfx/generated/fonts/include/fonts/CachedFont.hpp
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/touchgfx/generated/fonts/include/fonts/FontCache.hpp
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/Font.hpp
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/Unicode.hpp
+h757xi_sdram_test_cm7\cachedfont.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/hal/Types.hpp
+h757xi_sdram_test_cm7\cachedfont.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+h757xi_sdram_test_cm7\cachedfont.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/hal/Config.hpp
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/TypedText.hpp
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/Texts.hpp
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/touchgfx/generated/fonts/include/fonts/ApplicationFontProvider.hpp
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/FontManager.hpp
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/touchgfx/generated/fonts/include/fonts/GeneratedFont.hpp
+h757xi_sdram_test_cm7\cachedfont.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/ConstFont.hpp

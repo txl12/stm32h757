@@ -23,8 +23,11 @@ h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ha
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h
+h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h
+h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc.h
+h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_crc_ex.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h
@@ -37,9 +40,12 @@ h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ha
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h
+h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/crc.h
+h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/dma2d.h
 h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/i2c.h
 h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/ltdc.h
 h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/gpio.h
 h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/fmc.h
+h757xi_sdram_test_cm7\main_1.o: ../CM7/TouchGFX/App/app_touchgfx.h
 h757xi_sdram_test_cm7\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 h757xi_sdram_test_cm7\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

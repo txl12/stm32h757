@@ -18,10 +18,13 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "crc.h"
+#include "dma2d.h"
 #include "i2c.h"
 #include "ltdc.h"
 #include "gpio.h"
 #include "fmc.h"
+#include "app_touchgfx.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -77,10 +80,10 @@ int main(void)
   /* USER CODE BEGIN 1 */
 //	SCB->VTOR = 0X90020000;
 	  /* Enable I-Cache---------------------------------------------------------*/
-  SCB_EnableICache();
+//  SCB_EnableICache();
 
   /* Enable D-Cache---------------------------------------------------------*/
-  SCB_EnableDCache();
+//  SCB_EnableDCache();
   /* USER CODE END 1 */
 /* USER CODE BEGIN Boot_Mode_Sequence_0 */
   int32_t timeout;
@@ -133,6 +136,9 @@ HSEM notification */
   MX_FMC_Init();
   MX_LTDC_Init();
   MX_I2C2_Init();
+  MX_CRC_Init();
+  MX_DMA2D_Init();
+  MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
   /* USER CODE END 2 */
@@ -143,23 +149,8 @@ HSEM notification */
   {
     /* USER CODE END WHILE */
 
+  MX_TouchGFX_Process();
     /* USER CODE BEGIN 3 */
-		static uint8_t i=0;
-		static uint16_t x,y;
-
-		memset((uint8_t*)0xc0000000,i,480*2*800);
-		i+=25;
-		HAL_Delay(100);
-				memset((uint8_t*)0xc0000000,i,480*2*800);
-			i+=25;
-		HAL_Delay(100);
-				memset((uint8_t*)0xc0000000,i,480*2*800);
-			i+=25;
-		HAL_Delay(100);
-				memset((uint8_t*)0xc0000000,i,480*2*800);
-			i+=25;
-		HAL_Delay(100);
-				touchpad_get_xy(&x,&y);
   }
   /* USER CODE END 3 */
 }

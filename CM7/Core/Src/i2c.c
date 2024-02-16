@@ -60,11 +60,11 @@ uint8_t touchpad_get_xy(uint16_t * x, uint16_t * y)
 	uint8_t ret=0;
     ft5206_rd_reg(0x02, &status, 1);
     if ( status ){
-				HAL_GPIO_TogglePin(LCD_BLK_GPIO_Port,LCD_BLK_Pin);
+//  
 			uint8_t buf[4];
     ft5206_rd_reg(0x03, buf, 4);
-    (*y) = ((uint16_t)(buf[0] & 0X0F) << 8) + buf[1];
-    (*x) = (((uint16_t)(buf[2] & 0X0F) << 8) + buf[3]);
+    (*x) = ((uint16_t)(buf[0] & 0X0F) << 8) + buf[1];
+    (*y) = (((uint16_t)(buf[2] & 0X0F) << 8) + buf[3]);
 			
         ret= 1;
 		}
@@ -156,7 +156,7 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
     */
     GPIO_InitStruct.Pin = LCD_TOUCH_SCL_Pin|LCD_TOUCH_SDA_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     GPIO_InitStruct.Alternate = GPIO_AF4_I2C2;
     HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
