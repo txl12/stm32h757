@@ -1,0 +1,14 @@
+h757xi_sdram_test_cm7\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
+h757xi_sdram_test_cm7\stream_buffer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+h757xi_sdram_test_cm7\stream_buffer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+h757xi_sdram_test_cm7\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+h757xi_sdram_test_cm7\stream_buffer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+h757xi_sdram_test_cm7\stream_buffer.o: ../CM7/Core/Inc/FreeRTOSConfig.h
+h757xi_sdram_test_cm7\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+h757xi_sdram_test_cm7\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+h757xi_sdram_test_cm7\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+h757xi_sdram_test_cm7\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+h757xi_sdram_test_cm7\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+h757xi_sdram_test_cm7\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+h757xi_sdram_test_cm7\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+h757xi_sdram_test_cm7\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h

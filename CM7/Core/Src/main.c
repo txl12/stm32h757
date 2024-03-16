@@ -18,10 +18,12 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "i2c.h"
+#include "cmsis_os.h"
+#include "crc.h"
 #include "ltdc.h"
 #include "gpio.h"
 #include "fmc.h"
+#include "app_touchgfx.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -58,6 +60,7 @@ uint32_t ret = 0;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
 uint32_t bsp_TestExtSDRAM(void);
 void PeriphCommonClock_Config(void);
@@ -83,7 +86,6 @@ int main(void)
   SCB_EnableDCache();
   /* USER CODE END 1 */
 /* USER CODE BEGIN Boot_Mode_Sequence_0 */
-  int32_t timeout;
 /* USER CODE END Boot_Mode_Sequence_0 */
 
 /* USER CODE BEGIN Boot_Mode_Sequence_1 */
@@ -132,11 +134,24 @@ HSEM notification */
   MX_GPIO_Init();
   MX_FMC_Init();
   MX_LTDC_Init();
-  MX_I2C2_Init();
+  MX_CRC_Init();
+  MX_TouchGFX_Init();
+  /* Call PreOsInit function */
+  MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
   /* USER CODE END 2 */
 
+  /* Init scheduler */
+  osKernelInitialize();
+
+  /* Call init function for freertos objects (in freertos.c) */
+  MX_FREERTOS_Init();
+
+  /* Start scheduler */
+  osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -144,22 +159,6 @@ HSEM notification */
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		static uint8_t i=0;
-		static uint16_t x,y;
-
-		memset((uint8_t*)0xc0000000,i,600*2*1024);
-		i+=25;
-		HAL_Delay(100);
-				memset((uint8_t*)0xc0000000,i,600*2*1024);
-			i+=25;
-		HAL_Delay(100);
-				memset((uint8_t*)0xc0000000,i,600*2*1024);
-			i+=25;
-		HAL_Delay(100);
-				memset((uint8_t*)0xc0000000,i,600*2*1024);
-			i+=25;
-		HAL_Delay(100);
-				touchpad_get_xy(&x,&y);
   }
   /* USER CODE END 3 */
 }
@@ -350,6 +349,27 @@ uint32_t bsp_TestExtSDRAM(void)
 	return 0;
 }
 /* USER CODE END 4 */
+
+/**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called  when TIM17 interrupt took place, inside
+  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* USER CODE BEGIN Callback 0 */
+
+  /* USER CODE END Callback 0 */
+  if (htim->Instance == TIM17) {
+    HAL_IncTick();
+  }
+  /* USER CODE BEGIN Callback 1 */
+
+  /* USER CODE END Callback 1 */
+}
 
 /**
   * @brief  This function is executed in case of error occurrence.

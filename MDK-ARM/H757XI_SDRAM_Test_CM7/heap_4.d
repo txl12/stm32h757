@@ -1,0 +1,13 @@
+h757xi_sdram_test_cm7\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
+h757xi_sdram_test_cm7\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+h757xi_sdram_test_cm7\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+h757xi_sdram_test_cm7\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+h757xi_sdram_test_cm7\heap_4.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+h757xi_sdram_test_cm7\heap_4.o: ../CM7/Core/Inc/FreeRTOSConfig.h
+h757xi_sdram_test_cm7\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+h757xi_sdram_test_cm7\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+h757xi_sdram_test_cm7\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+h757xi_sdram_test_cm7\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+h757xi_sdram_test_cm7\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+h757xi_sdram_test_cm7\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+h757xi_sdram_test_cm7\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
