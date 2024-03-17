@@ -9,15 +9,57 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
 {
     switch (typography)
     {
-    case Typography::DEFAULT:
-        // verdana_20_4bpp
+    case Typography::LANGUAGEOPTIONTYPOGRAPHY:
+        // GommeSansW04Bold_25_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
-    case Typography::LARGE:
-        // verdana_40_4bpp
+    case Typography::LANGUAGEOPTIONTYPOGRAPHY_AUTO_GENERATED_FOR_GB:
+        // GommeSansW04Bold_25_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
+    case Typography::LANGUAGEOPTIONTYPOGRAPHY_AUTO_GENERATED_FOR_FR:
+        // GILB_____TTF_24_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[1]);
-    case Typography::SMALL:
-        // verdana_10_4bpp
+    case Typography::LANGUAGEOPTIONTYPOGRAPHY_AUTO_GENERATED_FOR_JP:
+        // chinese_msyh_25_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
+    case Typography::LANGUAGEOPTIONTYPOGRAPHY_AUTO_GENERATED_FOR_KR:
+        // Nanum_Gothic_Bold_700_25_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
+    case Typography::SETTIMETYPOGRAPHY:
+        // GommeSansW04Bold_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
+    case Typography::SETTINGSTYPOGRAPY:
+        // GommeSansW04Bold_25_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
+    case Typography::SETTINGSTYPOGRAPY_AUTO_GENERATED_FOR_FR:
+        // GommeSansW04Bold_24_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
+    case Typography::SETTINGSTYPOGRAPY_AUTO_GENERATED_FOR_JP:
+        // chinese_msyh_25_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
+    case Typography::SETTINGSTYPOGRAPY_AUTO_GENERATED_FOR_KR:
+        // Nanum_Gothic_Bold_700_25_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
+    case Typography::CLOCKTYPOGRAPHY:
+        // GommeSansW04Bold_30_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
+    case Typography::STARTTYPOGRAPHY:
+        // GommeSansW04Bold_28_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+    case Typography::STARTTYPOGRAPHY_AUTO_GENERATED_FOR_JP:
+        // chinese_msyh_28_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+    case Typography::STARTTYPOGRAPHY_AUTO_GENERATED_FOR_KR:
+        // Nanum_Gothic_Bold_700_28_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
+    case Typography::OPTIONMENUTYPOGRAPHY:
+        // GommeSansW04Bold_14_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[10]);
+    case Typography::OPTIONMENUTYPOGRAPHY_AUTO_GENERATED_FOR_JP:
+        // chinese_msyh_14_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[11]);
+    case Typography::OPTIONMENUTYPOGRAPHY_AUTO_GENERATED_FOR_KR:
+        // Nanum_Gothic_Bold_700_14_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[12]);
     default:
         return 0;
     }

@@ -131,58 +131,118 @@
       <UniqueIdentifier>{C07B02B9-A55E-47AA-AD61-59A6AAD754E6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui">
-      <UniqueIdentifier>21F7B07D-51AB-580F-A409-5D20F28E2DA1</UniqueIdentifier>
+      <UniqueIdentifier>38569AB4-61F7-F7EE-FF0E-C54D1522F46E</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui">
-      <UniqueIdentifier>2FCB66E7-405A-C288-E784-ADEAD2FCB78F</UniqueIdentifier>
+      <UniqueIdentifier>C9F5886F-7D26-B891-7917-0DD65387EEB4</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\model">
-      <UniqueIdentifier>65B2604B-E9E0-5D6E-A1D9-46747B8BF075</UniqueIdentifier>
+      <UniqueIdentifier>FC5C4385-57B0-C6D8-1BC7-DC1501969E96</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui\model">
-      <UniqueIdentifier>CFAF02D1-F1AA-07DB-18B2-80CD1431DDAD</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\screen1_screen">
-      <UniqueIdentifier>578AA32C-E48C-2D3F-31DB-4AFCBB1B0EB6</UniqueIdentifier>
+      <UniqueIdentifier>0E1DD279-1DAE-42BB-4F4D-821CC31E1662</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\generated\gui_generated">
-      <UniqueIdentifier>8C4B106F-D292-FA23-CFFF-682227138C99</UniqueIdentifier>
+      <UniqueIdentifier>B4927143-3BCE-27DF-3BD0-F5628E46CEBF</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\common">
-      <UniqueIdentifier>152E77F6-FB31-76CF-4785-3C242F3BB6D0</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\screen1_screen">
-      <UniqueIdentifier>FCD984F4-144F-1307-C55C-38823FF38E2A</UniqueIdentifier>
+      <UniqueIdentifier>BC900ADB-DD75-A784-207B-7A1CD24BE3DD</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\generated\gui_generated">
-      <UniqueIdentifier>D8500F82-A927-70B8-FF63-8AEB314A2006</UniqueIdentifier>
+      <UniqueIdentifier>6A854816-9FF9-F2F5-5EA1-6B49FC62A820</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui\common">
-      <UniqueIdentifier>5BC18B5B-0652-684E-992D-957C5BFFE64A</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>C9A399DA-8554-7FAD-D664-1EE0E5E56302</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>25CC2009-9801-545A-A246-F547C40DA765</UniqueIdentifier>
+      <UniqueIdentifier>DD7A678D-1127-57FC-FAB1-99F7419565CE</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\generated\simulator\include">
-      <UniqueIdentifier>801C0B5F-4A16-86AA-E4D9-482BEF8A18AD</UniqueIdentifier>
+      <UniqueIdentifier>1753300A-924B-4523-9109-3C16B220C1B0</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\generated\gui_generated\common">
-      <UniqueIdentifier>CAC00439-E9AD-1EF0-F954-3800B2368EDB</UniqueIdentifier>
+      <UniqueIdentifier>7F3897D1-CEB5-C1BB-0254-C3E401992C8E</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\common">
-      <UniqueIdentifier>E31E6F88-4DBB-3F2F-4804-4304584A1255</UniqueIdentifier>
+      <UniqueIdentifier>89F465DD-6D0F-F953-9A20-69681594668D</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\generated\simulator\video">
-      <UniqueIdentifier>B8CCB3F1-3C35-73BC-1F74-93C029483A3E</UniqueIdentifier>
+      <UniqueIdentifier>A619A18C-41D4-FEF6-00CD-8730BEDC9DC2</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\generated\simulator\include\simulator">
-      <UniqueIdentifier>A223F659-9208-E2E4-FA22-BF98A70357F4</UniqueIdentifier>
+      <UniqueIdentifier>1E56E137-C878-6BEA-848C-C2AEBDB19044</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\generated\simulator\include\simulator\video">
-      <UniqueIdentifier>989A5F32-1239-442A-3892-4FE2E132BC3D</UniqueIdentifier>
+      <UniqueIdentifier>C8F596AC-9891-D78E-C4FD-3A88DC0976EF</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\splashscreen_screen">
+      <UniqueIdentifier>7EA90E3C-9849-B73C-DE13-9B710035541F</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\selectingmenu_screen">
+      <UniqueIdentifier>D980B5C6-9C0A-E699-45E5-AD0E472FB1F3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\selectingmenu_screen">
+      <UniqueIdentifier>E0EB9A66-2604-7D68-818D-C213CD449486</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\information_screen">
+      <UniqueIdentifier>583E2AD7-4CC3-A86D-CFE3-C290DED84E46</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\splashscreen_screen">
+      <UniqueIdentifier>45F66155-B4C1-A773-1D98-3911B4FE9C82</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\cooking_screen">
+      <UniqueIdentifier>F5763873-ECFF-1BC6-1530-8E3CA21E6AC8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\information_screen">
+      <UniqueIdentifier>00FC9CD3-007F-354A-0FC6-7719A22DFA7A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\settings_screen">
+      <UniqueIdentifier>B9511031-5A75-20E4-D4EF-1D6D1CB0A69A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\cooking_screen">
+      <UniqueIdentifier>8AE774B4-676C-430A-03A8-94CB99EB437D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\settings_screen">
+      <UniqueIdentifier>CACD7093-056D-8E03-8F65-3BC37E5F69EF</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\informationdemo_screen">
+      <UniqueIdentifier>EAF68936-1B15-3BCF-51BA-01B0D6ABF788</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\informationdemo_screen">
+      <UniqueIdentifier>05678E3B-07AF-1304-B7B0-81B5A99519DF</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\settings_screen">
+      <UniqueIdentifier>9A086FA0-6FF4-F9DD-8676-6EDC7E486D9A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\cooking_screen">
+      <UniqueIdentifier>BAC74429-4C5A-B5DB-662F-253AA2D2A9A2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\cooking_screen">
+      <UniqueIdentifier>EAEFD0B8-34D7-3767-0BDE-DB51C76ACD6B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\settings_screen">
+      <UniqueIdentifier>8B2EEBA7-0E49-8DCF-A1E4-A9341EE4A14A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\selectingmenu_screen">
+      <UniqueIdentifier>AC52544F-EBCE-6613-D2B9-F7B6130E3326</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\selectingmenu_screen">
+      <UniqueIdentifier>514736E0-FA91-4313-4A2E-EEF9AB811649</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\splashscreen_screen">
+      <UniqueIdentifier>5BE83983-6750-954E-3F18-DD7B92FBE29B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\information_screen">
+      <UniqueIdentifier>A5B862F0-72F3-13F8-7543-2011586CD414</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\information_screen">
+      <UniqueIdentifier>318B5D76-034D-B5E5-73F8-505699E0A24E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\informationdemo_screen">
+      <UniqueIdentifier>2B27471D-D39F-CE91-35C8-AEA0043E9CD8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\informationdemo_screen">
+      <UniqueIdentifier>6AE86FD3-F5B8-4888-FCD4-3687326E01D3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\splashscreen_screen">
+      <UniqueIdentifier>6D8BCF68-A781-3F95-4B1B-6EAB3B6DB3E5</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -213,17 +273,62 @@
     <ClCompile Include="..\..\gui\src\model\Model.cpp">
       <Filter>Source Files\gui\model</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp">
-      <Filter>Source Files\gui\screen1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1View.cpp">
-      <Filter>Source Files\gui\screen1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screen1_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\cooking_screen\CookingPresenter.cpp">
+      <Filter>Source Files\gui\cooking_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\cooking_screen\CookingView.cpp">
+      <Filter>Source Files\gui\cooking_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\cooking_screen\CookingViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\cooking_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\informationdemo_screen\InformationDemoPresenter.cpp">
+      <Filter>Source Files\gui\informationdemo_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\informationdemo_screen\InformationDemoView.cpp">
+      <Filter>Source Files\gui\informationdemo_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\informationdemo_screen\InformationDemoViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\informationdemo_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\information_screen\InformationPresenter.cpp">
+      <Filter>Source Files\gui\information_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\information_screen\InformationView.cpp">
+      <Filter>Source Files\gui\information_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\information_screen\InformationViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\information_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\selectingmenu_screen\SelectingMenuPresenter.cpp">
+      <Filter>Source Files\gui\selectingmenu_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\selectingmenu_screen\SelectingMenuView.cpp">
+      <Filter>Source Files\gui\selectingmenu_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\selectingmenu_screen\SelectingMenuViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\selectingmenu_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\settings_screen\SettingsPresenter.cpp">
+      <Filter>Source Files\gui\settings_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\settings_screen\SettingsView.cpp">
+      <Filter>Source Files\gui\settings_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\settings_screen\SettingsViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\settings_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\splashscreen_screen\SplashScreenPresenter.cpp">
+      <Filter>Source Files\gui\splashscreen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\splashscreen_screen\SplashScreenView.cpp">
+      <Filter>Source Files\gui\splashscreen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\splashscreen_screen\SplashScreenViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\splashscreen_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -661,20 +766,71 @@
     <ClInclude Include="..\..\gui\include\gui\model\ModelListener.hpp">
       <Filter>Header Files\gui\model</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp">
-      <Filter>Header Files\gui\screen1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1View.hpp">
-      <Filter>Header Files\gui\screen1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screen1_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp">
       <Filter>Header Files\generated\gui_generated\common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\common\Constants.hpp">
+      <Filter>Header Files\gui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\cooking_screen\CookingPresenter.hpp">
+      <Filter>Header Files\gui\cooking_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\cooking_screen\CookingView.hpp">
+      <Filter>Header Files\gui\cooking_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\cooking_screen\CookingViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\cooking_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\common\Enums.hpp">
+      <Filter>Header Files\gui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\informationdemo_screen\InformationDemoPresenter.hpp">
+      <Filter>Header Files\gui\informationdemo_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\informationdemo_screen\InformationDemoView.hpp">
+      <Filter>Header Files\gui\informationdemo_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\informationdemo_screen\InformationDemoViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\informationdemo_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\information_screen\InformationPresenter.hpp">
+      <Filter>Header Files\gui\information_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\information_screen\InformationView.hpp">
+      <Filter>Header Files\gui\information_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\information_screen\InformationViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\information_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\selectingmenu_screen\SelectingMenuPresenter.hpp">
+      <Filter>Header Files\gui\selectingmenu_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\selectingmenu_screen\SelectingMenuView.hpp">
+      <Filter>Header Files\gui\selectingmenu_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\selectingmenu_screen\SelectingMenuViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\selectingmenu_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\settings_screen\SettingsPresenter.hpp">
+      <Filter>Header Files\gui\settings_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\settings_screen\SettingsView.hpp">
+      <Filter>Header Files\gui\settings_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\settings_screen\SettingsViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\settings_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\splashscreen_screen\SplashScreenPresenter.hpp">
+      <Filter>Header Files\gui\splashscreen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\splashscreen_screen\SplashScreenView.hpp">
+      <Filter>Header Files\gui\splashscreen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\splashscreen_screen\SplashScreenViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\splashscreen_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

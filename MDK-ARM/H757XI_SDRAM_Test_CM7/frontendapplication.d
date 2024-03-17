@@ -46,3 +46,4 @@ h757xi_sdram_test_cm7\frontendapplication.o: ../cm7/middlewares/st/touchgfx/fram
 h757xi_sdram_test_cm7\frontendapplication.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/hal/Gestures.hpp
 h757xi_sdram_test_cm7\frontendapplication.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/transitions/Transition.hpp
 h757xi_sdram_test_cm7\frontendapplication.o: ../cm7/touchgfx/gui/include/gui/model/Model.hpp
+h757xi_sdram_test_cm7\frontendapplication.o: ../cm7/middlewares/st/touchgfx/framework/include/touchgfx/Utils.hpp
