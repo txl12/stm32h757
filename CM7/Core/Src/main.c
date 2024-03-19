@@ -79,7 +79,7 @@ void PeriphCommonClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-//	SCB->VTOR = 0X90020000;
+	SCB->VTOR = 0X90000000;
 	  /* Enable I-Cache---------------------------------------------------------*/
   SCB_EnableICache();
 

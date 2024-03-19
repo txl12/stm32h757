@@ -17,49 +17,19 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoSplashScreenScreenNoTransition();
+        gotoScreen1ScreenNoTransition();
     }
 
-    // SplashScreen
-    void gotoSplashScreenScreenNoTransition();
-
-    // SelectingMenu
-    void gotoSelectingMenuScreenNoTransition();
-
-    // Cooking
-    void gotoCookingScreenNoTransition();
-
-    // InformationDemo
-    void gotoInformationDemoScreenNoTransition();
-
-    // Settings
-    void gotoSettingsScreenNoTransition();
-
-    // Information
-    void gotoInformationScreenNoTransition();
+    // Screen1
+    void gotoScreen1ScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // SplashScreen
-    void gotoSplashScreenScreenNoTransitionImpl();
-
-    // SelectingMenu
-    void gotoSelectingMenuScreenNoTransitionImpl();
-
-    // Cooking
-    void gotoCookingScreenNoTransitionImpl();
-
-    // InformationDemo
-    void gotoInformationDemoScreenNoTransitionImpl();
-
-    // Settings
-    void gotoSettingsScreenNoTransitionImpl();
-
-    // Information
-    void gotoInformationScreenNoTransitionImpl();
+    // Screen1
+    void gotoScreen1ScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

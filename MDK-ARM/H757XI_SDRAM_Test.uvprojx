@@ -2735,39 +2735,9 @@
           </GroupOption>
           <Files>
             <File>
-              <FileName>CookingPresenter.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/cooking_screen/cookingpresenter.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>CookingView.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/cooking_screen/cookingview.cpp</FilePath>
-            </File>
-            <File>
               <FileName>FrontendApplication.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../cm7/touchgfx/gui/src/common/frontendapplication.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationDemoPresenter.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/informationdemo_screen/informationdemopresenter.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationDemoView.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/informationdemo_screen/informationdemoview.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationPresenter.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/information_screen/informationpresenter.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationView.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/information_screen/informationview.cpp</FilePath>
             </File>
             <File>
               <FileName>Model.cpp</FileName>
@@ -2775,34 +2745,14 @@
               <FilePath>../cm7/touchgfx/gui/src/model/model.cpp</FilePath>
             </File>
             <File>
-              <FileName>SelectingMenuPresenter.cpp</FileName>
+              <FileName>Screen1Presenter.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/selectingmenu_screen/selectingmenupresenter.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/gui/src/screen1_screen/screen1presenter.cpp</FilePath>
             </File>
             <File>
-              <FileName>SelectingMenuView.cpp</FileName>
+              <FileName>Screen1View.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/selectingmenu_screen/selectingmenuview.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SettingsPresenter.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/settings_screen/settingspresenter.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SettingsView.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/settings_screen/settingsview.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SplashScreenPresenter.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/splashscreen_screen/splashscreenpresenter.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SplashScreenView.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/splashscreen_screen/splashscreenview.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/gui/src/screen1_screen/screen1view.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -2894,229 +2844,19 @@
               <FilePath>../cm7/touchgfx/generated/fonts/src/cachedfont.cpp</FilePath>
             </File>
             <File>
-              <FileName>CookingViewBase.cpp</FileName>
+              <FileName>Font_verdana_10_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/cooking_screen/cookingviewbase.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_10_4bpp_0.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_chinese_msyh_14_4bpp_0.cpp</FileName>
+              <FileName>Font_verdana_20_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_0.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_20_4bpp_0.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_chinese_msyh_14_4bpp_10.cpp</FileName>
+              <FileName>Font_verdana_40_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_10.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_11.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_11.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_14.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_14.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_15.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_15.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_16.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_16.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_17.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_17.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_19.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_19.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_6.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_6.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_10.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_10.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_11.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_11.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_12.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_12.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_14.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_14.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_17.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_17.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_18.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_18.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_19.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_19.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_6.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_6.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_9.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_9.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_28_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_28_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_28_4bpp_11.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_28_4bpp_11.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_28_4bpp_18.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_28_4bpp_18.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GILB_____TTF_24_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gilb_____ttf_24_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_14_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_14_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_20_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_20_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_24_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_24_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_25_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_25_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_28_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_28_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_30_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_30_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_21.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_21.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_22.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_22.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_23.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_23.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_24.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_24.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_25.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_25.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_26.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_26.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_21.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_21.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_22.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_22.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_24.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_24.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_25.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_25.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_26.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_26.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_28_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_28_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_28_4bpp_24.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_28_4bpp_24.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_40_4bpp_0.cpp</FilePath>
             </File>
             <File>
               <FileName>FontCache.cpp</FileName>
@@ -3134,224 +2874,19 @@
               <FilePath>../cm7/touchgfx/generated/fonts/src/generatedfont.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_arrow_down_v3.cpp</FileName>
+              <FileName>Kerning_verdana_10_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/button/image_arrow_down_v3.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_arrow_left.cpp</FileName>
+              <FileName>Kerning_verdana_20_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/button/image_arrow_left.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_20_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_arrow_right.cpp</FileName>
+              <FileName>Kerning_verdana_40_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/button/image_arrow_right.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_arrow_up_v3.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/button/image_arrow_up_v3.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_background_settings_language.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_background_settings_language.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_background_settings_right.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_background_settings_right.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_background_settings_time_date.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_background_settings_time_date.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_cancel_button_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_cancel_button_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_cancel_button_white_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_cancel_button_white_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_empty_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_empty_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_fish_3d.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/steam/image_fish_3d.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_icon_dumplings_3d.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/bun/image_icon_dumplings_3d.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_info_button_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_info_button_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_info_button_white_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_info_button_white_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_info_screen.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_info_screen.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_info_v2.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_info_v2.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_left_button_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_left_button_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_left_button_white_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_left_button_white_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_pancakes_3d.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/pancake/image_pancakes_3d.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_rice_3d.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/rice/image_rice_3d.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_selecting_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_selecting_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_settings_button_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_settings_button_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_settings_button_white_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_settings_button_white_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_start_button_left.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_start_button_left.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_start_button_right.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_start_button_right.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_time_icon_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_time_icon_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_title_demo.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/logo/image_title_demo.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_TouchGFX_logo.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/logo/image_touchgfx_logo.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationDemoViewBase.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/informationdemo_screen/informationdemoviewbase.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationViewBase.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/information_screen/informationviewbase.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_chinese_msyh_14_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_chinese_msyh_14_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_chinese_msyh_25_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_chinese_msyh_25_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_chinese_msyh_28_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_chinese_msyh_28_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GILB_____TTF_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gilb_____ttf_24_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_14_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_14_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_20_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_20_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_24_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_25_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_25_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_28_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_28_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_30_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_30_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_Nanum_Gothic_Bold_700_14_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_nanum_gothic_bold_700_14_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_Nanum_Gothic_Bold_700_25_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_nanum_gothic_bold_700_25_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_Nanum_Gothic_Bold_700_28_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_nanum_gothic_bold_700_28_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>LanguageFr.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/texts/src/languagefr.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_40_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>LanguageGb.cpp</FileName>
@@ -3359,29 +2894,9 @@
               <FilePath>../cm7/touchgfx/generated/texts/src/languagegb.cpp</FilePath>
             </File>
             <File>
-              <FileName>LanguageJp.cpp</FileName>
+              <FileName>Screen1ViewBase.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/texts/src/languagejp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>LanguageKr.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/texts/src/languagekr.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SelectingMenuViewBase.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/selectingmenu_screen/selectingmenuviewbase.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SettingsViewBase.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/settings_screen/settingsviewbase.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SplashScreenViewBase.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/splashscreen_screen/splashscreenviewbase.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/gui_generated/src/screen1_screen/screen1viewbase.cpp</FilePath>
             </File>
             <File>
               <FileName>SVGDatabase.cpp</FileName>
@@ -3389,69 +2904,19 @@
               <FilePath>../cm7/touchgfx/generated/images/src/svgdatabase.cpp</FilePath>
             </File>
             <File>
-              <FileName>Table_chinese_msyh_14_4bpp.cpp</FileName>
+              <FileName>Table_verdana_10_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_chinese_msyh_14_4bpp.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>Table_chinese_msyh_25_4bpp.cpp</FileName>
+              <FileName>Table_verdana_20_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_chinese_msyh_25_4bpp.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_20_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>Table_chinese_msyh_28_4bpp.cpp</FileName>
+              <FileName>Table_verdana_40_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_chinese_msyh_28_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GILB_____TTF_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gilb_____ttf_24_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_14_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_14_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_20_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_20_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_24_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_25_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_25_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_28_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_28_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_30_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_30_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_Nanum_Gothic_Bold_700_14_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_nanum_gothic_bold_700_14_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_Nanum_Gothic_Bold_700_25_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_nanum_gothic_bold_700_25_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_Nanum_Gothic_Bold_700_28_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_nanum_gothic_bold_700_28_4bpp.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_40_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>Texts.cpp</FileName>
@@ -3663,12 +3128,12 @@
             <nBranchProt>0</nBranchProt>
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>0</hadIROM2>
-            <StupSel>8</StupSel>
+            <StupSel>1</StupSel>
             <useUlib>0</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
-            <RoSelD>3</RoSelD>
+            <RoSelD>0</RoSelD>
             <RwSelD>4</RwSelD>
             <CodeSel>0</CodeSel>
             <OptFeed>0</OptFeed>
@@ -3677,10 +3142,10 @@
             <NoZi3>0</NoZi3>
             <NoZi4>0</NoZi4>
             <NoZi5>0</NoZi5>
-            <Ro1Chk>0</Ro1Chk>
+            <Ro1Chk>1</Ro1Chk>
             <Ro2Chk>0</Ro2Chk>
             <Ro3Chk>0</Ro3Chk>
-            <Ir1Chk>1</Ir1Chk>
+            <Ir1Chk>0</Ir1Chk>
             <Ir2Chk>0</Ir2Chk>
             <Ra1Chk>0</Ra1Chk>
             <Ra2Chk>0</Ra2Chk>
@@ -3735,7 +3200,7 @@
               </XRAM>
               <OCR_RVCT1>
                 <Type>1</Type>
-                <StartAddress>0x90020000</StartAddress>
+                <StartAddress>0x90000000</StartAddress>
                 <Size>0x3f80000</Size>
               </OCR_RVCT1>
               <OCR_RVCT2>
@@ -3836,7 +3301,7 @@
             </VariousControls>
           </Aads>
           <LDads>
-            <umfTarg>0</umfTarg>
+            <umfTarg>1</umfTarg>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
             <noStLib>0</noStLib>
@@ -5867,39 +5332,9 @@
           <GroupName>gui</GroupName>
           <Files>
             <File>
-              <FileName>CookingPresenter.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/cooking_screen/cookingpresenter.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>CookingView.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/cooking_screen/cookingview.cpp</FilePath>
-            </File>
-            <File>
               <FileName>FrontendApplication.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../cm7/touchgfx/gui/src/common/frontendapplication.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationDemoPresenter.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/informationdemo_screen/informationdemopresenter.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationDemoView.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/informationdemo_screen/informationdemoview.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationPresenter.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/information_screen/informationpresenter.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationView.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/information_screen/informationview.cpp</FilePath>
             </File>
             <File>
               <FileName>Model.cpp</FileName>
@@ -5907,34 +5342,14 @@
               <FilePath>../cm7/touchgfx/gui/src/model/model.cpp</FilePath>
             </File>
             <File>
-              <FileName>SelectingMenuPresenter.cpp</FileName>
+              <FileName>Screen1Presenter.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/selectingmenu_screen/selectingmenupresenter.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/gui/src/screen1_screen/screen1presenter.cpp</FilePath>
             </File>
             <File>
-              <FileName>SelectingMenuView.cpp</FileName>
+              <FileName>Screen1View.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/selectingmenu_screen/selectingmenuview.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SettingsPresenter.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/settings_screen/settingspresenter.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SettingsView.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/settings_screen/settingsview.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SplashScreenPresenter.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/splashscreen_screen/splashscreenpresenter.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SplashScreenView.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/gui/src/splashscreen_screen/splashscreenview.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/gui/src/screen1_screen/screen1view.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -5957,229 +5372,19 @@
               <FilePath>../cm7/touchgfx/generated/fonts/src/cachedfont.cpp</FilePath>
             </File>
             <File>
-              <FileName>CookingViewBase.cpp</FileName>
+              <FileName>Font_verdana_10_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/cooking_screen/cookingviewbase.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_10_4bpp_0.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_chinese_msyh_14_4bpp_0.cpp</FileName>
+              <FileName>Font_verdana_20_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_0.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_20_4bpp_0.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_chinese_msyh_14_4bpp_10.cpp</FileName>
+              <FileName>Font_verdana_40_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_10.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_11.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_11.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_14.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_14.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_15.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_15.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_16.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_16.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_17.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_17.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_19.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_19.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_14_4bpp_6.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_14_4bpp_6.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_10.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_10.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_11.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_11.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_12.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_12.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_14.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_14.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_17.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_17.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_18.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_18.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_19.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_19.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_6.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_6.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_25_4bpp_9.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_25_4bpp_9.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_28_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_28_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_28_4bpp_11.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_28_4bpp_11.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_chinese_msyh_28_4bpp_18.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_chinese_msyh_28_4bpp_18.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GILB_____TTF_24_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gilb_____ttf_24_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_14_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_14_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_20_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_20_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_24_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_24_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_25_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_25_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_28_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_28_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_GommeSansW04Bold_30_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_gommesansw04bold_30_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_21.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_21.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_22.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_22.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_23.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_23.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_24.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_24.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_25.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_25.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_14_4bpp_26.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_14_4bpp_26.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_21.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_21.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_22.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_22.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_24.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_24.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_25.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_25.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_25_4bpp_26.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_25_4bpp_26.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_28_4bpp_0.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_28_4bpp_0.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Font_Nanum_Gothic_Bold_700_28_4bpp_24.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_nanum_gothic_bold_700_28_4bpp_24.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_40_4bpp_0.cpp</FilePath>
             </File>
             <File>
               <FileName>FontCache.cpp</FileName>
@@ -6197,224 +5402,19 @@
               <FilePath>../cm7/touchgfx/generated/fonts/src/generatedfont.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_arrow_down_v3.cpp</FileName>
+              <FileName>Kerning_verdana_10_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/button/image_arrow_down_v3.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_arrow_left.cpp</FileName>
+              <FileName>Kerning_verdana_20_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/button/image_arrow_left.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_20_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>image_arrow_right.cpp</FileName>
+              <FileName>Kerning_verdana_40_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/button/image_arrow_right.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_arrow_up_v3.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/button/image_arrow_up_v3.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_background_settings_language.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_background_settings_language.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_background_settings_right.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_background_settings_right.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_background_settings_time_date.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_background_settings_time_date.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_cancel_button_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_cancel_button_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_cancel_button_white_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_cancel_button_white_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_empty_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_empty_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_fish_3d.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/steam/image_fish_3d.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_icon_dumplings_3d.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/bun/image_icon_dumplings_3d.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_info_button_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_info_button_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_info_button_white_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_info_button_white_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_info_screen.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_info_screen.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_info_v2.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_info_v2.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_left_button_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_left_button_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_left_button_white_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_left_button_white_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_pancakes_3d.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/pancake/image_pancakes_3d.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_rice_3d.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/rice/image_rice_3d.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_selecting_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_selecting_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_settings_button_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_settings_button_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_settings_button_white_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_settings_button_white_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_start_button_left.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_start_button_left.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_start_button_right.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/backgrounds/image_start_button_right.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_time_icon_background.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/icons/image_time_icon_background.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_title_demo.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/logo/image_title_demo.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>image_TouchGFX_logo.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/images/src/logo/image_touchgfx_logo.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationDemoViewBase.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/informationdemo_screen/informationdemoviewbase.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>InformationViewBase.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/information_screen/informationviewbase.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_chinese_msyh_14_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_chinese_msyh_14_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_chinese_msyh_25_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_chinese_msyh_25_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_chinese_msyh_28_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_chinese_msyh_28_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GILB_____TTF_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gilb_____ttf_24_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_14_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_14_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_20_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_20_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_24_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_25_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_25_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_28_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_28_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_GommeSansW04Bold_30_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_gommesansw04bold_30_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_Nanum_Gothic_Bold_700_14_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_nanum_gothic_bold_700_14_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_Nanum_Gothic_Bold_700_25_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_nanum_gothic_bold_700_25_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Kerning_Nanum_Gothic_Bold_700_28_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_nanum_gothic_bold_700_28_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>LanguageFr.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/texts/src/languagefr.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_40_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>LanguageGb.cpp</FileName>
@@ -6422,29 +5422,9 @@
               <FilePath>../cm7/touchgfx/generated/texts/src/languagegb.cpp</FilePath>
             </File>
             <File>
-              <FileName>LanguageJp.cpp</FileName>
+              <FileName>Screen1ViewBase.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/texts/src/languagejp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>LanguageKr.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/texts/src/languagekr.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SelectingMenuViewBase.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/selectingmenu_screen/selectingmenuviewbase.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SettingsViewBase.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/settings_screen/settingsviewbase.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SplashScreenViewBase.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/gui_generated/src/splashscreen_screen/splashscreenviewbase.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/gui_generated/src/screen1_screen/screen1viewbase.cpp</FilePath>
             </File>
             <File>
               <FileName>SVGDatabase.cpp</FileName>
@@ -6452,69 +5432,19 @@
               <FilePath>../cm7/touchgfx/generated/images/src/svgdatabase.cpp</FilePath>
             </File>
             <File>
-              <FileName>Table_chinese_msyh_14_4bpp.cpp</FileName>
+              <FileName>Table_verdana_10_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_chinese_msyh_14_4bpp.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>Table_chinese_msyh_25_4bpp.cpp</FileName>
+              <FileName>Table_verdana_20_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_chinese_msyh_25_4bpp.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_20_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>Table_chinese_msyh_28_4bpp.cpp</FileName>
+              <FileName>Table_verdana_40_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_chinese_msyh_28_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GILB_____TTF_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gilb_____ttf_24_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_14_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_14_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_20_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_20_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_24_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_24_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_25_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_25_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_28_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_28_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_GommeSansW04Bold_30_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_gommesansw04bold_30_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_Nanum_Gothic_Bold_700_14_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_nanum_gothic_bold_700_14_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_Nanum_Gothic_Bold_700_25_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_nanum_gothic_bold_700_25_4bpp.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>Table_Nanum_Gothic_Bold_700_28_4bpp.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_nanum_gothic_bold_700_28_4bpp.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_40_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>Texts.cpp</FileName>
