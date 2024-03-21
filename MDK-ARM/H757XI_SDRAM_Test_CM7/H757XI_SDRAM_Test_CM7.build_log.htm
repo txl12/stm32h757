@@ -22,7 +22,7 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 D:\stm32\new_h757\H757XI_rgb\stm32h757\MDK-ARM\H757XI_SDRAM_Test.uvprojx
-Project File Date:  02/16/2024
+Project File Date:  03/21/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
@@ -30,11 +30,14 @@ Build target 'H757XI_SDRAM_Test_CM7'
 Note: source file '../CM7/Core/Src/main.c' - object file renamed from 'H757XI_SDRAM_Test_CM7\main.o' to 'H757XI_SDRAM_Test_CM7\main_1.o'.
 Note: source file '../CM7/Core/Src/stm32h7xx_it.c' - object file renamed from 'H757XI_SDRAM_Test_CM7\stm32h7xx_it.o' to 'H757XI_SDRAM_Test_CM7\stm32h7xx_it_1.o'.
 Note: source file '../CM7/Core/Src/stm32h7xx_hal_msp.c' - object file renamed from 'H757XI_SDRAM_Test_CM7\stm32h7xx_hal_msp.o' to 'H757XI_SDRAM_Test_CM7\stm32h7xx_hal_msp_1.o'.
-compiling i2c.c...
+compiling main.c...
+../CM7/Core/Src/main.c(91): warning:  #177-D: variable "timeout"  was declared but never referenced
+    int32_t timeout;
+../CM7/Core/Src/main.c: 1 warning, 0 errors
 linking...
-Program Size: Code=16584 RO-data=712 RW-data=40 ZI-data=1344  
+Program Size: Code=15404 RO-data=804 RW-data=32 ZI-data=1784  
 FromELF: creating hex file...
-"H757XI_SDRAM_Test_CM7\H757XI_SDRAM_Test_CM7.axf" - 0 Error(s), 0 Warning(s).
+"H757XI_SDRAM_Test_CM7\H757XI_SDRAM_Test_CM7.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -58,7 +61,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE@5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
