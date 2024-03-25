@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "lv_mem.h": "c",
+        "lv_string.h": "c",
+        "lv_os.h": "c",
+        "lv_assert.h": "c",
+        "lv_log.h": "c",
+        "lv_cache.h": "c"
+    }
+}

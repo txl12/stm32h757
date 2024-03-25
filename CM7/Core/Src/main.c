@@ -144,22 +144,7 @@ HSEM notification */
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		static uint8_t i=0;
-		static uint16_t x,y;
 
-		memset((uint8_t*)0xc0000000,i,600*2*1024);
-		i+=25;
-		HAL_Delay(100);
-				memset((uint8_t*)0xc0000000,i,600*2*1024);
-			i+=25;
-		HAL_Delay(100);
-				memset((uint8_t*)0xc0000000,i,600*2*1024);
-			i+=25;
-		HAL_Delay(100);
-				memset((uint8_t*)0xc0000000,i,600*2*1024);
-			i+=25;
-		HAL_Delay(100);
-				touchpad_get_xy(&x,&y);
   }
   /* USER CODE END 3 */
 }

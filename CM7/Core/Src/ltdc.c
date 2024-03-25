@@ -46,19 +46,19 @@ void MX_LTDC_Init(void)
   /* USER CODE BEGIN LTDC_Init 1 */
 
   /* USER CODE END LTDC_Init 1 */
-  hltdc.Instance = LTDC;
+ hltdc.Instance = LTDC;
   hltdc.Init.HSPolarity = LTDC_HSPOLARITY_AL;
   hltdc.Init.VSPolarity = LTDC_VSPOLARITY_AL;
   hltdc.Init.DEPolarity = LTDC_DEPOLARITY_AL;
   hltdc.Init.PCPolarity = LTDC_PCPOLARITY_IPC;
   hltdc.Init.HorizontalSync = 7;
   hltdc.Init.VerticalSync = 3;
-  hltdc.Init.AccumulatedHBP = 14;
-  hltdc.Init.AccumulatedVBP = 5;
-  hltdc.Init.AccumulatedActiveW = 1038;
-  hltdc.Init.AccumulatedActiveH = 605;
-  hltdc.Init.TotalWidth = 1044;
-  hltdc.Init.TotalHeigh = 607;
+  hltdc.Init.AccumulatedHBP = 167;
+  hltdc.Init.AccumulatedVBP = 18;
+  hltdc.Init.AccumulatedActiveW = 1191;
+  hltdc.Init.AccumulatedActiveH = 618;
+  hltdc.Init.TotalWidth = 1351;
+  hltdc.Init.TotalHeigh = 638;
   hltdc.Init.Backcolor.Blue = 0;
   hltdc.Init.Backcolor.Green = 0;
   hltdc.Init.Backcolor.Red = 0;
