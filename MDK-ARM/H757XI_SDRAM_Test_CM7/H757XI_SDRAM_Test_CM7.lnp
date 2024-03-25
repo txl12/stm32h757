@@ -305,6 +305,7 @@
 "h757xi_sdram_test_cm7\img_demo_widgets_avatar.o"
 "h757xi_sdram_test_cm7\img_demo_widgets_needle.o"
 "h757xi_sdram_test_cm7\img_lvgl_logo.o"
+"h757xi_sdram_test_cm7\lvgl_app.o"
 --library_type=microlib --strict --scatter "H757XI_SDRAM_Test_CM7\H757XI_SDRAM_Test_CM7.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -2334,6 +2334,16 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>lvgl_app</GroupName>
+          <Files>
+            <File>
+              <FileName>lvgl_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\lvgl_app\lvgl_app.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
@@ -2672,7 +2682,7 @@
               <MiscControls></MiscControls>
               <Define>CORE_CM7,USE_HAL_DRIVER,STM32H757xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../CM7/Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;..\lvgl;..\lvgl\demos;..\lvgl\examples;..\lvgl\src</IncludePath>
+              <IncludePath>../CM7/Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;..\lvgl;..\lvgl\demos;..\lvgl\examples;..\lvgl\src;..\user;..\user\lvgl_app</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -4458,6 +4468,16 @@
               <FileName>img_lvgl_logo.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\demos\widgets\assets\img_lvgl_logo.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lvgl_app</GroupName>
+          <Files>
+            <File>
+              <FileName>lvgl_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\lvgl_app\lvgl_app.c</FilePath>
             </File>
           </Files>
         </Group>

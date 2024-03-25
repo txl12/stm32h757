@@ -53,7 +53,8 @@ uint32_t ret = 0;
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+extern 
+int lvgl_app(void);
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -135,6 +136,7 @@ HSEM notification */
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
+	lvgl_app();
   /* USER CODE END 2 */
 
   /* Infinite loop */
