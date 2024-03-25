@@ -126,6 +126,7 @@ static void disp_flush(lv_display_t * disp_drv, const lv_area_t * area, uint8_t 
             for(x = area->x1; x <= area->x2; x++) {
                 /*Put a pixel to the display. For example:*/
                 /*put_px(x, y, *px_map)*/
+								*(volatile uint16_t*)( 0xc0000000 + 2*(x + y*MY_DISP_VER_RES) ) = *px_map ; 	
                 px_map++;
             }
         }
