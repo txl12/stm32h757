@@ -23,7 +23,6 @@
 #include "ltdc.h"
 #include "gpio.h"
 #include "fmc.h"
-#include "SEGGER_RTT.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -139,8 +138,6 @@ HSEM notification */
   MX_DMA2D_Init();
   /* USER CODE BEGIN 2 */
   gt911_Init();
-  SEGGER_RTT_Init();
-  SEGGER_RTT_printf(0, "This LVGL test\r\n");
   HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
   lvgl_app();
   /* USER CODE END 2 */

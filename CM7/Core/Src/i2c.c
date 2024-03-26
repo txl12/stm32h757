@@ -146,7 +146,7 @@ void gt911_Scanf(void)
 				GT911_ReadReg((GT_TPD_Sta + i*8 + S_H), &_temp, 1);	//读出触摸大小数据的高8位
 				User_Touch.Touch_XY[i].S_Point |= (_temp<<8); 
                 
-                SEGGER_RTT_printf(0, "touch[%d], x: %d, y: %d, s: %d\r\n", i, User_Touch.Touch_XY[i].X_Point, User_Touch.Touch_XY[i].Y_Point, User_Touch.Touch_XY[i].S_Point);
+//                SEGGER_RTT_printf(0, "touch[%d], x: %d, y: %d, s: %d\r\n", i, User_Touch.Touch_XY[i].X_Point, User_Touch.Touch_XY[i].Y_Point, User_Touch.Touch_XY[i].S_Point);
 			}
 			
 			_temp=0;
