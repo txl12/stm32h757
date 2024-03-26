@@ -7,7 +7,7 @@ h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ha
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h757xx.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/CMSIS/Include/core_cm7.h
-h757xi_sdram_test_cm7\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+h757xi_sdram_test_cm7\main_1.o: D:\IDE\Keil5\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/CMSIS/Include/cmsis_version.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -15,8 +15,8 @@ h757xi_sdram_test_cm7\main_1.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-h757xi_sdram_test_cm7\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-h757xi_sdram_test_cm7\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+h757xi_sdram_test_cm7\main_1.o: D:\IDE\Keil5\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+h757xi_sdram_test_cm7\main_1.o: D:\IDE\Keil5\Keil5\ARM\ARMCC\Bin\..\include\math.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h
 h757xi_sdram_test_cm7\main_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h
@@ -43,5 +43,9 @@ h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/i2c.h
 h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/ltdc.h
 h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/gpio.h
 h757xi_sdram_test_cm7\main_1.o: ../CM7/Core/Inc/fmc.h
-h757xi_sdram_test_cm7\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-h757xi_sdram_test_cm7\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+h757xi_sdram_test_cm7\main_1.o: ..\SEGGER_RTT\SEGGER_RTT.h
+h757xi_sdram_test_cm7\main_1.o: ..\SEGGER_RTT\SEGGER_RTT_Conf.h
+h757xi_sdram_test_cm7\main_1.o: D:\IDE\Keil5\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+h757xi_sdram_test_cm7\main_1.o: D:\IDE\Keil5\Keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+h757xi_sdram_test_cm7\main_1.o: D:\IDE\Keil5\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+h757xi_sdram_test_cm7\main_1.o: D:\IDE\Keil5\Keil5\ARM\ARMCC\Bin\..\include\string.h

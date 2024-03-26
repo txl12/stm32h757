@@ -23,6 +23,7 @@
 #include "ltdc.h"
 #include "gpio.h"
 #include "fmc.h"
+#include "SEGGER_RTT.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -137,8 +138,11 @@ HSEM notification */
   MX_I2C2_Init();
   MX_DMA2D_Init();
   /* USER CODE BEGIN 2 */
+  gt911_Init();
+  SEGGER_RTT_Init();
+  SEGGER_RTT_printf(0, "This LVGL test\r\n");
   HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
-	lvgl_app();
+  lvgl_app();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -236,6 +240,7 @@ int fputc(int ch, FILE *f)
   ITM_SendChar(ch);
   return ch;
 }
+
 void MPU_Config(void)
 {
 	MPU_Region_InitTypeDef MPU_InitStruct;
@@ -260,84 +265,6 @@ void MPU_Config(void)
 	HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);	// Ê¹ÄÜMPU
 }
 
-uint32_t bsp_TestExtSDRAM(void)
-{
-	uint32_t i;
-	uint32_t *pSRAM;
-	uint8_t *pBytes;
-	uint32_t err;
-	const uint8_t ByteBuf[4] = {0x55, 0xA5, 0x5A, 0xAA};
-
-	/* ?SDRAM */
-	pSRAM = (uint32_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < EXT_SDRAM_SIZE / 4; i++)
-	{
-		*pSRAM++ = i;
-	}
-
-	/* ?SDRAM */
-	err = 0;
-	pSRAM = (uint32_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < EXT_SDRAM_SIZE / 4; i++)
-	{
-		if (*pSRAM++ != i)
-		{
-			err++;
-		}
-	}
-
-	if (err >  0)
-	{
-		return  (4 * err);
-	}
-
-	/* ?SDRAM ???????? */
-	pSRAM = (uint32_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < EXT_SDRAM_SIZE / 4; i++)
-	{
-		*pSRAM = ~*pSRAM;
-		pSRAM++;
-	}
-
-	/* ????SDRAM??? */
-	err = 0;
-	pSRAM = (uint32_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < EXT_SDRAM_SIZE / 4; i++)
-	{
-		if (*pSRAM++ != (~i))
-		{
-			err++;
-		}
-	}
-
-	if (err >  0)
-	{
-		return (4 * err);
-	}
-
-	/* ?????????, ????? FSMC_NBL0 ? FSMC_NBL1 ?? */
-	pBytes = (uint8_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < sizeof(ByteBuf); i++)
-	{
-		*pBytes++ = ByteBuf[i];
-	}
-
-	/* ??SDRAM??? */
-	err = 0;
-	pBytes = (uint8_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < sizeof(ByteBuf); i++)
-	{
-		if (*pBytes++ != ByteBuf[i])
-		{
-			err++;
-		}
-	}
-	if (err >  0)
-	{
-		return err;
-	}
-	return 0;
-}
 /* USER CODE END 4 */
 
 /**

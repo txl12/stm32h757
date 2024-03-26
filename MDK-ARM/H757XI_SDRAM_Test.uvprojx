@@ -16,8 +16,8 @@
         <TargetCommonOption>
           <Device>STM32H757XIHx:CM4</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32H7xx_DFP.2.8.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>Keil.STM32H7xx_DFP.3.1.1</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x10000000-0x10047FFF) IRAM2(0x18000000-0x1800FFFF) IROM(0x8100000-0x81FFFFF) CLOCK(12000000) FPU3(SFPU) CPUTYPE("Cortex-M4") TZ</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -1056,7 +1056,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lvgl_src</GroupName>
+          <GroupName>Drivers/lvgl_src</GroupName>
           <Files>
             <File>
               <FileName>lv_group.c</FileName>
@@ -1831,7 +1831,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lvgl_example</GroupName>
+          <GroupName>Drivers/lvgl_example</GroupName>
           <Files>
             <File>
               <FileName>lv_port_disp_template.c</FileName>
@@ -1856,7 +1856,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lvge_demos</GroupName>
+          <GroupName>Drivers/lvge_demos</GroupName>
           <Files>
             <File>
               <FileName>lv_demos.c</FileName>
@@ -2446,12 +2446,27 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lvgl_app</GroupName>
+          <GroupName>Drivers/lvgl_app</GroupName>
           <Files>
             <File>
               <FileName>lvgl_app.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\lvgl_app\lvgl_app.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Drivers/SERGGER_RTT</GroupName>
+          <Files>
+            <File>
+              <FileName>SEGGER_RTT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SEGGER_RTT\SEGGER_RTT.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SEGGER_RTT\SEGGER_RTT_printf.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2470,8 +2485,8 @@
         <TargetCommonOption>
           <Device>STM32H757XIHx:CM7</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32H7xx_DFP.2.8.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>Keil.STM32H7xx_DFP.3.1.1</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000-0x2001FFFF) IRAM2(0x00000000-0xFFFF) IROM(0x8000000-0x80FFFFF) CLOCK(12000000) FPU3(DFPU) CPUTYPE("Cortex-M7") ELITTLE TZ</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -2508,7 +2523,7 @@
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
-          <BrowseInformation>0</BrowseInformation>
+          <BrowseInformation>1</BrowseInformation>
           <ListingPath></ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
@@ -2777,7 +2792,7 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>1</wLevel>
+            <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
@@ -2794,7 +2809,7 @@
               <MiscControls></MiscControls>
               <Define>CORE_CM7,USE_HAL_DRIVER,STM32H757xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../CM7/Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;../lvgl;../lvgl/demos;../lvgl/examples;../lvgl/src;../user;../user/lvgl_app</IncludePath>
+              <IncludePath>../CM7/Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;../lvgl;../lvgl/demos;../lvgl/examples;../lvgl/src;../user;../user/lvgl_app;..\SEGGER_RTT</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -3306,7 +3321,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lvgl_src</GroupName>
+          <GroupName>Drivers/lvgl_src</GroupName>
           <Files>
             <File>
               <FileName>lv_group.c</FileName>
@@ -4081,7 +4096,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lvgl_example</GroupName>
+          <GroupName>Drivers/lvgl_example</GroupName>
           <Files>
             <File>
               <FileName>lv_port_disp_template.c</FileName>
@@ -4106,7 +4121,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lvge_demos</GroupName>
+          <GroupName>Drivers/lvge_demos</GroupName>
           <Files>
             <File>
               <FileName>lv_demos.c</FileName>
@@ -4696,12 +4711,27 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lvgl_app</GroupName>
+          <GroupName>Drivers/lvgl_app</GroupName>
           <Files>
             <File>
               <FileName>lvgl_app.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\lvgl_app\lvgl_app.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Drivers/SERGGER_RTT</GroupName>
+          <Files>
+            <File>
+              <FileName>SEGGER_RTT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SEGGER_RTT\SEGGER_RTT.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SEGGER_RTT\SEGGER_RTT_printf.c</FilePath>
             </File>
           </Files>
         </Group>

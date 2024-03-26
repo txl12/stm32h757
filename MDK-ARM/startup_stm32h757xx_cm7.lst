@@ -1312,12 +1312,12 @@ ARM Macro Assembler    Page 21
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M7.fp.dp --apcs=
 interwork --depend=h757xi_sdram_test_cm7\startup_stm32h757xx_cm7.d -oh757xi_sdr
-am_test_cm7\startup_stm32h757xx_cm7.o -I.\RTE\_H757XI_SDRAM_Test_CM7 -ID:\app\k
-eil\ARM\CMSIS\5.9.0\CMSIS\Core\Include -ID:\app\keil\Keil\STM32H7xx_DFP\2.8.0\D
-rivers\CMSIS\Device\ST\STM32H7xx\Include --predefine="__UVISION_VERSION SETA 53
-9" --predefine="_RTE_ SETA 1" --predefine="CORE_CM7 SETA 1" --predefine="STM32H
-757xx SETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm32h757xx_cm7.lst sta
-rtup_stm32h757xx_CM7.s
+am_test_cm7\startup_stm32h757xx_cm7.o -I.\RTE\_H757XI_SDRAM_Test_CM7 -ID:\IDE\K
+eil5\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include -ID:\IDE\Keil5\Pack\Keil\STM32H7xx
+_DFP\3.1.1\Drivers\CMSIS\Device\ST\STM32H7xx\Include --predefine="__UVISION_VER
+SION SETA 538" --predefine="_RTE_ SETA 1" --predefine="CORE_CM7 SETA 1" --prede
+fine="STM32H757xx SETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm32h757xx
+_cm7.lst startup_stm32h757xx_CM7.s
 
 
 

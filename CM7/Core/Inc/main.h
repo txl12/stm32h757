@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-uint8_t touchpad_get_xy(uint16_t * x, uint16_t * y);
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
