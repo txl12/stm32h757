@@ -3,7 +3,7 @@
 #include "porting/lv_port_disp_template.h"
 #include "main.h"
 #include "lv_demos.h"
-#define LVGL_TICK 	5
+#define LVGL_TICK 	1
 
 static void lvgl_init( void ) 
 {
@@ -20,9 +20,9 @@ int lvgl_app(void)
 
 	while(1) {
 		// ??? lv_tick_inc ??? lv_timer_handler
-		lv_tick_inc(1);
+		lv_tick_inc(LVGL_TICK);
 		lv_timer_handler();
-//		HAL_Delay(LVGL_TICK);
+		HAL_Delay(LVGL_TICK);
 	}
 }
 
