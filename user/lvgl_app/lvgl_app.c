@@ -20,9 +20,9 @@ int lvgl_app(void)
 
 	while(1) {
 		// ??? lv_tick_inc ??? lv_timer_handler
-		lv_tick_inc(LVGL_TICK);
+		lv_tick_inc(1);
 		lv_timer_handler();
-		HAL_Delay(LVGL_TICK);
+//		HAL_Delay(LVGL_TICK);
 	}
 }
 

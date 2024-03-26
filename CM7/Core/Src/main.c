@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma2d.h"
 #include "i2c.h"
 #include "ltdc.h"
 #include "gpio.h"
@@ -134,6 +135,7 @@ HSEM notification */
   MX_FMC_Init();
   MX_LTDC_Init();
   MX_I2C2_Init();
+  MX_DMA2D_Init();
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
 	lvgl_app();

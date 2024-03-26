@@ -3,7 +3,7 @@
 <title>Static Call Graph - [H757XI_SDRAM_Test_CM7\H757XI_SDRAM_Test_CM7.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image H757XI_SDRAM_Test_CM7\H757XI_SDRAM_Test_CM7.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Mar 25 23:06:59 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Mar 26 19:21:25 2024
 <BR><P>
 <H3>Maximum Stack Usage =       1328 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1027,7 +1027,6 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SDRAM_Initialization_Sequence
-<LI><a href="#[69e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lvgl_app
 </UL>
 
 <P><STRONG><a name="[175]"></a>HAL_GPIO_Init</STRONG> (Thumb, 456 bytes, Stack size 24 bytes, stm32h7xx_hal_gpio.o(i.HAL_GPIO_Init))
@@ -1056,12 +1055,12 @@ Global Symbols
 <LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
 <LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCCEx_PeriphCLKConfig
 <LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_ConfigSupply
+<LI><a href="#[193]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCCEx_PLL3_Config
+<LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCCEx_PLL2_Config
 <LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnTXISFlagUntilTimeout
 <LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnSTOPFlagUntilTimeout
 <LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnFlagUntilTimeout
 <LI><a href="#[19f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_IsErrorOccurred
-<LI><a href="#[193]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCCEx_PLL3_Config
-<LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCCEx_PLL2_Config
 </UL>
 
 <P><STRONG><a name="[1a6]"></a>HAL_I2CEx_ConfigAnalogFilter</STRONG> (Thumb, 106 bytes, Stack size 0 bytes, stm32h7xx_hal_i2c_ex.o(i.HAL_I2CEx_ConfigAnalogFilter))
@@ -1085,12 +1084,12 @@ Global Symbols
 <P><STRONG><a name="[178]"></a>HAL_I2C_Mem_Write</STRONG> (Thumb, 402 bytes, Stack size 48 bytes, stm32h7xx_hal_i2c.o(i.HAL_I2C_Mem_Write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = HAL_I2C_Mem_Write &rArr; I2C_RequestMemoryWrite &rArr; I2C_WaitOnTXISFlagUntilTimeout &rArr; I2C_IsErrorOccurred
 </UL>
-<BR>[Calls]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnTXISFlagUntilTimeout
+<BR>[Calls]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnTXISFlagUntilTimeout
 <LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnSTOPFlagUntilTimeout
 <LI><a href="#[179]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnFlagUntilTimeout
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_TransferConfig
 <LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_RequestMemoryWrite
-<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ft5206_wr_reg
 </UL>
@@ -2123,8 +2122,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[30c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_map
 </UL>
-<BR>[Address Reference Count : 3]<UL><LI> lv_style.o(i.lv_style_transition_dsc_init)
-<LI> lv_anim.o(i.lv_anim_init)
+<BR>[Address Reference Count : 3]<UL><LI> lv_anim.o(i.lv_anim_init)
+<LI> lv_style.o(i.lv_style_transition_dsc_init)
 <LI> lv_theme_default.o(i.style_init)
 </UL>
 <P><STRONG><a name="[c7]"></a>lv_anim_path_step</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, lv_anim.o(i.lv_anim_path_step))
@@ -4725,13 +4724,13 @@ Global Symbols
 <P><STRONG><a name="[32d]"></a>lv_group_add_obj</STRONG> (Thumb, 168 bytes, Stack size 24 bytes, lv_group.o(i.lv_group_add_obj))
 <BR><BR>[Stack]<UL><LI>Max Depth = 576<LI>Call Chain = lv_group_add_obj &rArr; lv_group_remove_obj &rArr; lv_group_refocus &rArr; lv_group_focus_prev &rArr; focus_next_core &rArr; lv_obj_invalidate &rArr; lv_obj_invalidate_area &rArr; lv_obj_area_is_visible &rArr; lv_obj_get_transformed_area &rArr; lv_obj_transform_point_array &rArr;  lv_obj_transform_point_array (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[53b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_refocus
-<LI><a href="#[2b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_group
+<BR>[Calls]<UL><LI><a href="#[2b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_group
 <LI><a href="#[1ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_allocate_spec_attr
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_ll_ins_tail
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_ll_get_next
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_ll_get_head
 <LI><a href="#[53a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_remove_obj
+<LI><a href="#[53b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_refocus
 </UL>
 <BR>[Called By]<UL><LI><a href="#[456]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_class_init_obj
 <LI><a href="#[4c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_tabview_add_tab
@@ -4743,8 +4742,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
 </UL>
-<BR>[Called By]<UL><LI><a href="#[53b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_refocus
-<LI><a href="#[229]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_flag
+<BR>[Called By]<UL><LI><a href="#[229]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_flag
+<LI><a href="#[53b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_refocus
 </UL>
 
 <P><STRONG><a name="[53d]"></a>lv_group_focus_prev</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, lv_group.o(i.lv_group_focus_prev))
@@ -4781,15 +4780,15 @@ Global Symbols
 <P><STRONG><a name="[53a]"></a>lv_group_remove_obj</STRONG> (Thumb, 186 bytes, Stack size 24 bytes, lv_group.o(i.lv_group_remove_obj))
 <BR><BR>[Stack]<UL><LI>Max Depth = 552<LI>Call Chain = lv_group_remove_obj &rArr; lv_group_refocus &rArr; lv_group_focus_prev &rArr; focus_next_core &rArr; lv_obj_invalidate &rArr; lv_obj_invalidate_area &rArr; lv_obj_area_is_visible &rArr; lv_obj_get_transformed_area &rArr; lv_obj_transform_point_array &rArr;  lv_obj_transform_point_array (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[53b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_refocus
-<LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_indev
-<LI><a href="#[1f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_send_event
+<BR>[Calls]<UL><LI><a href="#[1f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_send_event
 <LI><a href="#[2b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_group
 <LI><a href="#[1e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_free
 <LI><a href="#[1e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_ll_remove
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_ll_get_tail
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_ll_get_next
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_ll_get_head
+<LI><a href="#[53b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_refocus
+<LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_indev
 </UL>
 <BR>[Called By]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_destructor
 <LI><a href="#[32d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_add_obj
@@ -4798,10 +4797,10 @@ Global Symbols
 <P><STRONG><a name="[2b3]"></a>lv_group_set_editing</STRONG> (Thumb, 100 bytes, Stack size 32 bytes, lv_group.o(i.lv_group_set_editing))
 <BR><BR>[Stack]<UL><LI>Max Depth = 480<LI>Call Chain = lv_group_set_editing &rArr; lv_obj_invalidate &rArr; lv_obj_invalidate_area &rArr; lv_obj_area_is_visible &rArr; lv_obj_get_transformed_area &rArr; lv_obj_transform_point_array &rArr;  lv_obj_transform_point_array (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_indev
-<LI><a href="#[1f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_send_event
+<BR>[Calls]<UL><LI><a href="#[1f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_send_event
 <LI><a href="#[1f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_invalidate
 <LI><a href="#[53e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_get_focused
+<LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_indev
 </UL>
 <BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_arc_event
 <LI><a href="#[446]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_release_handler
@@ -5042,9 +5041,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_ll_get_next
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_ll_get_head
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_indev
-<LI><a href="#[3bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_scrollbar_area
+<BR>[Called By]<UL><LI><a href="#[3bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_scrollbar_area
 <LI><a href="#[546]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_indev_reset
+<LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_indev
 <LI><a href="#[59c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;obj_delete_core
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_buttonmatrix_event
 </UL>
@@ -5077,8 +5076,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[287]"></a>lv_indev_get_type</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, lv_indev.o(i.lv_indev_get_type))
-<BR><BR>[Called By]<UL><LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_indev
-<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_event
+<BR><BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_event
+<LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_indev
 <LI><a href="#[59c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;obj_delete_core
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_arc_event
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_buttonmatrix_event
@@ -6337,14 +6336,14 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[230]"></a>lv_obj_get_parent</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, lv_obj_tree.o(i.lv_obj_get_parent))
-<BR><BR>[Called By]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
-<LI><a href="#[5ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_scroll_to_view_recursive
+<BR><BR>[Called By]<UL><LI><a href="#[5ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_scroll_to_view_recursive
 <LI><a href="#[588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_refresh_style
 <LI><a href="#[2d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_is_layout_positioned
 <LI><a href="#[5ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_style_opa_recursive
 <LI><a href="#[456]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_class_init_obj
 <LI><a href="#[23b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_remove_flag
 <LI><a href="#[229]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_flag
+<LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
 <LI><a href="#[3ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;event_send_core
 <LI><a href="#[5f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scroll_area_into_view
 <LI><a href="#[520]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_screen
@@ -6622,8 +6621,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[3ae]"></a>lv_obj_get_state</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, lv_obj.o(i.lv_obj_get_state))
-<BR><BR>[Called By]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
-<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_event
+<BR><BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_event
+<LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
 <LI><a href="#[674]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_switch_trigger_anim
 <LI><a href="#[3ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;draw_main
 </UL>
@@ -6963,9 +6962,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[3c9]"></a>lv_obj_has_flag</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, lv_obj.o(i.lv_obj_has_flag))
-<BR><BR>[Called By]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
-<LI><a href="#[3bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_scrollbar_area
+<BR><BR>[Called By]<UL><LI><a href="#[3bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_scrollbar_area
 <LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_event
+<LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
 <LI><a href="#[3c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;event_is_bubbled
 <LI><a href="#[5f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scroll_area_into_view
 <LI><a href="#[5e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_move_to
@@ -7109,14 +7108,14 @@ Global Symbols
 <LI><a href="#[43e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_obj_get_ext_draw_size
 <LI><a href="#[58c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_area_copy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
-<LI><a href="#[588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_refresh_style
+<BR>[Called By]<UL><LI><a href="#[588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_refresh_style
 <LI><a href="#[483]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_refresh_ext_draw_size
 <LI><a href="#[456]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_class_init_obj
 <LI><a href="#[23b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_remove_flag
 <LI><a href="#[229]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_add_flag
 <LI><a href="#[585]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;update_obj_state
 <LI><a href="#[2b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_set_editing
+<LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
 <LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_refr_size
 <LI><a href="#[5e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_move_to
 <LI><a href="#[60b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_set_local_style_prop
@@ -7705,13 +7704,13 @@ Global Symbols
 <LI><a href="#[5fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_lv_event_pop
 <LI><a href="#[3ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;event_send_core
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
-<LI><a href="#[588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_refresh_style
+<BR>[Called By]<UL><LI><a href="#[588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_refresh_style
 <LI><a href="#[483]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_refresh_ext_draw_size
 <LI><a href="#[456]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_class_init_obj
 <LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_event
 <LI><a href="#[2b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_set_editing
 <LI><a href="#[53a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_remove_obj
+<LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scroll_completed_completed_cb
 <LI><a href="#[5f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scroll_area_into_view
 <LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_refr_size
@@ -10391,11 +10390,10 @@ Global Symbols
 <LI><a href="#[67c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_table_set_cell_value_fmt
 </UL>
 
-<P><STRONG><a name="[69e]"></a>lvgl_app</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, lvgl_app.o(i.lvgl_app))
+<P><STRONG><a name="[69e]"></a>lvgl_app</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, lvgl_app.o(i.lvgl_app))
 <BR><BR>[Stack]<UL><LI>Max Depth = 840<LI>Call Chain = lvgl_app &rArr; lvgl_init &rArr; lv_demo_benchmark &rArr; load_scene &rArr; lv_obj_clean &rArr; lv_obj_scroll_to &rArr; lv_obj_scroll_to_y &rArr; lv_obj_scroll_by_bounded &rArr; lv_obj_update_layout &rArr; layout_update_core &rArr;  layout_update_core (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
-<LI><a href="#[696]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_timer_handler
+<BR>[Calls]<UL><LI><a href="#[696]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_timer_handler
 <LI><a href="#[6a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_tick_inc
 <LI><a href="#[69f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lvgl_init
 </UL>
@@ -10464,8 +10462,8 @@ Local Symbols
 <P><STRONG><a name="[19f]"></a>I2C_IsErrorOccurred</STRONG> (Thumb, 300 bytes, Stack size 48 bytes, stm32h7xx_hal_i2c.o(i.I2C_IsErrorOccurred))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = I2C_IsErrorOccurred
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Flush_TXDR
-<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<BR>[Calls]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[1a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Flush_TXDR
 </UL>
 <BR>[Called By]<UL><LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnTXISFlagUntilTimeout
 <LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_WaitOnSTOPFlagUntilTimeout
@@ -10500,8 +10498,8 @@ Local Symbols
 <P><STRONG><a name="[17d]"></a>I2C_WaitOnSTOPFlagUntilTimeout</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, stm32h7xx_hal_i2c.o(i.I2C_WaitOnSTOPFlagUntilTimeout))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = I2C_WaitOnSTOPFlagUntilTimeout &rArr; I2C_IsErrorOccurred
 </UL>
-<BR>[Calls]<UL><LI><a href="#[19f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_IsErrorOccurred
-<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<BR>[Calls]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[19f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_IsErrorOccurred
 </UL>
 <BR>[Called By]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Mem_Write
 </UL>
@@ -10509,8 +10507,8 @@ Local Symbols
 <P><STRONG><a name="[17c]"></a>I2C_WaitOnTXISFlagUntilTimeout</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, stm32h7xx_hal_i2c.o(i.I2C_WaitOnTXISFlagUntilTimeout))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = I2C_WaitOnTXISFlagUntilTimeout &rArr; I2C_IsErrorOccurred
 </UL>
-<BR>[Calls]<UL><LI><a href="#[19f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_IsErrorOccurred
-<LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<BR>[Calls]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
+<LI><a href="#[19f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_IsErrorOccurred
 </UL>
 <BR>[Called By]<UL><LI><a href="#[178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_I2C_Mem_Write
 <LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_RequestMemoryWrite
@@ -10525,12 +10523,12 @@ Local Symbols
 <P><STRONG><a name="[3de]"></a>focus_next_core</STRONG> (Thumb, 298 bytes, Stack size 48 bytes, lv_group.o(i.focus_next_core))
 <BR><BR>[Stack]<UL><LI>Max Depth = 496<LI>Call Chain = focus_next_core &rArr; lv_obj_invalidate &rArr; lv_obj_invalidate_area &rArr; lv_obj_area_is_visible &rArr; lv_obj_get_transformed_area &rArr; lv_obj_transform_point_array &rArr;  lv_obj_transform_point_array (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_indev
-<LI><a href="#[1f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_send_event
+<BR>[Calls]<UL><LI><a href="#[1f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_send_event
 <LI><a href="#[1f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_invalidate
 <LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_has_flag
 <LI><a href="#[3ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_state
 <LI><a href="#[230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_obj_get_parent
+<LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_indev
 </UL>
 <BR>[Called By]<UL><LI><a href="#[53d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_focus_prev
 <LI><a href="#[53c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_focus_next
@@ -10543,9 +10541,9 @@ Local Symbols
 <LI><a href="#[3f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_indev_get_next
 <LI><a href="#[3f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_indev_get_group
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
-<LI><a href="#[2b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_set_editing
+<BR>[Called By]<UL><LI><a href="#[2b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_set_editing
 <LI><a href="#[53a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_group_remove_obj
+<LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;focus_next_core
 </UL>
 
 <P><STRONG><a name="[53b]"></a>lv_group_refocus</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, lv_group.o(i.lv_group_refocus))

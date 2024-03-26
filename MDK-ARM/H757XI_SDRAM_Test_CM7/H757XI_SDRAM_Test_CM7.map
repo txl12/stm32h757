@@ -8181,7 +8181,6 @@ Section Cross References
     lvgl_app.o(i.lvgl_app) refers to lvgl_app.o(i.lvgl_init) for lvgl_init
     lvgl_app.o(i.lvgl_app) refers to lv_tick.o(i.lv_tick_inc) for lv_tick_inc
     lvgl_app.o(i.lvgl_app) refers to lv_timer.o(i.lv_timer_handler) for lv_timer_handler
-    lvgl_app.o(i.lvgl_app) refers to stm32h7xx_hal.o(i.HAL_Delay) for HAL_Delay
     lvgl_app.o(i.lvgl_init) refers to lv_init.o(i.lv_init) for lv_init
     lvgl_app.o(i.lvgl_init) refers to lv_port_disp_template.o(i.lv_port_disp_init) for lv_port_disp_init
     lvgl_app.o(i.lvgl_init) refers to lv_demo_benchmark.o(i.lv_demo_benchmark) for lv_demo_benchmark
@@ -12276,382 +12275,382 @@ Image Symbol Table
     i.lv_win_constructor                     0x08028f38   Section        0  lv_win.o(i.lv_win_constructor)
     lv_win_constructor                       0x08028f39   Thumb Code   134  lv_win.o(i.lv_win_constructor)
     i.lvgl_app                               0x08028fc4   Section        0  lvgl_app.o(i.lvgl_app)
-    i.lvgl_init                              0x08028fdc   Section        0  lvgl_app.o(i.lvgl_init)
-    lvgl_init                                0x08028fdd   Thumb Code    16  lvgl_app.o(i.lvgl_init)
-    i.main                                   0x08028fec   Section        0  main_1.o(i.main)
-    i.make_one_button_checked                0x08029144   Section        0  lv_buttonmatrix.o(i.make_one_button_checked)
-    make_one_button_checked                  0x08029145   Thumb Code    46  lv_buttonmatrix.o(i.make_one_button_checked)
-    i.mapping_insert                         0x08029172   Section        0  lv_tlsf.o(i.mapping_insert)
-    mapping_insert                           0x08029173   Thumb Code    58  lv_tlsf.o(i.mapping_insert)
-    i.mapping_search                         0x080291ac   Section        0  lv_tlsf.o(i.mapping_search)
-    mapping_search                           0x080291ad   Thumb Code    48  lv_tlsf.o(i.mapping_search)
-    i.month_event_cb                         0x080291dc   Section        0  lv_calendar_header_arrow.o(i.month_event_cb)
-    month_event_cb                           0x080291dd   Thumb Code   224  lv_calendar_header_arrow.o(i.month_event_cb)
-    i.month_event_cb                         0x080292c8   Section        0  lv_calendar_header_dropdown.o(i.month_event_cb)
-    month_event_cb                           0x080292c9   Thumb Code    68  lv_calendar_header_dropdown.o(i.month_event_cb)
-    i.moving_wallpaper_cb                    0x0802930c   Section        0  lv_demo_benchmark.o(i.moving_wallpaper_cb)
-    moving_wallpaper_cb                      0x0802930d   Thumb Code    94  lv_demo_benchmark.o(i.moving_wallpaper_cb)
-    i.multiple_arcs_cb                       0x08029370   Section        0  lv_demo_benchmark.o(i.multiple_arcs_cb)
-    multiple_arcs_cb                         0x08029371   Thumb Code   316  lv_demo_benchmark.o(i.multiple_arcs_cb)
-    i.multiple_argb_images_cb                0x080294ac   Section        0  lv_demo_benchmark.o(i.multiple_argb_images_cb)
-    multiple_argb_images_cb                  0x080294ad   Thumb Code   150  lv_demo_benchmark.o(i.multiple_argb_images_cb)
-    i.multiple_labels_cb                     0x08029548   Section        0  lv_demo_benchmark.o(i.multiple_labels_cb)
-    multiple_labels_cb                       0x08029549   Thumb Code   178  lv_demo_benchmark.o(i.multiple_labels_cb)
-    i.multiple_rectangles_cb                 0x08029608   Section        0  lv_demo_benchmark.o(i.multiple_rectangles_cb)
-    multiple_rectangles_cb                   0x08029609   Thumb Code   106  lv_demo_benchmark.o(i.multiple_rectangles_cb)
-    i.multiple_rgb_images_cb                 0x08029674   Section        0  lv_demo_benchmark.o(i.multiple_rgb_images_cb)
-    multiple_rgb_images_cb                   0x08029675   Thumb Code   150  lv_demo_benchmark.o(i.multiple_rgb_images_cb)
-    i.my_constructor                         0x08029710   Section        0  lv_calendar_header_arrow.o(i.my_constructor)
-    my_constructor                           0x08029711   Thumb Code   232  lv_calendar_header_arrow.o(i.my_constructor)
-    i.my_constructor                         0x08029808   Section        0  lv_calendar_header_dropdown.o(i.my_constructor)
-    my_constructor                           0x08029809   Thumb Code   134  lv_calendar_header_dropdown.o(i.my_constructor)
-    i.new_points_alloc                       0x080298a4   Section        0  lv_chart.o(i.new_points_alloc)
-    new_points_alloc                         0x080298a5   Thumb Code   234  lv_chart.o(i.new_points_alloc)
-    i.next_scene_timer_cb                    0x08029990   Section        0  lv_demo_benchmark.o(i.next_scene_timer_cb)
-    next_scene_timer_cb                      0x08029991   Thumb Code    68  lv_demo_benchmark.o(i.next_scene_timer_cb)
-    i.node_set_next                          0x080299dc   Section        0  lv_ll.o(i.node_set_next)
-    node_set_next                            0x080299dd   Thumb Code    28  lv_ll.o(i.node_set_next)
-    i.node_set_prev                          0x080299f8   Section        0  lv_ll.o(i.node_set_prev)
-    node_set_prev                            0x080299f9   Thumb Code    26  lv_ll.o(i.node_set_prev)
-    i.obj_delete_core                        0x08029a14   Section        0  lv_obj_tree.o(i.obj_delete_core)
-    obj_delete_core                          0x08029a15   Thumb Code   446  lv_obj_tree.o(i.obj_delete_core)
-    i.obj_indev_reset                        0x08029bd8   Section        0  lv_obj_tree.o(i.obj_indev_reset)
-    obj_indev_reset                          0x08029bd9   Thumb Code    22  lv_obj_tree.o(i.obj_indev_reset)
-    i.offset_to_block                        0x08029bee   Section        0  lv_tlsf.o(i.offset_to_block)
-    offset_to_block                          0x08029bef   Thumb Code     6  lv_tlsf.o(i.offset_to_block)
-    i.overwrite_anim_property                0x08029bf4   Section        0  lv_label.o(i.overwrite_anim_property)
-    overwrite_anim_property                  0x08029bf5   Thumb Code    76  lv_label.o(i.overwrite_anim_property)
-    i.place_content                          0x08029c40   Section        0  lv_flex.o(i.place_content)
-    place_content                            0x08029c41   Thumb Code   156  lv_flex.o(i.place_content)
-    i.position_knob                          0x08029cdc   Section        0  lv_slider.o(i.position_knob)
-    position_knob                            0x08029cdd   Thumb Code   184  lv_slider.o(i.position_knob)
-    i.position_to_selected                   0x08029d94   Section        0  lv_dropdown.o(i.position_to_selected)
-    position_to_selected                     0x08029d95   Thumb Code   100  lv_dropdown.o(i.position_to_selected)
-    i.profile_create                         0x08029df8   Section        0  lv_demo_widgets.o(i.profile_create)
-    profile_create                           0x08029df9   Thumb Code  3174  lv_demo_widgets.o(i.profile_create)
-    i.pwd_char_hider                         0x0802aa64   Section        0  lv_textarea.o(i.pwd_char_hider)
-    pwd_char_hider                           0x0802aa65   Thumb Code   130  lv_textarea.o(i.pwd_char_hider)
-    i.pwd_char_hider_anim                    0x0802aaec   Section        0  lv_textarea.o(i.pwd_char_hider_anim)
-    pwd_char_hider_anim                      0x0802aaed   Thumb Code     2  lv_textarea.o(i.pwd_char_hider_anim)
-    i.pwd_char_hider_anim_completed          0x0802aaee   Section        0  lv_textarea.o(i.pwd_char_hider_anim_completed)
-    pwd_char_hider_anim_completed            0x0802aaef   Thumb Code    14  lv_textarea.o(i.pwd_char_hider_anim_completed)
-    i.refr_area                              0x0802aafc   Section        0  lv_refr.o(i.refr_area)
-    refr_area                                0x0802aafd   Thumb Code   468  lv_refr.o(i.refr_area)
-    i.refr_area_part                         0x0802acd4   Section        0  lv_refr.o(i.refr_area_part)
-    refr_area_part                           0x0802acd5   Thumb Code   352  lv_refr.o(i.refr_area_part)
-    i.refr_cell_size                         0x0802ae38   Section        0  lv_table.o(i.refr_cell_size)
-    refr_cell_size                           0x0802ae39   Thumb Code   256  lv_table.o(i.refr_cell_size)
-    i.refr_cursor_area                       0x0802af38   Section        0  lv_textarea.o(i.refr_cursor_area)
-    refr_cursor_area                         0x0802af39   Thumb Code   516  lv_textarea.o(i.refr_cursor_area)
-    i.refr_invalid_areas                     0x0802b148   Section        0  lv_refr.o(i.refr_invalid_areas)
-    refr_invalid_areas                       0x0802b149   Thumb Code   218  lv_refr.o(i.refr_invalid_areas)
-    i.refr_obj                               0x0802b228   Section        0  lv_refr.o(i.refr_obj)
-    refr_obj                                 0x0802b229   Thumb Code   732  lv_refr.o(i.refr_obj)
-    i.refr_obj_and_children                  0x0802b508   Section        0  lv_refr.o(i.refr_obj_and_children)
-    refr_obj_and_children                    0x0802b509   Thumb Code   150  lv_refr.o(i.refr_obj_and_children)
-    i.refr_position                          0x0802b5a4   Section        0  lv_roller.o(i.refr_position)
-    refr_position                            0x0802b5a5   Thumb Code   350  lv_roller.o(i.refr_position)
-    i.refr_size_form_row                     0x0802b710   Section        0  lv_table.o(i.refr_size_form_row)
-    refr_size_form_row                       0x0802b711   Thumb Code   220  lv_table.o(i.refr_size_form_row)
-    i.refr_sync_areas                        0x0802b7ec   Section        0  lv_refr.o(i.refr_sync_areas)
-    refr_sync_areas                          0x0802b7ed   Thumb Code   390  lv_refr.o(i.refr_sync_areas)
-    i.refresh_children_style                 0x0802b978   Section        0  lv_obj_style.o(i.refresh_children_style)
-    refresh_children_style                   0x0802b979   Thumb Code    64  lv_obj_style.o(i.refresh_children_style)
-    i.release_handler                        0x0802b9b8   Section        0  lv_roller.o(i.release_handler)
-    release_handler                          0x0802b9b9   Thumb Code   428  lv_roller.o(i.release_handler)
-    i.remove_concurrent_anims                0x0802bb68   Section        0  lv_anim.o(i.remove_concurrent_anims)
-    remove_concurrent_anims                  0x0802bb69   Thumb Code   136  lv_anim.o(i.remove_concurrent_anims)
-    i.remove_free_block                      0x0802bbf4   Section        0  lv_tlsf.o(i.remove_free_block)
-    remove_free_block                        0x0802bbf5   Thumb Code   114  lv_tlsf.o(i.remove_free_block)
-    i.report_style_change_core               0x0802bc66   Section        0  lv_obj_style.o(i.report_style_change_core)
-    report_style_change_core                 0x0802bc67   Thumb Code   114  lv_obj_style.o(i.report_style_change_core)
-    i.resolve_point_coord                    0x0802bcd8   Section        0  lv_line.o(i.resolve_point_coord)
-    resolve_point_coord                      0x0802bcd9   Thumb Code   180  lv_line.o(i.resolve_point_coord)
-    i.resolve_time                           0x0802bd8c   Section        0  lv_anim.o(i.resolve_time)
-    resolve_time                             0x0802bd8d   Thumb Code    54  lv_anim.o(i.resolve_time)
-    i.rgb565_image_blend                     0x0802bdc2   Section        0  lv_draw_sw_blend_to_argb8888.o(i.rgb565_image_blend)
-    rgb565_image_blend                       0x0802bdc3   Thumb Code   704  lv_draw_sw_blend_to_argb8888.o(i.rgb565_image_blend)
-    i.rgb565_image_blend                     0x0802c082   Section        0  lv_draw_sw_blend_to_rgb565.o(i.rgb565_image_blend)
-    rgb565_image_blend                       0x0802c083   Thumb Code   966  lv_draw_sw_blend_to_rgb565.o(i.rgb565_image_blend)
-    i.rgb565_image_blend                     0x0802c448   Section        0  lv_draw_sw_blend_to_rgb888.o(i.rgb565_image_blend)
-    rgb565_image_blend                       0x0802c449   Thumb Code   772  lv_draw_sw_blend_to_rgb888.o(i.rgb565_image_blend)
-    i.rgb888_image_blend                     0x0802c74c   Section        0  lv_draw_sw_blend_to_argb8888.o(i.rgb888_image_blend)
-    rgb888_image_blend                       0x0802c74d   Thumb Code   732  lv_draw_sw_blend_to_argb8888.o(i.rgb888_image_blend)
-    i.rgb888_image_blend                     0x0802ca28   Section        0  lv_draw_sw_blend_to_rgb565.o(i.rgb888_image_blend)
-    rgb888_image_blend                       0x0802ca29   Thumb Code   956  lv_draw_sw_blend_to_rgb565.o(i.rgb888_image_blend)
-    i.rgb888_image_blend                     0x0802cde4   Section        0  lv_draw_sw_blend_to_rgb888.o(i.rgb888_image_blend)
-    rgb888_image_blend                       0x0802cde5   Thumb Code   544  lv_draw_sw_blend_to_rgb888.o(i.rgb888_image_blend)
-    i.rnd_next                               0x0802d004   Section        0  lv_demo_benchmark.o(i.rnd_next)
-    rnd_next                                 0x0802d005   Thumb Code    72  lv_demo_benchmark.o(i.rnd_next)
-    i.rnd_reset                              0x0802d054   Section        0  lv_demo_benchmark.o(i.rnd_reset)
-    rnd_reset                                0x0802d055   Thumb Code     8  lv_demo_benchmark.o(i.rnd_reset)
-    i.rotated_argb_image_cb                  0x0802d060   Section        0  lv_demo_benchmark.o(i.rotated_argb_image_cb)
-    rotated_argb_image_cb                    0x0802d061   Thumb Code   170  lv_demo_benchmark.o(i.rotated_argb_image_cb)
-    i.scale1_indic1_anim_cb                  0x0802d110   Section        0  lv_demo_widgets.o(i.scale1_indic1_anim_cb)
-    scale1_indic1_anim_cb                    0x0802d111   Thumb Code    52  lv_demo_widgets.o(i.scale1_indic1_anim_cb)
-    i.scale2_timer_cb                        0x0802d158   Section        0  lv_demo_widgets.o(i.scale2_timer_cb)
-    scale2_timer_cb                          0x0802d159   Thumb Code   390  lv_demo_widgets.o(i.scale2_timer_cb)
-    i.scale3_anim_cb                         0x0802d320   Section        0  lv_demo_widgets.o(i.scale3_anim_cb)
-    scale3_anim_cb                           0x0802d321   Thumb Code    52  lv_demo_widgets.o(i.scale3_anim_cb)
-    i.scale3_delete_event_cb                 0x0802d358   Section        0  lv_demo_widgets.o(i.scale3_delete_event_cb)
-    scale3_delete_event_cb                   0x0802d359   Thumb Code    72  lv_demo_widgets.o(i.scale3_delete_event_cb)
-    i.scale_build_custom_label_text          0x0802d3c4   Section        0  lv_scale.o(i.scale_build_custom_label_text)
-    scale_build_custom_label_text            0x0802d3c5   Thumb Code    56  lv_scale.o(i.scale_build_custom_label_text)
-    i.scale_draw_indicator                   0x0802d3fc   Section        0  lv_scale.o(i.scale_draw_indicator)
-    scale_draw_indicator                     0x0802d3fd   Thumb Code  1190  lv_scale.o(i.scale_draw_indicator)
-    i.scale_draw_main                        0x0802d8a8   Section        0  lv_scale.o(i.scale_draw_main)
-    scale_draw_main                          0x0802d8a9   Thumb Code   792  lv_scale.o(i.scale_draw_main)
-    i.scale_find_section_tick_idx            0x0802dbc0   Section        0  lv_scale.o(i.scale_find_section_tick_idx)
-    scale_find_section_tick_idx              0x0802dbc1   Thumb Code   148  lv_scale.o(i.scale_find_section_tick_idx)
-    i.scale_get_center                       0x0802dc54   Section        0  lv_scale.o(i.scale_get_center)
-    scale_get_center                         0x0802dc55   Thumb Code   138  lv_scale.o(i.scale_get_center)
-    i.scale_get_label_coords                 0x0802dcde   Section        0  lv_scale.o(i.scale_get_label_coords)
-    scale_get_label_coords                   0x0802dcdf   Thumb Code   294  lv_scale.o(i.scale_get_label_coords)
-    i.scale_get_tick_points                  0x0802de04   Section        0  lv_scale.o(i.scale_get_tick_points)
-    scale_get_tick_points                    0x0802de05   Thumb Code   862  lv_scale.o(i.scale_get_tick_points)
-    i.scale_set_arc_properties               0x0802e162   Section        0  lv_scale.o(i.scale_set_arc_properties)
-    scale_set_arc_properties                 0x0802e163   Thumb Code   184  lv_scale.o(i.scale_set_arc_properties)
-    i.scale_set_indicator_label_properties   0x0802e21a   Section        0  lv_scale.o(i.scale_set_indicator_label_properties)
-    scale_set_indicator_label_properties     0x0802e21b   Thumb Code   248  lv_scale.o(i.scale_set_indicator_label_properties)
-    i.scale_set_line_properties              0x0802e312   Section        0  lv_scale.o(i.scale_set_line_properties)
-    scale_set_line_properties                0x0802e313   Thumb Code   192  lv_scale.o(i.scale_set_line_properties)
-    i.scale_store_main_line_tick_width_compensation 0x0802e3d2   Section        0  lv_scale.o(i.scale_store_main_line_tick_width_compensation)
-    scale_store_main_line_tick_width_compensation 0x0802e3d3   Thumb Code   152  lv_scale.o(i.scale_store_main_line_tick_width_compensation)
-    i.scale_store_section_line_tick_width_compensation 0x0802e46a   Section        0  lv_scale.o(i.scale_store_section_line_tick_width_compensation)
-    scale_store_section_line_tick_width_compensation 0x0802e46b   Thumb Code   220  lv_scale.o(i.scale_store_section_line_tick_width_compensation)
-    i.scale_update                           0x0802e546   Section        0  lv_image.o(i.scale_update)
-    scale_update                             0x0802e547   Thumb Code   240  lv_image.o(i.scale_update)
-    i.screen_sized_text_cb                   0x0802e638   Section        0  lv_demo_benchmark.o(i.screen_sized_text_cb)
-    screen_sized_text_cb                     0x0802e639   Thumb Code    70  lv_demo_benchmark.o(i.screen_sized_text_cb)
-    i.scroll_anim                            0x0802e684   Section        0  lv_demo_benchmark.o(i.scroll_anim)
-    scroll_anim                              0x0802e685   Thumb Code    90  lv_demo_benchmark.o(i.scroll_anim)
-    i.scroll_anim_completed_cb               0x0802e6e4   Section        0  lv_roller.o(i.scroll_anim_completed_cb)
-    scroll_anim_completed_cb                 0x0802e6e5   Thumb Code    20  lv_roller.o(i.scroll_anim_completed_cb)
-    i.scroll_anim_y_cb                       0x0802e6f8   Section        0  lv_demo_benchmark.o(i.scroll_anim_y_cb)
-    scroll_anim_y_cb                         0x0802e6f9   Thumb Code    18  lv_demo_benchmark.o(i.scroll_anim_y_cb)
-    i.scroll_anim_y_cb                       0x0802e70a   Section        0  lv_demo_widgets.o(i.scroll_anim_y_cb)
-    scroll_anim_y_cb                         0x0802e70b   Thumb Code    18  lv_demo_widgets.o(i.scroll_anim_y_cb)
-    i.scroll_area_into_view                  0x0802e71c   Section        0  lv_obj_scroll.o(i.scroll_area_into_view)
-    scroll_area_into_view                    0x0802e71d   Thumb Code   764  lv_obj_scroll.o(i.scroll_area_into_view)
-    i.scroll_completed_completed_cb          0x0802ea20   Section        0  lv_obj_scroll.o(i.scroll_completed_completed_cb)
-    scroll_completed_completed_cb            0x0802ea21   Thumb Code    16  lv_obj_scroll.o(i.scroll_completed_completed_cb)
-    i.scroll_to_selected_cell                0x0802ea30   Section        0  lv_table.o(i.scroll_to_selected_cell)
-    scroll_to_selected_cell                  0x0802ea31   Thumb Code   132  lv_table.o(i.scroll_to_selected_cell)
-    i.scroll_x_anim                          0x0802eab4   Section        0  lv_obj_scroll.o(i.scroll_x_anim)
-    scroll_x_anim                            0x0802eab5   Thumb Code    26  lv_obj_scroll.o(i.scroll_x_anim)
-    i.scroll_y_anim                          0x0802eace   Section        0  lv_obj_scroll.o(i.scroll_y_anim)
-    scroll_y_anim                            0x0802eacf   Thumb Code    26  lv_obj_scroll.o(i.scroll_y_anim)
-    i.scrollbar_init_draw_dsc                0x0802eae8   Section        0  lv_obj.o(i.scrollbar_init_draw_dsc)
-    scrollbar_init_draw_dsc                  0x0802eae9   Thumb Code   362  lv_obj.o(i.scrollbar_init_draw_dsc)
-    i.search_suitable_block                  0x0802ec52   Section        0  lv_tlsf.o(i.search_suitable_block)
-    search_suitable_block                    0x0802ec53   Thumb Code   132  lv_tlsf.o(i.search_suitable_block)
-    i.set_ofs_x_anim                         0x0802ecd6   Section        0  lv_label.o(i.set_ofs_x_anim)
-    set_ofs_x_anim                           0x0802ecd7   Thumb Code    18  lv_label.o(i.set_ofs_x_anim)
-    i.set_ofs_y_anim                         0x0802ece8   Section        0  lv_label.o(i.set_ofs_y_anim)
-    set_ofs_y_anim                           0x0802ece9   Thumb Code    18  lv_label.o(i.set_ofs_y_anim)
-    i.set_y_anim                             0x0802ecfa   Section        0  lv_roller.o(i.set_y_anim)
-    set_y_anim                               0x0802ecfb   Thumb Code    16  lv_roller.o(i.set_y_anim)
-    i.shake_anim                             0x0802ed0c   Section        0  lv_demo_benchmark.o(i.shake_anim)
-    shake_anim                               0x0802ed0d   Thumb Code   104  lv_demo_benchmark.o(i.shake_anim)
-    i.shake_anim_y_cb                        0x0802ed78   Section        0  lv_demo_benchmark.o(i.shake_anim_y_cb)
-    shake_anim_y_cb                          0x0802ed79   Thumb Code    18  lv_demo_benchmark.o(i.shake_anim_y_cb)
-    i.shop_chart_event_cb                    0x0802ed8a   Section        0  lv_demo_widgets.o(i.shop_chart_event_cb)
-    shop_chart_event_cb                      0x0802ed8b   Thumb Code     2  lv_demo_widgets.o(i.shop_chart_event_cb)
-    i.shop_create                            0x0802ed8c   Section        0  lv_demo_widgets.o(i.shop_create)
-    shop_create                              0x0802ed8d   Thumb Code  1570  lv_demo_widgets.o(i.shop_create)
-    i.single_rectangle_cb                    0x0802f478   Section        0  lv_demo_benchmark.o(i.single_rectangle_cb)
-    single_rectangle_cb                      0x0802f479   Thumb Code    70  lv_demo_benchmark.o(i.single_rectangle_cb)
-    i.slider_event_cb                        0x0802f4c0   Section        0  lv_demo_widgets.o(i.slider_event_cb)
-    slider_event_cb                          0x0802f4c1   Thumb Code   564  lv_demo_widgets.o(i.slider_event_cb)
-    i.slideshow_anim_completed_cb            0x0802f6fc   Section        0  lv_demo_widgets.o(i.slideshow_anim_completed_cb)
-    slideshow_anim_completed_cb              0x0802f6fd   Thumb Code   166  lv_demo_widgets.o(i.slideshow_anim_completed_cb)
-    i.start_cursor_blink                     0x0802f7b0   Section        0  lv_textarea.o(i.start_cursor_blink)
-    start_cursor_blink                       0x0802f7b1   Thumb Code   130  lv_textarea.o(i.start_cursor_blink)
-    i.style_has_flag                         0x0802f83c   Section        0  lv_obj_style.o(i.style_has_flag)
-    style_has_flag                           0x0802f83d   Thumb Code    94  lv_obj_style.o(i.style_has_flag)
-    i.style_init                             0x0802f89c   Section        0  lv_theme_default.o(i.style_init)
-    style_init                               0x0802f89d   Thumb Code 11080  lv_theme_default.o(i.style_init)
-    i.style_init_reset                       0x080323e4   Section        0  lv_theme_default.o(i.style_init_reset)
-    style_init_reset                         0x080323e5   Thumb Code    32  lv_theme_default.o(i.style_init_reset)
-    i.summary_create                         0x08032408   Section        0  lv_demo_benchmark.o(i.summary_create)
-    summary_create                           0x08032409   Thumb Code   674  lv_demo_benchmark.o(i.summary_create)
-    i.ta_event_cb                            0x08032724   Section        0  lv_demo_widgets.o(i.ta_event_cb)
-    ta_event_cb                              0x08032725   Thumb Code   256  lv_demo_widgets.o(i.ta_event_cb)
-    i.table_draw_task_event_cb               0x08032828   Section        0  lv_demo_benchmark.o(i.table_draw_task_event_cb)
-    table_draw_task_event_cb                 0x08032829   Thumb Code   194  lv_demo_benchmark.o(i.table_draw_task_event_cb)
-    i.tabview_delete_event_cb                0x080328ec   Section        0  lv_demo_widgets.o(i.tabview_delete_event_cb)
-    tabview_delete_event_cb                  0x080328ed   Thumb Code    42  lv_demo_widgets.o(i.tabview_delete_event_cb)
-    i.theme_apply                            0x08032928   Section        0  lv_theme_default.o(i.theme_apply)
-    theme_apply                              0x08032929   Thumb Code  4020  lv_theme_default.o(i.theme_apply)
-    i.tileview_event_cb                      0x08033928   Section        0  lv_tileview.o(i.tileview_event_cb)
-    tileview_event_cb                        0x08033929   Thumb Code   232  lv_tileview.o(i.tileview_event_cb)
-    i.tlsf_ffs                               0x08033a10   Section        0  lv_tlsf.o(i.tlsf_ffs)
-    tlsf_ffs                                 0x08033a11   Thumb Code    24  lv_tlsf.o(i.tlsf_ffs)
-    i.tlsf_fls                               0x08033a28   Section        0  lv_tlsf.o(i.tlsf_fls)
-    tlsf_fls                                 0x08033a29   Thumb Code    22  lv_tlsf.o(i.tlsf_fls)
-    i.trans_anim_cb                          0x08033a3e   Section        0  lv_obj_style.o(i.trans_anim_cb)
-    trans_anim_cb                            0x08033a3f   Thumb Code   546  lv_obj_style.o(i.trans_anim_cb)
-    i.trans_anim_completed_cb                0x08033c60   Section        0  lv_obj_style.o(i.trans_anim_completed_cb)
-    trans_anim_completed_cb                  0x08033c61   Thumb Code   204  lv_obj_style.o(i.trans_anim_completed_cb)
-    i.trans_anim_start_cb                    0x08033d30   Section        0  lv_obj_style.o(i.trans_anim_start_cb)
-    trans_anim_start_cb                      0x08033d31   Thumb Code    72  lv_obj_style.o(i.trans_anim_start_cb)
-    i.trans_delete                           0x08033d78   Section        0  lv_obj_style.o(i.trans_delete)
-    trans_delete                             0x08033d79   Thumb Code   178  lv_obj_style.o(i.trans_delete)
-    i.transform_a8                           0x08033e30   Section        0  lv_draw_sw_transform.o(i.transform_a8)
-    transform_a8                             0x08033e31   Thumb Code   454  lv_draw_sw_transform.o(i.transform_a8)
-    i.transform_argb8888                     0x08033ff6   Section        0  lv_draw_sw_transform.o(i.transform_argb8888)
-    transform_argb8888                       0x08033ff7   Thumb Code   560  lv_draw_sw_transform.o(i.transform_argb8888)
-    i.transform_point_array                  0x08034226   Section        0  lv_obj_pos.o(i.transform_point_array)
-    transform_point_array                    0x08034227   Thumb Code   390  lv_obj_pos.o(i.transform_point_array)
-    i.transform_point_upscaled               0x080343ac   Section        0  lv_draw_sw_transform.o(i.transform_point_upscaled)
-    transform_point_upscaled                 0x080343ad   Thumb Code   186  lv_draw_sw_transform.o(i.transform_point_upscaled)
-    i.transform_rgb565a8                     0x08034466   Section        0  lv_draw_sw_transform.o(i.transform_rgb565a8)
-    transform_rgb565a8                       0x08034467   Thumb Code   558  lv_draw_sw_transform.o(i.transform_rgb565a8)
-    i.transform_rgb888                       0x08034694   Section        0  lv_draw_sw_transform.o(i.transform_rgb888)
-    transform_rgb888                         0x08034695   Thumb Code   520  lv_draw_sw_transform.o(i.transform_rgb888)
-    i.transform_vect_recursive               0x0803489c   Section        0  lv_roller.o(i.transform_vect_recursive)
-    transform_vect_recursive                 0x0803489d   Thumb Code   200  lv_roller.o(i.transform_vect_recursive)
-    i.unicode_list_compare                   0x08034964   Section        0  lv_font_fmt_txt.o(i.unicode_list_compare)
-    unicode_list_compare                     0x08034965   Thumb Code    10  lv_font_fmt_txt.o(i.unicode_list_compare)
-    i.update_align                           0x0803496e   Section        0  lv_image.o(i.update_align)
-    update_align                             0x0803496f   Thumb Code   124  lv_image.o(i.update_align)
-    i.update_cursor_position_on_click        0x080349ea   Section        0  lv_textarea.o(i.update_cursor_position_on_click)
-    update_cursor_position_on_click          0x080349eb   Thumb Code   484  lv_textarea.o(i.update_cursor_position_on_click)
-    i.update_knob_pos                        0x08034bce   Section        0  lv_slider.o(i.update_knob_pos)
-    update_knob_pos                          0x08034bcf   Thumb Code   528  lv_slider.o(i.update_knob_pos)
-    i.update_obj_state                       0x08034dde   Section        0  lv_obj.o(i.update_obj_state)
-    update_obj_state                         0x08034ddf   Thumb Code   506  lv_obj.o(i.update_obj_state)
-    i.value_changed_event_cb                 0x08034fd8   Section        0  lv_calendar_header_arrow.o(i.value_changed_event_cb)
-    value_changed_event_cb                   0x08034fd9   Thumb Code   100  lv_calendar_header_arrow.o(i.value_changed_event_cb)
-    i.value_changed_event_cb                 0x08035048   Section        0  lv_calendar_header_dropdown.o(i.value_changed_event_cb)
-    value_changed_event_cb                   0x08035049   Thumb Code   130  lv_calendar_header_dropdown.o(i.value_changed_event_cb)
-    i.value_update                           0x080350ca   Section        0  lv_arc.o(i.value_update)
-    value_update                             0x080350cb   Thumb Code   232  lv_arc.o(i.value_update)
-    i.wait_for_flushing                      0x080351b2   Section        0  lv_refr.o(i.wait_for_flushing)
-    wait_for_flushing                        0x080351b3   Thumb Code    58  lv_refr.o(i.wait_for_flushing)
-    i.widgets_demo_cb                        0x080351ec   Section        0  lv_demo_benchmark.o(i.widgets_demo_cb)
-    widgets_demo_cb                          0x080351ed   Thumb Code    38  lv_demo_benchmark.o(i.widgets_demo_cb)
-    i.width_to_stride                        0x08035212   Section        0  lv_draw_buf.o(i.width_to_stride)
-    width_to_stride                          0x08035213   Thumb Code    24  lv_draw_buf.o(i.width_to_stride)
-    i.year_event_cb                          0x0803522a   Section        0  lv_calendar_header_dropdown.o(i.year_event_cb)
-    year_event_cb                            0x0803522b   Thumb Code   126  lv_calendar_header_dropdown.o(i.year_event_cb)
-    .constdata                               0x080352a8   Section       16  system_stm32h7xx_dualcore_boot_cm4_cm7.o(.constdata)
-    .constdata                               0x080352b8   Section       36  lv_obj.o(.constdata)
-    .constdata                               0x080352dc   Section       16  lv_obj_pos.o(.constdata)
-    .constdata                               0x080352ec   Section       16  lv_draw_image.o(.constdata)
-    .constdata                               0x080352fc   Section       20  lv_font_fmt_txt.o(.constdata)
-    opa4_table                               0x080352fc   Data          16  lv_font_fmt_txt.o(.constdata)
-    opa2_table                               0x0803530c   Data           4  lv_font_fmt_txt.o(.constdata)
-    .constdata                               0x08035310   Section    13640  lv_font_montserrat_14.o(.constdata)
-    glyph_bitmap                             0x08035310   Data        8832  lv_font_montserrat_14.o(.constdata)
-    glyph_dsc                                0x08037590   Data        1264  lv_font_montserrat_14.o(.constdata)
-    unicode_list_1                           0x08037a80   Data         124  lv_font_montserrat_14.o(.constdata)
-    cmaps                                    0x08037afc   Data          40  lv_font_montserrat_14.o(.constdata)
-    kern_left_class_mapping                  0x08037b24   Data         158  lv_font_montserrat_14.o(.constdata)
-    kern_right_class_mapping                 0x08037bc2   Data         158  lv_font_montserrat_14.o(.constdata)
-    kern_class_values                        0x08037c60   Data        2989  lv_font_montserrat_14.o(.constdata)
-    kern_classes                             0x08038810   Data          16  lv_font_montserrat_14.o(.constdata)
-    font_dsc                                 0x08038820   Data          20  lv_font_montserrat_14.o(.constdata)
-    .constdata                               0x08038858   Section    28692  lv_font_montserrat_24.o(.constdata)
-    glyph_bitmap                             0x08038858   Data       23884  lv_font_montserrat_24.o(.constdata)
-    glyph_dsc                                0x0803e5a4   Data        1264  lv_font_montserrat_24.o(.constdata)
-    unicode_list_1                           0x0803ea94   Data         124  lv_font_montserrat_24.o(.constdata)
-    cmaps                                    0x0803eb10   Data          40  lv_font_montserrat_24.o(.constdata)
-    kern_left_class_mapping                  0x0803eb38   Data         158  lv_font_montserrat_24.o(.constdata)
-    kern_right_class_mapping                 0x0803ebd6   Data         158  lv_font_montserrat_24.o(.constdata)
-    kern_class_values                        0x0803ec74   Data        2989  lv_font_montserrat_24.o(.constdata)
-    kern_classes                             0x0803f824   Data          16  lv_font_montserrat_24.o(.constdata)
-    font_dsc                                 0x0803f834   Data          20  lv_font_montserrat_24.o(.constdata)
-    .constdata                               0x0803f86c   Section      182  lv_math.o(.constdata)
-    sin0_90_table                            0x0803f86c   Data         182  lv_math.o(.constdata)
-    .constdata                               0x0803f922   Section      570  lv_palette.o(.constdata)
-    colors                                   0x0803f922   Data          57  lv_palette.o(.constdata)
-    colors                                   0x0803f95b   Data         285  lv_palette.o(.constdata)
-    colors                                   0x0803fa78   Data         228  lv_palette.o(.constdata)
-    .constdata                               0x0803fb5c   Section      176  lv_style.o(.constdata)
-    .constdata                               0x0803fc0c   Section       12  lv_theme_default.o(.constdata)
-    trans_props                              0x0803fc0c   Data          12  lv_theme_default.o(.constdata)
-    .constdata                               0x0803fc18   Section       36  lv_arc.o(.constdata)
-    .constdata                               0x0803fc3c   Section       36  lv_bar.o(.constdata)
-    .constdata                               0x0803fc60   Section       36  lv_button.o(.constdata)
-    .constdata                               0x0803fc84   Section       36  lv_buttonmatrix.o(.constdata)
-    .constdata                               0x0803fca8   Section       36  lv_calendar.o(.constdata)
-    .constdata                               0x0803fccc   Section       36  lv_calendar_header_arrow.o(.constdata)
-    .constdata                               0x0803fcf0   Section       36  lv_calendar_header_dropdown.o(.constdata)
-    .constdata                               0x0803fd14   Section       36  lv_chart.o(.constdata)
-    .constdata                               0x0803fd38   Section       36  lv_checkbox.o(.constdata)
-    .constdata                               0x0803fd5c   Section       72  lv_dropdown.o(.constdata)
-    .constdata                               0x0803fda4   Section       36  lv_image.o(.constdata)
-    .constdata                               0x0803fdc8   Section     1196  lv_keyboard.o(.constdata)
-    default_kb_map_lc                        0x0803fdec   Data         176  lv_keyboard.o(.constdata)
-    default_kb_ctrl_lc_map                   0x0803fe9c   Data         160  lv_keyboard.o(.constdata)
-    default_kb_map_uc                        0x0803ff3c   Data         176  lv_keyboard.o(.constdata)
-    default_kb_ctrl_uc_map                   0x0803ffec   Data         160  lv_keyboard.o(.constdata)
-    default_kb_map_spec                      0x0804008c   Data         176  lv_keyboard.o(.constdata)
-    default_kb_ctrl_spec_map                 0x0804013c   Data         160  lv_keyboard.o(.constdata)
-    default_kb_map_num                       0x080401dc   Data          84  lv_keyboard.o(.constdata)
-    default_kb_ctrl_num_map                  0x08040230   Data          68  lv_keyboard.o(.constdata)
-    .constdata                               0x08040274   Section       36  lv_label.o(.constdata)
-    .constdata                               0x08040298   Section       36  lv_led.o(.constdata)
-    .constdata                               0x080402bc   Section       36  lv_line.o(.constdata)
-    .constdata                               0x080402e0   Section      108  lv_list.o(.constdata)
-    .constdata                               0x0804034c   Section      324  lv_menu.o(.constdata)
-    .constdata                               0x08040490   Section      252  lv_msgbox.o(.constdata)
-    .constdata                               0x0804058c   Section       72  lv_roller.o(.constdata)
-    .constdata                               0x080405d4   Section       36  lv_scale.o(.constdata)
-    .constdata                               0x080405f8   Section       36  lv_slider.o(.constdata)
-    .constdata                               0x0804061c   Section       36  lv_spinbox.o(.constdata)
-    .constdata                               0x08040640   Section       36  lv_spinner.o(.constdata)
-    .constdata                               0x08040664   Section       36  lv_switch.o(.constdata)
-    .constdata                               0x08040688   Section       36  lv_table.o(.constdata)
-    .constdata                               0x080406ac   Section       36  lv_tabview.o(.constdata)
-    .constdata                               0x080406d0   Section       36  lv_textarea.o(.constdata)
-    .constdata                               0x080406f4   Section       72  lv_tileview.o(.constdata)
-    .constdata                               0x0804073c   Section       36  lv_win.o(.constdata)
-    .constdata                               0x08040760   Section      256  lv_demo_benchmark.o(.constdata)
-    rnd_map                                  0x08040760   Data         256  lv_demo_benchmark.o(.constdata)
-    .constdata                               0x08040860   Section    30024  img_benchmark_cogwheel_argb.o(.constdata)
-    .constdata                               0x08047da8   Section    20024  img_benchmark_cogwheel_rgb.o(.constdata)
-    .constdata                               0x0804cbe0   Section    25624  img_transform_avatar_15.o(.constdata)
-    .constdata                               0x08052ff8   Section       28  lv_demo_widgets.o(.constdata)
-    col_dsc                                  0x08052ff8   Data          12  lv_demo_widgets.o(.constdata)
-    row_dsc                                  0x08053004   Data          16  lv_demo_widgets.o(.constdata)
-    .constdata                               0x08053014   Section     9432  img_clothes.o(.constdata)
-    .constdata                               0x080554ec   Section    98584  img_demo_widgets_avatar.o(.constdata)
-    .constdata                               0x0806d604   Section     3624  img_demo_widgets_needle.o(.constdata)
-    .constdata                               0x0806e42c   Section     7248  img_lvgl_logo.o(.constdata)
-    .conststring                             0x0807007c   Section        4  lv_obj.o(.conststring)
-    .conststring                             0x08070080   Section        4  lv_arc.o(.conststring)
-    .conststring                             0x08070084   Section        4  lv_bar.o(.conststring)
-    .conststring                             0x08070088   Section        4  lv_button.o(.conststring)
-    .conststring                             0x0807008c   Section       57  lv_buttonmatrix.o(.conststring)
-    .conststring                             0x080700c8   Section       39  lv_calendar.o(.conststring)
-    .conststring                             0x080700f0   Section      129  lv_calendar_header_arrow.o(.conststring)
-    .conststring                             0x08070174   Section      689  lv_calendar_header_dropdown.o(.conststring)
-    .conststring                             0x08070428   Section        6  lv_chart.o(.conststring)
-    .conststring                             0x08070430   Section        9  lv_checkbox.o(.conststring)
-    .conststring                             0x0807043c   Section       14  lv_dropdown.o(.conststring)
-    .conststring                             0x0807044c   Section        6  lv_image.o(.conststring)
-    .conststring                             0x08070454   Section      404  lv_keyboard.o(.conststring)
-    .conststring                             0x080705e8   Section        6  lv_label.o(.conststring)
-    .conststring                             0x080705f0   Section        4  lv_led.o(.conststring)
-    .conststring                             0x080705f4   Section        5  lv_line.o(.conststring)
-    .conststring                             0x080705fc   Section       30  lv_list.o(.conststring)
-    .conststring                             0x0807061c   Section       61  lv_menu.o(.conststring)
-    .conststring                             0x0807065c   Section      119  lv_msgbox.o(.conststring)
-    .conststring                             0x080706d4   Section       23  lv_roller.o(.conststring)
-    .conststring                             0x080706ec   Section        6  lv_scale.o(.conststring)
-    .conststring                             0x080706f4   Section        7  lv_slider.o(.conststring)
-    .conststring                             0x080706fc   Section        8  lv_spinbox.o(.conststring)
-    .conststring                             0x08070704   Section        8  lv_spinner.o(.conststring)
-    .conststring                             0x0807070c   Section        7  lv_switch.o(.conststring)
-    .conststring                             0x08070714   Section        6  lv_table.o(.conststring)
-    .conststring                             0x0807071c   Section        8  lv_tabview.o(.conststring)
-    .conststring                             0x08070724   Section        9  lv_textarea.o(.conststring)
-    .conststring                             0x08070730   Section       17  lv_tileview.o(.conststring)
-    .conststring                             0x08070744   Section        4  lv_win.o(.conststring)
-    .conststring                             0x08070748   Section     3576  lv_demo_benchmark.o(.conststring)
-    .conststring                             0x08071540   Section      112  lv_demo_widgets.o(.conststring)
+    i.lvgl_init                              0x08028fd6   Section        0  lvgl_app.o(i.lvgl_init)
+    lvgl_init                                0x08028fd7   Thumb Code    16  lvgl_app.o(i.lvgl_init)
+    i.main                                   0x08028fe8   Section        0  main_1.o(i.main)
+    i.make_one_button_checked                0x08029140   Section        0  lv_buttonmatrix.o(i.make_one_button_checked)
+    make_one_button_checked                  0x08029141   Thumb Code    46  lv_buttonmatrix.o(i.make_one_button_checked)
+    i.mapping_insert                         0x0802916e   Section        0  lv_tlsf.o(i.mapping_insert)
+    mapping_insert                           0x0802916f   Thumb Code    58  lv_tlsf.o(i.mapping_insert)
+    i.mapping_search                         0x080291a8   Section        0  lv_tlsf.o(i.mapping_search)
+    mapping_search                           0x080291a9   Thumb Code    48  lv_tlsf.o(i.mapping_search)
+    i.month_event_cb                         0x080291d8   Section        0  lv_calendar_header_arrow.o(i.month_event_cb)
+    month_event_cb                           0x080291d9   Thumb Code   224  lv_calendar_header_arrow.o(i.month_event_cb)
+    i.month_event_cb                         0x080292c4   Section        0  lv_calendar_header_dropdown.o(i.month_event_cb)
+    month_event_cb                           0x080292c5   Thumb Code    68  lv_calendar_header_dropdown.o(i.month_event_cb)
+    i.moving_wallpaper_cb                    0x08029308   Section        0  lv_demo_benchmark.o(i.moving_wallpaper_cb)
+    moving_wallpaper_cb                      0x08029309   Thumb Code    94  lv_demo_benchmark.o(i.moving_wallpaper_cb)
+    i.multiple_arcs_cb                       0x0802936c   Section        0  lv_demo_benchmark.o(i.multiple_arcs_cb)
+    multiple_arcs_cb                         0x0802936d   Thumb Code   316  lv_demo_benchmark.o(i.multiple_arcs_cb)
+    i.multiple_argb_images_cb                0x080294a8   Section        0  lv_demo_benchmark.o(i.multiple_argb_images_cb)
+    multiple_argb_images_cb                  0x080294a9   Thumb Code   150  lv_demo_benchmark.o(i.multiple_argb_images_cb)
+    i.multiple_labels_cb                     0x08029544   Section        0  lv_demo_benchmark.o(i.multiple_labels_cb)
+    multiple_labels_cb                       0x08029545   Thumb Code   178  lv_demo_benchmark.o(i.multiple_labels_cb)
+    i.multiple_rectangles_cb                 0x08029604   Section        0  lv_demo_benchmark.o(i.multiple_rectangles_cb)
+    multiple_rectangles_cb                   0x08029605   Thumb Code   106  lv_demo_benchmark.o(i.multiple_rectangles_cb)
+    i.multiple_rgb_images_cb                 0x08029670   Section        0  lv_demo_benchmark.o(i.multiple_rgb_images_cb)
+    multiple_rgb_images_cb                   0x08029671   Thumb Code   150  lv_demo_benchmark.o(i.multiple_rgb_images_cb)
+    i.my_constructor                         0x0802970c   Section        0  lv_calendar_header_arrow.o(i.my_constructor)
+    my_constructor                           0x0802970d   Thumb Code   232  lv_calendar_header_arrow.o(i.my_constructor)
+    i.my_constructor                         0x08029804   Section        0  lv_calendar_header_dropdown.o(i.my_constructor)
+    my_constructor                           0x08029805   Thumb Code   134  lv_calendar_header_dropdown.o(i.my_constructor)
+    i.new_points_alloc                       0x080298a0   Section        0  lv_chart.o(i.new_points_alloc)
+    new_points_alloc                         0x080298a1   Thumb Code   234  lv_chart.o(i.new_points_alloc)
+    i.next_scene_timer_cb                    0x0802998c   Section        0  lv_demo_benchmark.o(i.next_scene_timer_cb)
+    next_scene_timer_cb                      0x0802998d   Thumb Code    68  lv_demo_benchmark.o(i.next_scene_timer_cb)
+    i.node_set_next                          0x080299d8   Section        0  lv_ll.o(i.node_set_next)
+    node_set_next                            0x080299d9   Thumb Code    28  lv_ll.o(i.node_set_next)
+    i.node_set_prev                          0x080299f4   Section        0  lv_ll.o(i.node_set_prev)
+    node_set_prev                            0x080299f5   Thumb Code    26  lv_ll.o(i.node_set_prev)
+    i.obj_delete_core                        0x08029a10   Section        0  lv_obj_tree.o(i.obj_delete_core)
+    obj_delete_core                          0x08029a11   Thumb Code   446  lv_obj_tree.o(i.obj_delete_core)
+    i.obj_indev_reset                        0x08029bd4   Section        0  lv_obj_tree.o(i.obj_indev_reset)
+    obj_indev_reset                          0x08029bd5   Thumb Code    22  lv_obj_tree.o(i.obj_indev_reset)
+    i.offset_to_block                        0x08029bea   Section        0  lv_tlsf.o(i.offset_to_block)
+    offset_to_block                          0x08029beb   Thumb Code     6  lv_tlsf.o(i.offset_to_block)
+    i.overwrite_anim_property                0x08029bf0   Section        0  lv_label.o(i.overwrite_anim_property)
+    overwrite_anim_property                  0x08029bf1   Thumb Code    76  lv_label.o(i.overwrite_anim_property)
+    i.place_content                          0x08029c3c   Section        0  lv_flex.o(i.place_content)
+    place_content                            0x08029c3d   Thumb Code   156  lv_flex.o(i.place_content)
+    i.position_knob                          0x08029cd8   Section        0  lv_slider.o(i.position_knob)
+    position_knob                            0x08029cd9   Thumb Code   184  lv_slider.o(i.position_knob)
+    i.position_to_selected                   0x08029d90   Section        0  lv_dropdown.o(i.position_to_selected)
+    position_to_selected                     0x08029d91   Thumb Code   100  lv_dropdown.o(i.position_to_selected)
+    i.profile_create                         0x08029df4   Section        0  lv_demo_widgets.o(i.profile_create)
+    profile_create                           0x08029df5   Thumb Code  3174  lv_demo_widgets.o(i.profile_create)
+    i.pwd_char_hider                         0x0802aa60   Section        0  lv_textarea.o(i.pwd_char_hider)
+    pwd_char_hider                           0x0802aa61   Thumb Code   130  lv_textarea.o(i.pwd_char_hider)
+    i.pwd_char_hider_anim                    0x0802aae8   Section        0  lv_textarea.o(i.pwd_char_hider_anim)
+    pwd_char_hider_anim                      0x0802aae9   Thumb Code     2  lv_textarea.o(i.pwd_char_hider_anim)
+    i.pwd_char_hider_anim_completed          0x0802aaea   Section        0  lv_textarea.o(i.pwd_char_hider_anim_completed)
+    pwd_char_hider_anim_completed            0x0802aaeb   Thumb Code    14  lv_textarea.o(i.pwd_char_hider_anim_completed)
+    i.refr_area                              0x0802aaf8   Section        0  lv_refr.o(i.refr_area)
+    refr_area                                0x0802aaf9   Thumb Code   468  lv_refr.o(i.refr_area)
+    i.refr_area_part                         0x0802acd0   Section        0  lv_refr.o(i.refr_area_part)
+    refr_area_part                           0x0802acd1   Thumb Code   352  lv_refr.o(i.refr_area_part)
+    i.refr_cell_size                         0x0802ae34   Section        0  lv_table.o(i.refr_cell_size)
+    refr_cell_size                           0x0802ae35   Thumb Code   256  lv_table.o(i.refr_cell_size)
+    i.refr_cursor_area                       0x0802af34   Section        0  lv_textarea.o(i.refr_cursor_area)
+    refr_cursor_area                         0x0802af35   Thumb Code   516  lv_textarea.o(i.refr_cursor_area)
+    i.refr_invalid_areas                     0x0802b144   Section        0  lv_refr.o(i.refr_invalid_areas)
+    refr_invalid_areas                       0x0802b145   Thumb Code   218  lv_refr.o(i.refr_invalid_areas)
+    i.refr_obj                               0x0802b224   Section        0  lv_refr.o(i.refr_obj)
+    refr_obj                                 0x0802b225   Thumb Code   732  lv_refr.o(i.refr_obj)
+    i.refr_obj_and_children                  0x0802b504   Section        0  lv_refr.o(i.refr_obj_and_children)
+    refr_obj_and_children                    0x0802b505   Thumb Code   150  lv_refr.o(i.refr_obj_and_children)
+    i.refr_position                          0x0802b5a0   Section        0  lv_roller.o(i.refr_position)
+    refr_position                            0x0802b5a1   Thumb Code   350  lv_roller.o(i.refr_position)
+    i.refr_size_form_row                     0x0802b70c   Section        0  lv_table.o(i.refr_size_form_row)
+    refr_size_form_row                       0x0802b70d   Thumb Code   220  lv_table.o(i.refr_size_form_row)
+    i.refr_sync_areas                        0x0802b7e8   Section        0  lv_refr.o(i.refr_sync_areas)
+    refr_sync_areas                          0x0802b7e9   Thumb Code   390  lv_refr.o(i.refr_sync_areas)
+    i.refresh_children_style                 0x0802b974   Section        0  lv_obj_style.o(i.refresh_children_style)
+    refresh_children_style                   0x0802b975   Thumb Code    64  lv_obj_style.o(i.refresh_children_style)
+    i.release_handler                        0x0802b9b4   Section        0  lv_roller.o(i.release_handler)
+    release_handler                          0x0802b9b5   Thumb Code   428  lv_roller.o(i.release_handler)
+    i.remove_concurrent_anims                0x0802bb64   Section        0  lv_anim.o(i.remove_concurrent_anims)
+    remove_concurrent_anims                  0x0802bb65   Thumb Code   136  lv_anim.o(i.remove_concurrent_anims)
+    i.remove_free_block                      0x0802bbf0   Section        0  lv_tlsf.o(i.remove_free_block)
+    remove_free_block                        0x0802bbf1   Thumb Code   114  lv_tlsf.o(i.remove_free_block)
+    i.report_style_change_core               0x0802bc62   Section        0  lv_obj_style.o(i.report_style_change_core)
+    report_style_change_core                 0x0802bc63   Thumb Code   114  lv_obj_style.o(i.report_style_change_core)
+    i.resolve_point_coord                    0x0802bcd4   Section        0  lv_line.o(i.resolve_point_coord)
+    resolve_point_coord                      0x0802bcd5   Thumb Code   180  lv_line.o(i.resolve_point_coord)
+    i.resolve_time                           0x0802bd88   Section        0  lv_anim.o(i.resolve_time)
+    resolve_time                             0x0802bd89   Thumb Code    54  lv_anim.o(i.resolve_time)
+    i.rgb565_image_blend                     0x0802bdbe   Section        0  lv_draw_sw_blend_to_argb8888.o(i.rgb565_image_blend)
+    rgb565_image_blend                       0x0802bdbf   Thumb Code   704  lv_draw_sw_blend_to_argb8888.o(i.rgb565_image_blend)
+    i.rgb565_image_blend                     0x0802c07e   Section        0  lv_draw_sw_blend_to_rgb565.o(i.rgb565_image_blend)
+    rgb565_image_blend                       0x0802c07f   Thumb Code   966  lv_draw_sw_blend_to_rgb565.o(i.rgb565_image_blend)
+    i.rgb565_image_blend                     0x0802c444   Section        0  lv_draw_sw_blend_to_rgb888.o(i.rgb565_image_blend)
+    rgb565_image_blend                       0x0802c445   Thumb Code   772  lv_draw_sw_blend_to_rgb888.o(i.rgb565_image_blend)
+    i.rgb888_image_blend                     0x0802c748   Section        0  lv_draw_sw_blend_to_argb8888.o(i.rgb888_image_blend)
+    rgb888_image_blend                       0x0802c749   Thumb Code   732  lv_draw_sw_blend_to_argb8888.o(i.rgb888_image_blend)
+    i.rgb888_image_blend                     0x0802ca24   Section        0  lv_draw_sw_blend_to_rgb565.o(i.rgb888_image_blend)
+    rgb888_image_blend                       0x0802ca25   Thumb Code   956  lv_draw_sw_blend_to_rgb565.o(i.rgb888_image_blend)
+    i.rgb888_image_blend                     0x0802cde0   Section        0  lv_draw_sw_blend_to_rgb888.o(i.rgb888_image_blend)
+    rgb888_image_blend                       0x0802cde1   Thumb Code   544  lv_draw_sw_blend_to_rgb888.o(i.rgb888_image_blend)
+    i.rnd_next                               0x0802d000   Section        0  lv_demo_benchmark.o(i.rnd_next)
+    rnd_next                                 0x0802d001   Thumb Code    72  lv_demo_benchmark.o(i.rnd_next)
+    i.rnd_reset                              0x0802d050   Section        0  lv_demo_benchmark.o(i.rnd_reset)
+    rnd_reset                                0x0802d051   Thumb Code     8  lv_demo_benchmark.o(i.rnd_reset)
+    i.rotated_argb_image_cb                  0x0802d05c   Section        0  lv_demo_benchmark.o(i.rotated_argb_image_cb)
+    rotated_argb_image_cb                    0x0802d05d   Thumb Code   170  lv_demo_benchmark.o(i.rotated_argb_image_cb)
+    i.scale1_indic1_anim_cb                  0x0802d10c   Section        0  lv_demo_widgets.o(i.scale1_indic1_anim_cb)
+    scale1_indic1_anim_cb                    0x0802d10d   Thumb Code    52  lv_demo_widgets.o(i.scale1_indic1_anim_cb)
+    i.scale2_timer_cb                        0x0802d154   Section        0  lv_demo_widgets.o(i.scale2_timer_cb)
+    scale2_timer_cb                          0x0802d155   Thumb Code   390  lv_demo_widgets.o(i.scale2_timer_cb)
+    i.scale3_anim_cb                         0x0802d31c   Section        0  lv_demo_widgets.o(i.scale3_anim_cb)
+    scale3_anim_cb                           0x0802d31d   Thumb Code    52  lv_demo_widgets.o(i.scale3_anim_cb)
+    i.scale3_delete_event_cb                 0x0802d354   Section        0  lv_demo_widgets.o(i.scale3_delete_event_cb)
+    scale3_delete_event_cb                   0x0802d355   Thumb Code    72  lv_demo_widgets.o(i.scale3_delete_event_cb)
+    i.scale_build_custom_label_text          0x0802d3c0   Section        0  lv_scale.o(i.scale_build_custom_label_text)
+    scale_build_custom_label_text            0x0802d3c1   Thumb Code    56  lv_scale.o(i.scale_build_custom_label_text)
+    i.scale_draw_indicator                   0x0802d3f8   Section        0  lv_scale.o(i.scale_draw_indicator)
+    scale_draw_indicator                     0x0802d3f9   Thumb Code  1190  lv_scale.o(i.scale_draw_indicator)
+    i.scale_draw_main                        0x0802d8a4   Section        0  lv_scale.o(i.scale_draw_main)
+    scale_draw_main                          0x0802d8a5   Thumb Code   792  lv_scale.o(i.scale_draw_main)
+    i.scale_find_section_tick_idx            0x0802dbbc   Section        0  lv_scale.o(i.scale_find_section_tick_idx)
+    scale_find_section_tick_idx              0x0802dbbd   Thumb Code   148  lv_scale.o(i.scale_find_section_tick_idx)
+    i.scale_get_center                       0x0802dc50   Section        0  lv_scale.o(i.scale_get_center)
+    scale_get_center                         0x0802dc51   Thumb Code   138  lv_scale.o(i.scale_get_center)
+    i.scale_get_label_coords                 0x0802dcda   Section        0  lv_scale.o(i.scale_get_label_coords)
+    scale_get_label_coords                   0x0802dcdb   Thumb Code   294  lv_scale.o(i.scale_get_label_coords)
+    i.scale_get_tick_points                  0x0802de00   Section        0  lv_scale.o(i.scale_get_tick_points)
+    scale_get_tick_points                    0x0802de01   Thumb Code   862  lv_scale.o(i.scale_get_tick_points)
+    i.scale_set_arc_properties               0x0802e15e   Section        0  lv_scale.o(i.scale_set_arc_properties)
+    scale_set_arc_properties                 0x0802e15f   Thumb Code   184  lv_scale.o(i.scale_set_arc_properties)
+    i.scale_set_indicator_label_properties   0x0802e216   Section        0  lv_scale.o(i.scale_set_indicator_label_properties)
+    scale_set_indicator_label_properties     0x0802e217   Thumb Code   248  lv_scale.o(i.scale_set_indicator_label_properties)
+    i.scale_set_line_properties              0x0802e30e   Section        0  lv_scale.o(i.scale_set_line_properties)
+    scale_set_line_properties                0x0802e30f   Thumb Code   192  lv_scale.o(i.scale_set_line_properties)
+    i.scale_store_main_line_tick_width_compensation 0x0802e3ce   Section        0  lv_scale.o(i.scale_store_main_line_tick_width_compensation)
+    scale_store_main_line_tick_width_compensation 0x0802e3cf   Thumb Code   152  lv_scale.o(i.scale_store_main_line_tick_width_compensation)
+    i.scale_store_section_line_tick_width_compensation 0x0802e466   Section        0  lv_scale.o(i.scale_store_section_line_tick_width_compensation)
+    scale_store_section_line_tick_width_compensation 0x0802e467   Thumb Code   220  lv_scale.o(i.scale_store_section_line_tick_width_compensation)
+    i.scale_update                           0x0802e542   Section        0  lv_image.o(i.scale_update)
+    scale_update                             0x0802e543   Thumb Code   240  lv_image.o(i.scale_update)
+    i.screen_sized_text_cb                   0x0802e634   Section        0  lv_demo_benchmark.o(i.screen_sized_text_cb)
+    screen_sized_text_cb                     0x0802e635   Thumb Code    70  lv_demo_benchmark.o(i.screen_sized_text_cb)
+    i.scroll_anim                            0x0802e680   Section        0  lv_demo_benchmark.o(i.scroll_anim)
+    scroll_anim                              0x0802e681   Thumb Code    90  lv_demo_benchmark.o(i.scroll_anim)
+    i.scroll_anim_completed_cb               0x0802e6e0   Section        0  lv_roller.o(i.scroll_anim_completed_cb)
+    scroll_anim_completed_cb                 0x0802e6e1   Thumb Code    20  lv_roller.o(i.scroll_anim_completed_cb)
+    i.scroll_anim_y_cb                       0x0802e6f4   Section        0  lv_demo_benchmark.o(i.scroll_anim_y_cb)
+    scroll_anim_y_cb                         0x0802e6f5   Thumb Code    18  lv_demo_benchmark.o(i.scroll_anim_y_cb)
+    i.scroll_anim_y_cb                       0x0802e706   Section        0  lv_demo_widgets.o(i.scroll_anim_y_cb)
+    scroll_anim_y_cb                         0x0802e707   Thumb Code    18  lv_demo_widgets.o(i.scroll_anim_y_cb)
+    i.scroll_area_into_view                  0x0802e718   Section        0  lv_obj_scroll.o(i.scroll_area_into_view)
+    scroll_area_into_view                    0x0802e719   Thumb Code   764  lv_obj_scroll.o(i.scroll_area_into_view)
+    i.scroll_completed_completed_cb          0x0802ea1c   Section        0  lv_obj_scroll.o(i.scroll_completed_completed_cb)
+    scroll_completed_completed_cb            0x0802ea1d   Thumb Code    16  lv_obj_scroll.o(i.scroll_completed_completed_cb)
+    i.scroll_to_selected_cell                0x0802ea2c   Section        0  lv_table.o(i.scroll_to_selected_cell)
+    scroll_to_selected_cell                  0x0802ea2d   Thumb Code   132  lv_table.o(i.scroll_to_selected_cell)
+    i.scroll_x_anim                          0x0802eab0   Section        0  lv_obj_scroll.o(i.scroll_x_anim)
+    scroll_x_anim                            0x0802eab1   Thumb Code    26  lv_obj_scroll.o(i.scroll_x_anim)
+    i.scroll_y_anim                          0x0802eaca   Section        0  lv_obj_scroll.o(i.scroll_y_anim)
+    scroll_y_anim                            0x0802eacb   Thumb Code    26  lv_obj_scroll.o(i.scroll_y_anim)
+    i.scrollbar_init_draw_dsc                0x0802eae4   Section        0  lv_obj.o(i.scrollbar_init_draw_dsc)
+    scrollbar_init_draw_dsc                  0x0802eae5   Thumb Code   362  lv_obj.o(i.scrollbar_init_draw_dsc)
+    i.search_suitable_block                  0x0802ec4e   Section        0  lv_tlsf.o(i.search_suitable_block)
+    search_suitable_block                    0x0802ec4f   Thumb Code   132  lv_tlsf.o(i.search_suitable_block)
+    i.set_ofs_x_anim                         0x0802ecd2   Section        0  lv_label.o(i.set_ofs_x_anim)
+    set_ofs_x_anim                           0x0802ecd3   Thumb Code    18  lv_label.o(i.set_ofs_x_anim)
+    i.set_ofs_y_anim                         0x0802ece4   Section        0  lv_label.o(i.set_ofs_y_anim)
+    set_ofs_y_anim                           0x0802ece5   Thumb Code    18  lv_label.o(i.set_ofs_y_anim)
+    i.set_y_anim                             0x0802ecf6   Section        0  lv_roller.o(i.set_y_anim)
+    set_y_anim                               0x0802ecf7   Thumb Code    16  lv_roller.o(i.set_y_anim)
+    i.shake_anim                             0x0802ed08   Section        0  lv_demo_benchmark.o(i.shake_anim)
+    shake_anim                               0x0802ed09   Thumb Code   104  lv_demo_benchmark.o(i.shake_anim)
+    i.shake_anim_y_cb                        0x0802ed74   Section        0  lv_demo_benchmark.o(i.shake_anim_y_cb)
+    shake_anim_y_cb                          0x0802ed75   Thumb Code    18  lv_demo_benchmark.o(i.shake_anim_y_cb)
+    i.shop_chart_event_cb                    0x0802ed86   Section        0  lv_demo_widgets.o(i.shop_chart_event_cb)
+    shop_chart_event_cb                      0x0802ed87   Thumb Code     2  lv_demo_widgets.o(i.shop_chart_event_cb)
+    i.shop_create                            0x0802ed88   Section        0  lv_demo_widgets.o(i.shop_create)
+    shop_create                              0x0802ed89   Thumb Code  1570  lv_demo_widgets.o(i.shop_create)
+    i.single_rectangle_cb                    0x0802f474   Section        0  lv_demo_benchmark.o(i.single_rectangle_cb)
+    single_rectangle_cb                      0x0802f475   Thumb Code    70  lv_demo_benchmark.o(i.single_rectangle_cb)
+    i.slider_event_cb                        0x0802f4bc   Section        0  lv_demo_widgets.o(i.slider_event_cb)
+    slider_event_cb                          0x0802f4bd   Thumb Code   564  lv_demo_widgets.o(i.slider_event_cb)
+    i.slideshow_anim_completed_cb            0x0802f6f8   Section        0  lv_demo_widgets.o(i.slideshow_anim_completed_cb)
+    slideshow_anim_completed_cb              0x0802f6f9   Thumb Code   166  lv_demo_widgets.o(i.slideshow_anim_completed_cb)
+    i.start_cursor_blink                     0x0802f7ac   Section        0  lv_textarea.o(i.start_cursor_blink)
+    start_cursor_blink                       0x0802f7ad   Thumb Code   130  lv_textarea.o(i.start_cursor_blink)
+    i.style_has_flag                         0x0802f838   Section        0  lv_obj_style.o(i.style_has_flag)
+    style_has_flag                           0x0802f839   Thumb Code    94  lv_obj_style.o(i.style_has_flag)
+    i.style_init                             0x0802f898   Section        0  lv_theme_default.o(i.style_init)
+    style_init                               0x0802f899   Thumb Code 11080  lv_theme_default.o(i.style_init)
+    i.style_init_reset                       0x080323e0   Section        0  lv_theme_default.o(i.style_init_reset)
+    style_init_reset                         0x080323e1   Thumb Code    32  lv_theme_default.o(i.style_init_reset)
+    i.summary_create                         0x08032404   Section        0  lv_demo_benchmark.o(i.summary_create)
+    summary_create                           0x08032405   Thumb Code   674  lv_demo_benchmark.o(i.summary_create)
+    i.ta_event_cb                            0x08032720   Section        0  lv_demo_widgets.o(i.ta_event_cb)
+    ta_event_cb                              0x08032721   Thumb Code   256  lv_demo_widgets.o(i.ta_event_cb)
+    i.table_draw_task_event_cb               0x08032824   Section        0  lv_demo_benchmark.o(i.table_draw_task_event_cb)
+    table_draw_task_event_cb                 0x08032825   Thumb Code   194  lv_demo_benchmark.o(i.table_draw_task_event_cb)
+    i.tabview_delete_event_cb                0x080328e8   Section        0  lv_demo_widgets.o(i.tabview_delete_event_cb)
+    tabview_delete_event_cb                  0x080328e9   Thumb Code    42  lv_demo_widgets.o(i.tabview_delete_event_cb)
+    i.theme_apply                            0x08032924   Section        0  lv_theme_default.o(i.theme_apply)
+    theme_apply                              0x08032925   Thumb Code  4020  lv_theme_default.o(i.theme_apply)
+    i.tileview_event_cb                      0x08033924   Section        0  lv_tileview.o(i.tileview_event_cb)
+    tileview_event_cb                        0x08033925   Thumb Code   232  lv_tileview.o(i.tileview_event_cb)
+    i.tlsf_ffs                               0x08033a0c   Section        0  lv_tlsf.o(i.tlsf_ffs)
+    tlsf_ffs                                 0x08033a0d   Thumb Code    24  lv_tlsf.o(i.tlsf_ffs)
+    i.tlsf_fls                               0x08033a24   Section        0  lv_tlsf.o(i.tlsf_fls)
+    tlsf_fls                                 0x08033a25   Thumb Code    22  lv_tlsf.o(i.tlsf_fls)
+    i.trans_anim_cb                          0x08033a3a   Section        0  lv_obj_style.o(i.trans_anim_cb)
+    trans_anim_cb                            0x08033a3b   Thumb Code   546  lv_obj_style.o(i.trans_anim_cb)
+    i.trans_anim_completed_cb                0x08033c5c   Section        0  lv_obj_style.o(i.trans_anim_completed_cb)
+    trans_anim_completed_cb                  0x08033c5d   Thumb Code   204  lv_obj_style.o(i.trans_anim_completed_cb)
+    i.trans_anim_start_cb                    0x08033d2c   Section        0  lv_obj_style.o(i.trans_anim_start_cb)
+    trans_anim_start_cb                      0x08033d2d   Thumb Code    72  lv_obj_style.o(i.trans_anim_start_cb)
+    i.trans_delete                           0x08033d74   Section        0  lv_obj_style.o(i.trans_delete)
+    trans_delete                             0x08033d75   Thumb Code   178  lv_obj_style.o(i.trans_delete)
+    i.transform_a8                           0x08033e2c   Section        0  lv_draw_sw_transform.o(i.transform_a8)
+    transform_a8                             0x08033e2d   Thumb Code   454  lv_draw_sw_transform.o(i.transform_a8)
+    i.transform_argb8888                     0x08033ff2   Section        0  lv_draw_sw_transform.o(i.transform_argb8888)
+    transform_argb8888                       0x08033ff3   Thumb Code   560  lv_draw_sw_transform.o(i.transform_argb8888)
+    i.transform_point_array                  0x08034222   Section        0  lv_obj_pos.o(i.transform_point_array)
+    transform_point_array                    0x08034223   Thumb Code   390  lv_obj_pos.o(i.transform_point_array)
+    i.transform_point_upscaled               0x080343a8   Section        0  lv_draw_sw_transform.o(i.transform_point_upscaled)
+    transform_point_upscaled                 0x080343a9   Thumb Code   186  lv_draw_sw_transform.o(i.transform_point_upscaled)
+    i.transform_rgb565a8                     0x08034462   Section        0  lv_draw_sw_transform.o(i.transform_rgb565a8)
+    transform_rgb565a8                       0x08034463   Thumb Code   558  lv_draw_sw_transform.o(i.transform_rgb565a8)
+    i.transform_rgb888                       0x08034690   Section        0  lv_draw_sw_transform.o(i.transform_rgb888)
+    transform_rgb888                         0x08034691   Thumb Code   520  lv_draw_sw_transform.o(i.transform_rgb888)
+    i.transform_vect_recursive               0x08034898   Section        0  lv_roller.o(i.transform_vect_recursive)
+    transform_vect_recursive                 0x08034899   Thumb Code   200  lv_roller.o(i.transform_vect_recursive)
+    i.unicode_list_compare                   0x08034960   Section        0  lv_font_fmt_txt.o(i.unicode_list_compare)
+    unicode_list_compare                     0x08034961   Thumb Code    10  lv_font_fmt_txt.o(i.unicode_list_compare)
+    i.update_align                           0x0803496a   Section        0  lv_image.o(i.update_align)
+    update_align                             0x0803496b   Thumb Code   124  lv_image.o(i.update_align)
+    i.update_cursor_position_on_click        0x080349e6   Section        0  lv_textarea.o(i.update_cursor_position_on_click)
+    update_cursor_position_on_click          0x080349e7   Thumb Code   484  lv_textarea.o(i.update_cursor_position_on_click)
+    i.update_knob_pos                        0x08034bca   Section        0  lv_slider.o(i.update_knob_pos)
+    update_knob_pos                          0x08034bcb   Thumb Code   528  lv_slider.o(i.update_knob_pos)
+    i.update_obj_state                       0x08034dda   Section        0  lv_obj.o(i.update_obj_state)
+    update_obj_state                         0x08034ddb   Thumb Code   506  lv_obj.o(i.update_obj_state)
+    i.value_changed_event_cb                 0x08034fd4   Section        0  lv_calendar_header_arrow.o(i.value_changed_event_cb)
+    value_changed_event_cb                   0x08034fd5   Thumb Code   100  lv_calendar_header_arrow.o(i.value_changed_event_cb)
+    i.value_changed_event_cb                 0x08035044   Section        0  lv_calendar_header_dropdown.o(i.value_changed_event_cb)
+    value_changed_event_cb                   0x08035045   Thumb Code   130  lv_calendar_header_dropdown.o(i.value_changed_event_cb)
+    i.value_update                           0x080350c6   Section        0  lv_arc.o(i.value_update)
+    value_update                             0x080350c7   Thumb Code   232  lv_arc.o(i.value_update)
+    i.wait_for_flushing                      0x080351ae   Section        0  lv_refr.o(i.wait_for_flushing)
+    wait_for_flushing                        0x080351af   Thumb Code    58  lv_refr.o(i.wait_for_flushing)
+    i.widgets_demo_cb                        0x080351e8   Section        0  lv_demo_benchmark.o(i.widgets_demo_cb)
+    widgets_demo_cb                          0x080351e9   Thumb Code    38  lv_demo_benchmark.o(i.widgets_demo_cb)
+    i.width_to_stride                        0x0803520e   Section        0  lv_draw_buf.o(i.width_to_stride)
+    width_to_stride                          0x0803520f   Thumb Code    24  lv_draw_buf.o(i.width_to_stride)
+    i.year_event_cb                          0x08035226   Section        0  lv_calendar_header_dropdown.o(i.year_event_cb)
+    year_event_cb                            0x08035227   Thumb Code   126  lv_calendar_header_dropdown.o(i.year_event_cb)
+    .constdata                               0x080352a4   Section       16  system_stm32h7xx_dualcore_boot_cm4_cm7.o(.constdata)
+    .constdata                               0x080352b4   Section       36  lv_obj.o(.constdata)
+    .constdata                               0x080352d8   Section       16  lv_obj_pos.o(.constdata)
+    .constdata                               0x080352e8   Section       16  lv_draw_image.o(.constdata)
+    .constdata                               0x080352f8   Section       20  lv_font_fmt_txt.o(.constdata)
+    opa4_table                               0x080352f8   Data          16  lv_font_fmt_txt.o(.constdata)
+    opa2_table                               0x08035308   Data           4  lv_font_fmt_txt.o(.constdata)
+    .constdata                               0x0803530c   Section    13640  lv_font_montserrat_14.o(.constdata)
+    glyph_bitmap                             0x0803530c   Data        8832  lv_font_montserrat_14.o(.constdata)
+    glyph_dsc                                0x0803758c   Data        1264  lv_font_montserrat_14.o(.constdata)
+    unicode_list_1                           0x08037a7c   Data         124  lv_font_montserrat_14.o(.constdata)
+    cmaps                                    0x08037af8   Data          40  lv_font_montserrat_14.o(.constdata)
+    kern_left_class_mapping                  0x08037b20   Data         158  lv_font_montserrat_14.o(.constdata)
+    kern_right_class_mapping                 0x08037bbe   Data         158  lv_font_montserrat_14.o(.constdata)
+    kern_class_values                        0x08037c5c   Data        2989  lv_font_montserrat_14.o(.constdata)
+    kern_classes                             0x0803880c   Data          16  lv_font_montserrat_14.o(.constdata)
+    font_dsc                                 0x0803881c   Data          20  lv_font_montserrat_14.o(.constdata)
+    .constdata                               0x08038854   Section    28692  lv_font_montserrat_24.o(.constdata)
+    glyph_bitmap                             0x08038854   Data       23884  lv_font_montserrat_24.o(.constdata)
+    glyph_dsc                                0x0803e5a0   Data        1264  lv_font_montserrat_24.o(.constdata)
+    unicode_list_1                           0x0803ea90   Data         124  lv_font_montserrat_24.o(.constdata)
+    cmaps                                    0x0803eb0c   Data          40  lv_font_montserrat_24.o(.constdata)
+    kern_left_class_mapping                  0x0803eb34   Data         158  lv_font_montserrat_24.o(.constdata)
+    kern_right_class_mapping                 0x0803ebd2   Data         158  lv_font_montserrat_24.o(.constdata)
+    kern_class_values                        0x0803ec70   Data        2989  lv_font_montserrat_24.o(.constdata)
+    kern_classes                             0x0803f820   Data          16  lv_font_montserrat_24.o(.constdata)
+    font_dsc                                 0x0803f830   Data          20  lv_font_montserrat_24.o(.constdata)
+    .constdata                               0x0803f868   Section      182  lv_math.o(.constdata)
+    sin0_90_table                            0x0803f868   Data         182  lv_math.o(.constdata)
+    .constdata                               0x0803f91e   Section      570  lv_palette.o(.constdata)
+    colors                                   0x0803f91e   Data          57  lv_palette.o(.constdata)
+    colors                                   0x0803f957   Data         285  lv_palette.o(.constdata)
+    colors                                   0x0803fa74   Data         228  lv_palette.o(.constdata)
+    .constdata                               0x0803fb58   Section      176  lv_style.o(.constdata)
+    .constdata                               0x0803fc08   Section       12  lv_theme_default.o(.constdata)
+    trans_props                              0x0803fc08   Data          12  lv_theme_default.o(.constdata)
+    .constdata                               0x0803fc14   Section       36  lv_arc.o(.constdata)
+    .constdata                               0x0803fc38   Section       36  lv_bar.o(.constdata)
+    .constdata                               0x0803fc5c   Section       36  lv_button.o(.constdata)
+    .constdata                               0x0803fc80   Section       36  lv_buttonmatrix.o(.constdata)
+    .constdata                               0x0803fca4   Section       36  lv_calendar.o(.constdata)
+    .constdata                               0x0803fcc8   Section       36  lv_calendar_header_arrow.o(.constdata)
+    .constdata                               0x0803fcec   Section       36  lv_calendar_header_dropdown.o(.constdata)
+    .constdata                               0x0803fd10   Section       36  lv_chart.o(.constdata)
+    .constdata                               0x0803fd34   Section       36  lv_checkbox.o(.constdata)
+    .constdata                               0x0803fd58   Section       72  lv_dropdown.o(.constdata)
+    .constdata                               0x0803fda0   Section       36  lv_image.o(.constdata)
+    .constdata                               0x0803fdc4   Section     1196  lv_keyboard.o(.constdata)
+    default_kb_map_lc                        0x0803fde8   Data         176  lv_keyboard.o(.constdata)
+    default_kb_ctrl_lc_map                   0x0803fe98   Data         160  lv_keyboard.o(.constdata)
+    default_kb_map_uc                        0x0803ff38   Data         176  lv_keyboard.o(.constdata)
+    default_kb_ctrl_uc_map                   0x0803ffe8   Data         160  lv_keyboard.o(.constdata)
+    default_kb_map_spec                      0x08040088   Data         176  lv_keyboard.o(.constdata)
+    default_kb_ctrl_spec_map                 0x08040138   Data         160  lv_keyboard.o(.constdata)
+    default_kb_map_num                       0x080401d8   Data          84  lv_keyboard.o(.constdata)
+    default_kb_ctrl_num_map                  0x0804022c   Data          68  lv_keyboard.o(.constdata)
+    .constdata                               0x08040270   Section       36  lv_label.o(.constdata)
+    .constdata                               0x08040294   Section       36  lv_led.o(.constdata)
+    .constdata                               0x080402b8   Section       36  lv_line.o(.constdata)
+    .constdata                               0x080402dc   Section      108  lv_list.o(.constdata)
+    .constdata                               0x08040348   Section      324  lv_menu.o(.constdata)
+    .constdata                               0x0804048c   Section      252  lv_msgbox.o(.constdata)
+    .constdata                               0x08040588   Section       72  lv_roller.o(.constdata)
+    .constdata                               0x080405d0   Section       36  lv_scale.o(.constdata)
+    .constdata                               0x080405f4   Section       36  lv_slider.o(.constdata)
+    .constdata                               0x08040618   Section       36  lv_spinbox.o(.constdata)
+    .constdata                               0x0804063c   Section       36  lv_spinner.o(.constdata)
+    .constdata                               0x08040660   Section       36  lv_switch.o(.constdata)
+    .constdata                               0x08040684   Section       36  lv_table.o(.constdata)
+    .constdata                               0x080406a8   Section       36  lv_tabview.o(.constdata)
+    .constdata                               0x080406cc   Section       36  lv_textarea.o(.constdata)
+    .constdata                               0x080406f0   Section       72  lv_tileview.o(.constdata)
+    .constdata                               0x08040738   Section       36  lv_win.o(.constdata)
+    .constdata                               0x0804075c   Section      256  lv_demo_benchmark.o(.constdata)
+    rnd_map                                  0x0804075c   Data         256  lv_demo_benchmark.o(.constdata)
+    .constdata                               0x0804085c   Section    30024  img_benchmark_cogwheel_argb.o(.constdata)
+    .constdata                               0x08047da4   Section    20024  img_benchmark_cogwheel_rgb.o(.constdata)
+    .constdata                               0x0804cbdc   Section    25624  img_transform_avatar_15.o(.constdata)
+    .constdata                               0x08052ff4   Section       28  lv_demo_widgets.o(.constdata)
+    col_dsc                                  0x08052ff4   Data          12  lv_demo_widgets.o(.constdata)
+    row_dsc                                  0x08053000   Data          16  lv_demo_widgets.o(.constdata)
+    .constdata                               0x08053010   Section     9432  img_clothes.o(.constdata)
+    .constdata                               0x080554e8   Section    98584  img_demo_widgets_avatar.o(.constdata)
+    .constdata                               0x0806d600   Section     3624  img_demo_widgets_needle.o(.constdata)
+    .constdata                               0x0806e428   Section     7248  img_lvgl_logo.o(.constdata)
+    .conststring                             0x08070078   Section        4  lv_obj.o(.conststring)
+    .conststring                             0x0807007c   Section        4  lv_arc.o(.conststring)
+    .conststring                             0x08070080   Section        4  lv_bar.o(.conststring)
+    .conststring                             0x08070084   Section        4  lv_button.o(.conststring)
+    .conststring                             0x08070088   Section       57  lv_buttonmatrix.o(.conststring)
+    .conststring                             0x080700c4   Section       39  lv_calendar.o(.conststring)
+    .conststring                             0x080700ec   Section      129  lv_calendar_header_arrow.o(.conststring)
+    .conststring                             0x08070170   Section      689  lv_calendar_header_dropdown.o(.conststring)
+    .conststring                             0x08070424   Section        6  lv_chart.o(.conststring)
+    .conststring                             0x0807042c   Section        9  lv_checkbox.o(.conststring)
+    .conststring                             0x08070438   Section       14  lv_dropdown.o(.conststring)
+    .conststring                             0x08070448   Section        6  lv_image.o(.conststring)
+    .conststring                             0x08070450   Section      404  lv_keyboard.o(.conststring)
+    .conststring                             0x080705e4   Section        6  lv_label.o(.conststring)
+    .conststring                             0x080705ec   Section        4  lv_led.o(.conststring)
+    .conststring                             0x080705f0   Section        5  lv_line.o(.conststring)
+    .conststring                             0x080705f8   Section       30  lv_list.o(.conststring)
+    .conststring                             0x08070618   Section       61  lv_menu.o(.conststring)
+    .conststring                             0x08070658   Section      119  lv_msgbox.o(.conststring)
+    .conststring                             0x080706d0   Section       23  lv_roller.o(.conststring)
+    .conststring                             0x080706e8   Section        6  lv_scale.o(.conststring)
+    .conststring                             0x080706f0   Section        7  lv_slider.o(.conststring)
+    .conststring                             0x080706f8   Section        8  lv_spinbox.o(.conststring)
+    .conststring                             0x08070700   Section        8  lv_spinner.o(.conststring)
+    .conststring                             0x08070708   Section        7  lv_switch.o(.conststring)
+    .conststring                             0x08070710   Section        6  lv_table.o(.conststring)
+    .conststring                             0x08070718   Section        8  lv_tabview.o(.conststring)
+    .conststring                             0x08070720   Section        9  lv_textarea.o(.conststring)
+    .conststring                             0x0807072c   Section       17  lv_tileview.o(.conststring)
+    .conststring                             0x08070740   Section        4  lv_win.o(.conststring)
+    .conststring                             0x08070744   Section     3576  lv_demo_benchmark.o(.conststring)
+    .conststring                             0x0807153c   Section      112  lv_demo_widgets.o(.conststring)
     .data                                    0x24000000   Section        8  fmc.o(.data)
     FMC_Initialized                          0x24000000   Data           4  fmc.o(.data)
     FMC_DeInitialized                        0x24000004   Data           4  fmc.o(.data)
@@ -13691,78 +13690,78 @@ Image Symbol Table
     lv_tlsf_size                             0x08028e81   Thumb Code     6  lv_tlsf.o(i.lv_tlsf_size)
     lv_trigo_sin                             0x08028e89   Thumb Code   130  lv_math.o(i.lv_trigo_sin)
     lv_vsnprintf                             0x08028f15   Thumb Code    30  lv_sprintf_builtin.o(i.lv_vsnprintf)
-    lvgl_app                                 0x08028fc5   Thumb Code    24  lvgl_app.o(i.lvgl_app)
-    main                                     0x08028fed   Thumb Code   332  main_1.o(i.main)
-    D1CorePrescTable                         0x080352a8   Data          16  system_stm32h7xx_dualcore_boot_cm4_cm7.o(.constdata)
-    lv_obj_class                             0x080352b8   Data          36  lv_obj.o(.constdata)
-    lv_font_montserrat_14                    0x08038834   Data          36  lv_font_montserrat_14.o(.constdata)
-    lv_font_montserrat_24                    0x0803f848   Data          36  lv_font_montserrat_24.o(.constdata)
-    lv_style_const_prop_id_inv               0x0803fb5c   Data           1  lv_style.o(.constdata)
-    _lv_style_builtin_prop_flag_lookup_table 0x0803fb5d   Data         141  lv_style.o(.constdata)
-    lv_arc_class                             0x0803fc18   Data          36  lv_arc.o(.constdata)
-    lv_bar_class                             0x0803fc3c   Data          36  lv_bar.o(.constdata)
-    lv_button_class                          0x0803fc60   Data          36  lv_button.o(.constdata)
-    lv_buttonmatrix_class                    0x0803fc84   Data          36  lv_buttonmatrix.o(.constdata)
-    lv_calendar_class                        0x0803fca8   Data          36  lv_calendar.o(.constdata)
-    lv_calendar_header_arrow_class           0x0803fccc   Data          36  lv_calendar_header_arrow.o(.constdata)
-    lv_calendar_header_dropdown_class        0x0803fcf0   Data          36  lv_calendar_header_dropdown.o(.constdata)
-    lv_chart_class                           0x0803fd14   Data          36  lv_chart.o(.constdata)
-    lv_checkbox_class                        0x0803fd38   Data          36  lv_checkbox.o(.constdata)
-    lv_dropdown_class                        0x0803fd5c   Data          36  lv_dropdown.o(.constdata)
-    lv_dropdownlist_class                    0x0803fd80   Data          36  lv_dropdown.o(.constdata)
-    lv_image_class                           0x0803fda4   Data          36  lv_image.o(.constdata)
-    lv_keyboard_class                        0x0803fdc8   Data          36  lv_keyboard.o(.constdata)
-    lv_label_class                           0x08040274   Data          36  lv_label.o(.constdata)
-    lv_led_class                             0x08040298   Data          36  lv_led.o(.constdata)
-    lv_line_class                            0x080402bc   Data          36  lv_line.o(.constdata)
-    lv_list_class                            0x080402e0   Data          36  lv_list.o(.constdata)
-    lv_list_button_class                     0x08040304   Data          36  lv_list.o(.constdata)
-    lv_list_text_class                       0x08040328   Data          36  lv_list.o(.constdata)
-    lv_menu_class                            0x0804034c   Data          36  lv_menu.o(.constdata)
-    lv_menu_page_class                       0x08040370   Data          36  lv_menu.o(.constdata)
-    lv_menu_cont_class                       0x08040394   Data          36  lv_menu.o(.constdata)
-    lv_menu_section_class                    0x080403b8   Data          36  lv_menu.o(.constdata)
-    lv_menu_separator_class                  0x080403dc   Data          36  lv_menu.o(.constdata)
-    lv_menu_sidebar_cont_class               0x08040400   Data          36  lv_menu.o(.constdata)
-    lv_menu_main_cont_class                  0x08040424   Data          36  lv_menu.o(.constdata)
-    lv_menu_main_header_cont_class           0x08040448   Data          36  lv_menu.o(.constdata)
-    lv_menu_sidebar_header_cont_class        0x0804046c   Data          36  lv_menu.o(.constdata)
-    lv_msgbox_class                          0x08040490   Data          36  lv_msgbox.o(.constdata)
-    lv_msgbox_header_class                   0x080404b4   Data          36  lv_msgbox.o(.constdata)
-    lv_msgbox_content_class                  0x080404d8   Data          36  lv_msgbox.o(.constdata)
-    lv_msgbox_footer_class                   0x080404fc   Data          36  lv_msgbox.o(.constdata)
-    lv_msgbox_footer_button_class            0x08040520   Data          36  lv_msgbox.o(.constdata)
-    lv_msgbox_header_button_class            0x08040544   Data          36  lv_msgbox.o(.constdata)
-    lv_msgbox_backdrop_class                 0x08040568   Data          36  lv_msgbox.o(.constdata)
-    lv_roller_class                          0x0804058c   Data          36  lv_roller.o(.constdata)
-    lv_roller_label_class                    0x080405b0   Data          36  lv_roller.o(.constdata)
-    lv_scale_class                           0x080405d4   Data          36  lv_scale.o(.constdata)
-    lv_slider_class                          0x080405f8   Data          36  lv_slider.o(.constdata)
-    lv_spinbox_class                         0x0804061c   Data          36  lv_spinbox.o(.constdata)
-    lv_spinner_class                         0x08040640   Data          36  lv_spinner.o(.constdata)
-    lv_switch_class                          0x08040664   Data          36  lv_switch.o(.constdata)
-    lv_table_class                           0x08040688   Data          36  lv_table.o(.constdata)
-    lv_tabview_class                         0x080406ac   Data          36  lv_tabview.o(.constdata)
-    lv_textarea_class                        0x080406d0   Data          36  lv_textarea.o(.constdata)
-    lv_tileview_class                        0x080406f4   Data          36  lv_tileview.o(.constdata)
-    lv_tileview_tile_class                   0x08040718   Data          36  lv_tileview.o(.constdata)
-    lv_win_class                             0x0804073c   Data          36  lv_win.o(.constdata)
-    img_benchmark_cogwheel_argb_map          0x08040860   Data       30000  img_benchmark_cogwheel_argb.o(.constdata)
-    img_benchmark_cogwheel_argb              0x08047d90   Data          24  img_benchmark_cogwheel_argb.o(.constdata)
-    img_benchmark_cogwheel_rgb_map           0x08047da8   Data       20000  img_benchmark_cogwheel_rgb.o(.constdata)
-    img_benchmark_cogwheel_rgb               0x0804cbc8   Data          24  img_benchmark_cogwheel_rgb.o(.constdata)
-    img_transform_avatar_15_map              0x0804cbe0   Data       25600  img_transform_avatar_15.o(.constdata)
-    img_transform_avatar_15                  0x08052fe0   Data          24  img_transform_avatar_15.o(.constdata)
-    img_clothes_map                          0x08053014   Data        9408  img_clothes.o(.constdata)
-    img_clothes                              0x080554d4   Data          24  img_clothes.o(.constdata)
-    img_demo_widgets_avatar_map              0x080554ec   Data       98560  img_demo_widgets_avatar.o(.constdata)
-    img_demo_widgets_avatar                  0x0806d5ec   Data          24  img_demo_widgets_avatar.o(.constdata)
-    img_demo_widgets_needle_map              0x0806d604   Data        3600  img_demo_widgets_needle.o(.constdata)
-    img_demo_widgets_needle                  0x0806e414   Data          24  img_demo_widgets_needle.o(.constdata)
-    img_lvgl_logo_map                        0x0806e42c   Data        7224  img_lvgl_logo.o(.constdata)
-    img_lvgl_logo                            0x08070064   Data          24  img_lvgl_logo.o(.constdata)
-    Region$$Table$$Base                      0x080715b0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080715d0   Number         0  anon$$obj.o(Region$$Table)
+    lvgl_app                                 0x08028fc5   Thumb Code    18  lvgl_app.o(i.lvgl_app)
+    main                                     0x08028fe9   Thumb Code   332  main_1.o(i.main)
+    D1CorePrescTable                         0x080352a4   Data          16  system_stm32h7xx_dualcore_boot_cm4_cm7.o(.constdata)
+    lv_obj_class                             0x080352b4   Data          36  lv_obj.o(.constdata)
+    lv_font_montserrat_14                    0x08038830   Data          36  lv_font_montserrat_14.o(.constdata)
+    lv_font_montserrat_24                    0x0803f844   Data          36  lv_font_montserrat_24.o(.constdata)
+    lv_style_const_prop_id_inv               0x0803fb58   Data           1  lv_style.o(.constdata)
+    _lv_style_builtin_prop_flag_lookup_table 0x0803fb59   Data         141  lv_style.o(.constdata)
+    lv_arc_class                             0x0803fc14   Data          36  lv_arc.o(.constdata)
+    lv_bar_class                             0x0803fc38   Data          36  lv_bar.o(.constdata)
+    lv_button_class                          0x0803fc5c   Data          36  lv_button.o(.constdata)
+    lv_buttonmatrix_class                    0x0803fc80   Data          36  lv_buttonmatrix.o(.constdata)
+    lv_calendar_class                        0x0803fca4   Data          36  lv_calendar.o(.constdata)
+    lv_calendar_header_arrow_class           0x0803fcc8   Data          36  lv_calendar_header_arrow.o(.constdata)
+    lv_calendar_header_dropdown_class        0x0803fcec   Data          36  lv_calendar_header_dropdown.o(.constdata)
+    lv_chart_class                           0x0803fd10   Data          36  lv_chart.o(.constdata)
+    lv_checkbox_class                        0x0803fd34   Data          36  lv_checkbox.o(.constdata)
+    lv_dropdown_class                        0x0803fd58   Data          36  lv_dropdown.o(.constdata)
+    lv_dropdownlist_class                    0x0803fd7c   Data          36  lv_dropdown.o(.constdata)
+    lv_image_class                           0x0803fda0   Data          36  lv_image.o(.constdata)
+    lv_keyboard_class                        0x0803fdc4   Data          36  lv_keyboard.o(.constdata)
+    lv_label_class                           0x08040270   Data          36  lv_label.o(.constdata)
+    lv_led_class                             0x08040294   Data          36  lv_led.o(.constdata)
+    lv_line_class                            0x080402b8   Data          36  lv_line.o(.constdata)
+    lv_list_class                            0x080402dc   Data          36  lv_list.o(.constdata)
+    lv_list_button_class                     0x08040300   Data          36  lv_list.o(.constdata)
+    lv_list_text_class                       0x08040324   Data          36  lv_list.o(.constdata)
+    lv_menu_class                            0x08040348   Data          36  lv_menu.o(.constdata)
+    lv_menu_page_class                       0x0804036c   Data          36  lv_menu.o(.constdata)
+    lv_menu_cont_class                       0x08040390   Data          36  lv_menu.o(.constdata)
+    lv_menu_section_class                    0x080403b4   Data          36  lv_menu.o(.constdata)
+    lv_menu_separator_class                  0x080403d8   Data          36  lv_menu.o(.constdata)
+    lv_menu_sidebar_cont_class               0x080403fc   Data          36  lv_menu.o(.constdata)
+    lv_menu_main_cont_class                  0x08040420   Data          36  lv_menu.o(.constdata)
+    lv_menu_main_header_cont_class           0x08040444   Data          36  lv_menu.o(.constdata)
+    lv_menu_sidebar_header_cont_class        0x08040468   Data          36  lv_menu.o(.constdata)
+    lv_msgbox_class                          0x0804048c   Data          36  lv_msgbox.o(.constdata)
+    lv_msgbox_header_class                   0x080404b0   Data          36  lv_msgbox.o(.constdata)
+    lv_msgbox_content_class                  0x080404d4   Data          36  lv_msgbox.o(.constdata)
+    lv_msgbox_footer_class                   0x080404f8   Data          36  lv_msgbox.o(.constdata)
+    lv_msgbox_footer_button_class            0x0804051c   Data          36  lv_msgbox.o(.constdata)
+    lv_msgbox_header_button_class            0x08040540   Data          36  lv_msgbox.o(.constdata)
+    lv_msgbox_backdrop_class                 0x08040564   Data          36  lv_msgbox.o(.constdata)
+    lv_roller_class                          0x08040588   Data          36  lv_roller.o(.constdata)
+    lv_roller_label_class                    0x080405ac   Data          36  lv_roller.o(.constdata)
+    lv_scale_class                           0x080405d0   Data          36  lv_scale.o(.constdata)
+    lv_slider_class                          0x080405f4   Data          36  lv_slider.o(.constdata)
+    lv_spinbox_class                         0x08040618   Data          36  lv_spinbox.o(.constdata)
+    lv_spinner_class                         0x0804063c   Data          36  lv_spinner.o(.constdata)
+    lv_switch_class                          0x08040660   Data          36  lv_switch.o(.constdata)
+    lv_table_class                           0x08040684   Data          36  lv_table.o(.constdata)
+    lv_tabview_class                         0x080406a8   Data          36  lv_tabview.o(.constdata)
+    lv_textarea_class                        0x080406cc   Data          36  lv_textarea.o(.constdata)
+    lv_tileview_class                        0x080406f0   Data          36  lv_tileview.o(.constdata)
+    lv_tileview_tile_class                   0x08040714   Data          36  lv_tileview.o(.constdata)
+    lv_win_class                             0x08040738   Data          36  lv_win.o(.constdata)
+    img_benchmark_cogwheel_argb_map          0x0804085c   Data       30000  img_benchmark_cogwheel_argb.o(.constdata)
+    img_benchmark_cogwheel_argb              0x08047d8c   Data          24  img_benchmark_cogwheel_argb.o(.constdata)
+    img_benchmark_cogwheel_rgb_map           0x08047da4   Data       20000  img_benchmark_cogwheel_rgb.o(.constdata)
+    img_benchmark_cogwheel_rgb               0x0804cbc4   Data          24  img_benchmark_cogwheel_rgb.o(.constdata)
+    img_transform_avatar_15_map              0x0804cbdc   Data       25600  img_transform_avatar_15.o(.constdata)
+    img_transform_avatar_15                  0x08052fdc   Data          24  img_transform_avatar_15.o(.constdata)
+    img_clothes_map                          0x08053010   Data        9408  img_clothes.o(.constdata)
+    img_clothes                              0x080554d0   Data          24  img_clothes.o(.constdata)
+    img_demo_widgets_avatar_map              0x080554e8   Data       98560  img_demo_widgets_avatar.o(.constdata)
+    img_demo_widgets_avatar                  0x0806d5e8   Data          24  img_demo_widgets_avatar.o(.constdata)
+    img_demo_widgets_needle_map              0x0806d600   Data        3600  img_demo_widgets_needle.o(.constdata)
+    img_demo_widgets_needle                  0x0806e410   Data          24  img_demo_widgets_needle.o(.constdata)
+    img_lvgl_logo_map                        0x0806e428   Data        7224  img_lvgl_logo.o(.constdata)
+    img_lvgl_logo                            0x08070060   Data          24  img_lvgl_logo.o(.constdata)
+    Region$$Table$$Base                      0x080715ac   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080715cc   Number         0  anon$$obj.o(Region$$Table)
     uwTick                                   0x24000008   Data           4  stm32h7xx_hal.o(.data)
     uwTickPrio                               0x2400000c   Data           4  stm32h7xx_hal.o(.data)
     uwTickFreq                               0x24000010   Data           1  stm32h7xx_hal.o(.data)
@@ -13792,9 +13791,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000299
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00071c2c, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x000717f4])
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00071c28, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x000717f4])
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000715d0, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000715cc, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -15350,250 +15349,251 @@ Memory Map of the image
     0x08028e88   0x08028e88   0x0000008c   Code   RO        16026    i.lv_trigo_sin      lv_math.o
     0x08028f14   0x08028f14   0x00000024   Code   RO        33928    i.lv_vsnprintf      lv_sprintf_builtin.o
     0x08028f38   0x08028f38   0x0000008c   Code   RO        35704    i.lv_win_constructor  lv_win.o
-    0x08028fc4   0x08028fc4   0x00000018   Code   RO        49928    i.lvgl_app          lvgl_app.o
-    0x08028fdc   0x08028fdc   0x00000010   Code   RO        49929    i.lvgl_init         lvgl_app.o
-    0x08028fec   0x08028fec   0x00000158   Code   RO           19    i.main              main_1.o
-    0x08029144   0x08029144   0x0000002e   Code   RO        22301    i.make_one_button_checked  lv_buttonmatrix.o
-    0x08029172   0x08029172   0x0000003a   Code   RO        34112    i.mapping_insert    lv_tlsf.o
-    0x080291ac   0x080291ac   0x00000030   Code   RO        34113    i.mapping_search    lv_tlsf.o
-    0x080291dc   0x080291dc   0x000000ec   Code   RO        23334    i.month_event_cb    lv_calendar_header_arrow.o
-    0x080292c8   0x080292c8   0x00000044   Code   RO        23586    i.month_event_cb    lv_calendar_header_dropdown.o
-    0x0802930c   0x0802930c   0x00000064   Code   RO        39539    i.moving_wallpaper_cb  lv_demo_benchmark.o
-    0x08029370   0x08029370   0x0000013c   Code   RO        39540    i.multiple_arcs_cb  lv_demo_benchmark.o
-    0x080294ac   0x080294ac   0x0000009c   Code   RO        39541    i.multiple_argb_images_cb  lv_demo_benchmark.o
-    0x08029548   0x08029548   0x000000c0   Code   RO        39542    i.multiple_labels_cb  lv_demo_benchmark.o
-    0x08029608   0x08029608   0x0000006a   Code   RO        39543    i.multiple_rectangles_cb  lv_demo_benchmark.o
-    0x08029672   0x08029672   0x00000002   PAD
-    0x08029674   0x08029674   0x0000009c   Code   RO        39544    i.multiple_rgb_images_cb  lv_demo_benchmark.o
-    0x08029710   0x08029710   0x000000f8   Code   RO        23335    i.my_constructor    lv_calendar_header_arrow.o
-    0x08029808   0x08029808   0x0000009c   Code   RO        23587    i.my_constructor    lv_calendar_header_dropdown.o
-    0x080298a4   0x080298a4   0x000000ea   Code   RO        24111    i.new_points_alloc  lv_chart.o
-    0x0802998e   0x0802998e   0x00000002   PAD
-    0x08029990   0x08029990   0x0000004c   Code   RO        39545    i.next_scene_timer_cb  lv_demo_benchmark.o
-    0x080299dc   0x080299dc   0x0000001c   Code   RO        15838    i.node_set_next     lv_ll.o
-    0x080299f8   0x080299f8   0x0000001a   Code   RO        15839    i.node_set_prev     lv_ll.o
-    0x08029a12   0x08029a12   0x00000002   PAD
-    0x08029a14   0x08029a14   0x000001c4   Code   RO         7509    i.obj_delete_core   lv_obj_tree.o
-    0x08029bd8   0x08029bd8   0x00000016   Code   RO         7510    i.obj_indev_reset   lv_obj_tree.o
-    0x08029bee   0x08029bee   0x00000006   Code   RO        34114    i.offset_to_block   lv_tlsf.o
-    0x08029bf4   0x08029bf4   0x0000004c   Code   RO        26334    i.overwrite_anim_property  lv_label.o
-    0x08029c40   0x08029c40   0x0000009c   Code   RO        13931    i.place_content     lv_flex.o
-    0x08029cdc   0x08029cdc   0x000000b8   Code   RO        29154    i.position_knob     lv_slider.o
-    0x08029d94   0x08029d94   0x00000064   Code   RO        24893    i.position_to_selected  lv_dropdown.o
-    0x08029df8   0x08029df8   0x00000c6c   Code   RO        48641    i.profile_create    lv_demo_widgets.o
-    0x0802aa64   0x0802aa64   0x00000088   Code   RO        32243    i.pwd_char_hider    lv_textarea.o
-    0x0802aaec   0x0802aaec   0x00000002   Code   RO        32244    i.pwd_char_hider_anim  lv_textarea.o
-    0x0802aaee   0x0802aaee   0x0000000e   Code   RO        32245    i.pwd_char_hider_anim_completed  lv_textarea.o
-    0x0802aafc   0x0802aafc   0x000001d8   Code   RO         7805    i.refr_area         lv_refr.o
-    0x0802acd4   0x0802acd4   0x00000164   Code   RO         7806    i.refr_area_part    lv_refr.o
-    0x0802ae38   0x0802ae38   0x00000100   Code   RO        31163    i.refr_cell_size    lv_table.o
-    0x0802af38   0x0802af38   0x00000210   Code   RO        32246    i.refr_cursor_area  lv_textarea.o
-    0x0802b148   0x0802b148   0x000000e0   Code   RO         7807    i.refr_invalid_areas  lv_refr.o
-    0x0802b228   0x0802b228   0x000002e0   Code   RO         7808    i.refr_obj          lv_refr.o
-    0x0802b508   0x0802b508   0x0000009c   Code   RO         7809    i.refr_obj_and_children  lv_refr.o
-    0x0802b5a4   0x0802b5a4   0x0000016c   Code   RO        28289    i.refr_position     lv_roller.o
-    0x0802b710   0x0802b710   0x000000dc   Code   RO        31164    i.refr_size_form_row  lv_table.o
-    0x0802b7ec   0x0802b7ec   0x0000018c   Code   RO         7810    i.refr_sync_areas   lv_refr.o
-    0x0802b978   0x0802b978   0x00000040   Code   RO         6452    i.refresh_children_style  lv_obj_style.o
-    0x0802b9b8   0x0802b9b8   0x000001b0   Code   RO        28290    i.release_handler   lv_roller.o
-    0x0802bb68   0x0802bb68   0x0000008c   Code   RO        14289    i.remove_concurrent_anims  lv_anim.o
-    0x0802bbf4   0x0802bbf4   0x00000072   Code   RO        34115    i.remove_free_block  lv_tlsf.o
-    0x0802bc66   0x0802bc66   0x00000072   Code   RO         6453    i.report_style_change_core  lv_obj_style.o
-    0x0802bcd8   0x0802bcd8   0x000000b4   Code   RO        27055    i.resolve_point_coord  lv_line.o
-    0x0802bd8c   0x0802bd8c   0x00000036   Code   RO        14290    i.resolve_time      lv_anim.o
-    0x0802bdc2   0x0802bdc2   0x000002c0   Code   RO        37403    i.rgb565_image_blend  lv_draw_sw_blend_to_argb8888.o
-    0x0802c082   0x0802c082   0x000003c6   Code   RO        37589    i.rgb565_image_blend  lv_draw_sw_blend_to_rgb565.o
-    0x0802c448   0x0802c448   0x00000304   Code   RO        37744    i.rgb565_image_blend  lv_draw_sw_blend_to_rgb888.o
-    0x0802c74c   0x0802c74c   0x000002dc   Code   RO        37404    i.rgb888_image_blend  lv_draw_sw_blend_to_argb8888.o
-    0x0802ca28   0x0802ca28   0x000003bc   Code   RO        37590    i.rgb888_image_blend  lv_draw_sw_blend_to_rgb565.o
-    0x0802cde4   0x0802cde4   0x00000220   Code   RO        37745    i.rgb888_image_blend  lv_draw_sw_blend_to_rgb888.o
-    0x0802d004   0x0802d004   0x00000050   Code   RO        39546    i.rnd_next          lv_demo_benchmark.o
-    0x0802d054   0x0802d054   0x0000000c   Code   RO        39547    i.rnd_reset         lv_demo_benchmark.o
-    0x0802d060   0x0802d060   0x000000b0   Code   RO        39548    i.rotated_argb_image_cb  lv_demo_benchmark.o
-    0x0802d110   0x0802d110   0x00000048   Code   RO        48642    i.scale1_indic1_anim_cb  lv_demo_widgets.o
-    0x0802d158   0x0802d158   0x000001c8   Code   RO        48643    i.scale2_timer_cb   lv_demo_widgets.o
-    0x0802d320   0x0802d320   0x00000038   Code   RO        48644    i.scale3_anim_cb    lv_demo_widgets.o
-    0x0802d358   0x0802d358   0x0000006c   Code   RO        48645    i.scale3_delete_event_cb  lv_demo_widgets.o
-    0x0802d3c4   0x0802d3c4   0x00000038   Code   RO        28670    i.scale_build_custom_label_text  lv_scale.o
-    0x0802d3fc   0x0802d3fc   0x000004ac   Code   RO        28671    i.scale_draw_indicator  lv_scale.o
-    0x0802d8a8   0x0802d8a8   0x00000318   Code   RO        28672    i.scale_draw_main   lv_scale.o
-    0x0802dbc0   0x0802dbc0   0x00000094   Code   RO        28673    i.scale_find_section_tick_idx  lv_scale.o
-    0x0802dc54   0x0802dc54   0x0000008a   Code   RO        28674    i.scale_get_center  lv_scale.o
-    0x0802dcde   0x0802dcde   0x00000126   Code   RO        28675    i.scale_get_label_coords  lv_scale.o
-    0x0802de04   0x0802de04   0x0000035e   Code   RO        28676    i.scale_get_tick_points  lv_scale.o
-    0x0802e162   0x0802e162   0x000000b8   Code   RO        28677    i.scale_set_arc_properties  lv_scale.o
-    0x0802e21a   0x0802e21a   0x000000f8   Code   RO        28678    i.scale_set_indicator_label_properties  lv_scale.o
-    0x0802e312   0x0802e312   0x000000c0   Code   RO        28679    i.scale_set_line_properties  lv_scale.o
-    0x0802e3d2   0x0802e3d2   0x00000098   Code   RO        28680    i.scale_store_main_line_tick_width_compensation  lv_scale.o
-    0x0802e46a   0x0802e46a   0x000000dc   Code   RO        28681    i.scale_store_section_line_tick_width_compensation  lv_scale.o
-    0x0802e546   0x0802e546   0x000000f0   Code   RO        25344    i.scale_update      lv_image.o
-    0x0802e636   0x0802e636   0x00000002   PAD
-    0x0802e638   0x0802e638   0x0000004c   Code   RO        39549    i.screen_sized_text_cb  lv_demo_benchmark.o
-    0x0802e684   0x0802e684   0x00000060   Code   RO        39550    i.scroll_anim       lv_demo_benchmark.o
-    0x0802e6e4   0x0802e6e4   0x00000014   Code   RO        28291    i.scroll_anim_completed_cb  lv_roller.o
-    0x0802e6f8   0x0802e6f8   0x00000012   Code   RO        39551    i.scroll_anim_y_cb  lv_demo_benchmark.o
-    0x0802e70a   0x0802e70a   0x00000012   Code   RO        48646    i.scroll_anim_y_cb  lv_demo_widgets.o
-    0x0802e71c   0x0802e71c   0x00000304   Code   RO         6068    i.scroll_area_into_view  lv_obj_scroll.o
-    0x0802ea20   0x0802ea20   0x00000010   Code   RO         6069    i.scroll_completed_completed_cb  lv_obj_scroll.o
-    0x0802ea30   0x0802ea30   0x00000084   Code   RO        31165    i.scroll_to_selected_cell  lv_table.o
-    0x0802eab4   0x0802eab4   0x0000001a   Code   RO         6070    i.scroll_x_anim     lv_obj_scroll.o
-    0x0802eace   0x0802eace   0x0000001a   Code   RO         6071    i.scroll_y_anim     lv_obj_scroll.o
-    0x0802eae8   0x0802eae8   0x0000016a   Code   RO         4219    i.scrollbar_init_draw_dsc  lv_obj.o
-    0x0802ec52   0x0802ec52   0x00000084   Code   RO        34116    i.search_suitable_block  lv_tlsf.o
-    0x0802ecd6   0x0802ecd6   0x00000012   Code   RO        26335    i.set_ofs_x_anim    lv_label.o
-    0x0802ece8   0x0802ece8   0x00000012   Code   RO        26336    i.set_ofs_y_anim    lv_label.o
-    0x0802ecfa   0x0802ecfa   0x00000010   Code   RO        28292    i.set_y_anim        lv_roller.o
-    0x0802ed0a   0x0802ed0a   0x00000002   PAD
-    0x0802ed0c   0x0802ed0c   0x0000006c   Code   RO        39552    i.shake_anim        lv_demo_benchmark.o
-    0x0802ed78   0x0802ed78   0x00000012   Code   RO        39553    i.shake_anim_y_cb   lv_demo_benchmark.o
-    0x0802ed8a   0x0802ed8a   0x00000002   Code   RO        48647    i.shop_chart_event_cb  lv_demo_widgets.o
-    0x0802ed8c   0x0802ed8c   0x000006ec   Code   RO        48648    i.shop_create       lv_demo_widgets.o
-    0x0802f478   0x0802f478   0x00000046   Code   RO        39554    i.single_rectangle_cb  lv_demo_benchmark.o
-    0x0802f4be   0x0802f4be   0x00000002   PAD
-    0x0802f4c0   0x0802f4c0   0x0000023c   Code   RO        48649    i.slider_event_cb   lv_demo_widgets.o
-    0x0802f6fc   0x0802f6fc   0x000000b4   Code   RO        48650    i.slideshow_anim_completed_cb  lv_demo_widgets.o
-    0x0802f7b0   0x0802f7b0   0x0000008c   Code   RO        32247    i.start_cursor_blink  lv_textarea.o
-    0x0802f83c   0x0802f83c   0x0000005e   Code   RO         6454    i.style_has_flag    lv_obj_style.o
-    0x0802f89a   0x0802f89a   0x00000002   PAD
-    0x0802f89c   0x0802f89c   0x00002b48   Code   RO        20068    i.style_init        lv_theme_default.o
-    0x080323e4   0x080323e4   0x00000024   Code   RO        20069    i.style_init_reset  lv_theme_default.o
-    0x08032408   0x08032408   0x0000031c   Code   RO        39555    i.summary_create    lv_demo_benchmark.o
-    0x08032724   0x08032724   0x00000104   Code   RO        48651    i.ta_event_cb       lv_demo_widgets.o
-    0x08032828   0x08032828   0x000000c2   Code   RO        39556    i.table_draw_task_event_cb  lv_demo_benchmark.o
-    0x080328ea   0x080328ea   0x00000002   PAD
-    0x080328ec   0x080328ec   0x0000003c   Code   RO        48652    i.tabview_delete_event_cb  lv_demo_widgets.o
-    0x08032928   0x08032928   0x00001000   Code   RO        20070    i.theme_apply       lv_theme_default.o
-    0x08033928   0x08033928   0x000000e8   Code   RO        32783    i.tileview_event_cb  lv_tileview.o
-    0x08033a10   0x08033a10   0x00000018   Code   RO        34117    i.tlsf_ffs          lv_tlsf.o
-    0x08033a28   0x08033a28   0x00000016   Code   RO        34118    i.tlsf_fls          lv_tlsf.o
-    0x08033a3e   0x08033a3e   0x00000222   Code   RO         6455    i.trans_anim_cb     lv_obj_style.o
-    0x08033c60   0x08033c60   0x000000d0   Code   RO         6456    i.trans_anim_completed_cb  lv_obj_style.o
-    0x08033d30   0x08033d30   0x00000048   Code   RO         6457    i.trans_anim_start_cb  lv_obj_style.o
-    0x08033d78   0x08033d78   0x000000b8   Code   RO         6458    i.trans_delete      lv_obj_style.o
-    0x08033e30   0x08033e30   0x000001c6   Code   RO        35525    i.transform_a8      lv_draw_sw_transform.o
-    0x08033ff6   0x08033ff6   0x00000230   Code   RO        35526    i.transform_argb8888  lv_draw_sw_transform.o
-    0x08034226   0x08034226   0x00000186   Code   RO         5476    i.transform_point_array  lv_obj_pos.o
-    0x080343ac   0x080343ac   0x000000ba   Code   RO        35527    i.transform_point_upscaled  lv_draw_sw_transform.o
-    0x08034466   0x08034466   0x0000022e   Code   RO        35528    i.transform_rgb565a8  lv_draw_sw_transform.o
-    0x08034694   0x08034694   0x00000208   Code   RO        35529    i.transform_rgb888  lv_draw_sw_transform.o
-    0x0803489c   0x0803489c   0x000000c8   Code   RO        28293    i.transform_vect_recursive  lv_roller.o
-    0x08034964   0x08034964   0x0000000a   Code   RO        11632    i.unicode_list_compare  lv_font_fmt_txt.o
-    0x0803496e   0x0803496e   0x0000007c   Code   RO        25345    i.update_align      lv_image.o
-    0x080349ea   0x080349ea   0x000001e4   Code   RO        32248    i.update_cursor_position_on_click  lv_textarea.o
-    0x08034bce   0x08034bce   0x00000210   Code   RO        29155    i.update_knob_pos   lv_slider.o
-    0x08034dde   0x08034dde   0x000001fa   Code   RO         4220    i.update_obj_state  lv_obj.o
-    0x08034fd8   0x08034fd8   0x00000070   Code   RO        23336    i.value_changed_event_cb  lv_calendar_header_arrow.o
-    0x08035048   0x08035048   0x00000082   Code   RO        23588    i.value_changed_event_cb  lv_calendar_header_dropdown.o
-    0x080350ca   0x080350ca   0x000000e8   Code   RO        21277    i.value_update      lv_arc.o
-    0x080351b2   0x080351b2   0x0000003a   Code   RO         7811    i.wait_for_flushing  lv_refr.o
-    0x080351ec   0x080351ec   0x00000026   Code   RO        39557    i.widgets_demo_cb   lv_demo_benchmark.o
-    0x08035212   0x08035212   0x00000018   Code   RO         9313    i.width_to_stride   lv_draw_buf.o
-    0x0803522a   0x0803522a   0x0000007e   Code   RO        23589    i.year_event_cb     lv_calendar_header_dropdown.o
-    0x080352a8   0x080352a8   0x00000010   Data   RO         3731    .constdata          system_stm32h7xx_dualcore_boot_cm4_cm7.o
-    0x080352b8   0x080352b8   0x00000024   Data   RO         4221    .constdata          lv_obj.o
-    0x080352dc   0x080352dc   0x00000010   Data   RO         5477    .constdata          lv_obj_pos.o
-    0x080352ec   0x080352ec   0x00000010   Data   RO         9677    .constdata          lv_draw_image.o
-    0x080352fc   0x080352fc   0x00000014   Data   RO        11633    .constdata          lv_font_fmt_txt.o
-    0x08035310   0x08035310   0x00003548   Data   RO        11854    .constdata          lv_font_montserrat_14.o
-    0x08038858   0x08038858   0x00007014   Data   RO        12129    .constdata          lv_font_montserrat_24.o
-    0x0803f86c   0x0803f86c   0x000000b6   Data   RO        16027    .constdata          lv_math.o
-    0x0803f922   0x0803f922   0x0000023a   Data   RO        16187    .constdata          lv_palette.o
-    0x0803fb5c   0x0803fb5c   0x000000b0   Data   RO        16863    .constdata          lv_style.o
-    0x0803fc0c   0x0803fc0c   0x0000000c   Data   RO        20071    .constdata          lv_theme_default.o
-    0x0803fc18   0x0803fc18   0x00000024   Data   RO        21278    .constdata          lv_arc.o
-    0x0803fc3c   0x0803fc3c   0x00000024   Data   RO        21710    .constdata          lv_bar.o
-    0x0803fc60   0x0803fc60   0x00000024   Data   RO        22040    .constdata          lv_button.o
-    0x0803fc84   0x0803fc84   0x00000024   Data   RO        22302    .constdata          lv_buttonmatrix.o
-    0x0803fca8   0x0803fca8   0x00000024   Data   RO        22726    .constdata          lv_calendar.o
-    0x0803fccc   0x0803fccc   0x00000024   Data   RO        23337    .constdata          lv_calendar_header_arrow.o
-    0x0803fcf0   0x0803fcf0   0x00000024   Data   RO        23590    .constdata          lv_calendar_header_dropdown.o
-    0x0803fd14   0x0803fd14   0x00000024   Data   RO        24112    .constdata          lv_chart.o
-    0x0803fd38   0x0803fd38   0x00000024   Data   RO        24569    .constdata          lv_checkbox.o
-    0x0803fd5c   0x0803fd5c   0x00000048   Data   RO        24894    .constdata          lv_dropdown.o
-    0x0803fda4   0x0803fda4   0x00000024   Data   RO        25346    .constdata          lv_image.o
-    0x0803fdc8   0x0803fdc8   0x000004ac   Data   RO        26009    .constdata          lv_keyboard.o
-    0x08040274   0x08040274   0x00000024   Data   RO        26337    .constdata          lv_label.o
-    0x08040298   0x08040298   0x00000024   Data   RO        26773    .constdata          lv_led.o
-    0x080402bc   0x080402bc   0x00000024   Data   RO        27056    .constdata          lv_line.o
-    0x080402e0   0x080402e0   0x0000006c   Data   RO        27302    .constdata          lv_list.o
-    0x0804034c   0x0804034c   0x00000144   Data   RO        27582    .constdata          lv_menu.o
-    0x08040490   0x08040490   0x000000fc   Data   RO        27973    .constdata          lv_msgbox.o
-    0x0804058c   0x0804058c   0x00000048   Data   RO        28294    .constdata          lv_roller.o
-    0x080405d4   0x080405d4   0x00000024   Data   RO        28683    .constdata          lv_scale.o
-    0x080405f8   0x080405f8   0x00000024   Data   RO        29156    .constdata          lv_slider.o
-    0x0804061c   0x0804061c   0x00000024   Data   RO        29985    .constdata          lv_spinbox.o
-    0x08040640   0x08040640   0x00000024   Data   RO        30296    .constdata          lv_spinner.o
-    0x08040664   0x08040664   0x00000024   Data   RO        30868    .constdata          lv_switch.o
-    0x08040688   0x08040688   0x00000024   Data   RO        31166    .constdata          lv_table.o
-    0x080406ac   0x080406ac   0x00000024   Data   RO        31574    .constdata          lv_tabview.o
-    0x080406d0   0x080406d0   0x00000024   Data   RO        32249    .constdata          lv_textarea.o
-    0x080406f4   0x080406f4   0x00000048   Data   RO        32784    .constdata          lv_tileview.o
-    0x0804073c   0x0804073c   0x00000024   Data   RO        35708    .constdata          lv_win.o
-    0x08040760   0x08040760   0x00000100   Data   RO        39558    .constdata          lv_demo_benchmark.o
-    0x08040860   0x08040860   0x00007548   Data   RO        40836    .constdata          img_benchmark_cogwheel_argb.o
-    0x08047da8   0x08047da8   0x00004e38   Data   RO        41192    .constdata          img_benchmark_cogwheel_rgb.o
-    0x0804cbe0   0x0804cbe0   0x00006418   Data   RO        48042    .constdata          img_transform_avatar_15.o
-    0x08052ff8   0x08052ff8   0x0000001c   Data   RO        48654    .constdata          lv_demo_widgets.o
-    0x08053014   0x08053014   0x000024d8   Data   RO        49371    .constdata          img_clothes.o
-    0x080554ec   0x080554ec   0x00018118   Data   RO        49898    .constdata          img_demo_widgets_avatar.o
-    0x0806d604   0x0806d604   0x00000e28   Data   RO        49907    .constdata          img_demo_widgets_needle.o
-    0x0806e42c   0x0806e42c   0x00001c50   Data   RO        49916    .constdata          img_lvgl_logo.o
-    0x0807007c   0x0807007c   0x00000004   Data   RO         4222    .conststring        lv_obj.o
-    0x08070080   0x08070080   0x00000004   Data   RO        21279    .conststring        lv_arc.o
-    0x08070084   0x08070084   0x00000004   Data   RO        21711    .conststring        lv_bar.o
-    0x08070088   0x08070088   0x00000004   Data   RO        22041    .conststring        lv_button.o
-    0x0807008c   0x0807008c   0x00000039   Data   RO        22303    .conststring        lv_buttonmatrix.o
-    0x080700c5   0x080700c5   0x00000003   PAD
-    0x080700c8   0x080700c8   0x00000027   Data   RO        22727    .conststring        lv_calendar.o
-    0x080700ef   0x080700ef   0x00000001   PAD
-    0x080700f0   0x080700f0   0x00000081   Data   RO        23338    .conststring        lv_calendar_header_arrow.o
-    0x08070171   0x08070171   0x00000003   PAD
-    0x08070174   0x08070174   0x000002b1   Data   RO        23591    .conststring        lv_calendar_header_dropdown.o
-    0x08070425   0x08070425   0x00000003   PAD
-    0x08070428   0x08070428   0x00000006   Data   RO        24113    .conststring        lv_chart.o
-    0x0807042e   0x0807042e   0x00000002   PAD
-    0x08070430   0x08070430   0x00000009   Data   RO        24570    .conststring        lv_checkbox.o
-    0x08070439   0x08070439   0x00000003   PAD
-    0x0807043c   0x0807043c   0x0000000e   Data   RO        24895    .conststring        lv_dropdown.o
-    0x0807044a   0x0807044a   0x00000002   PAD
-    0x0807044c   0x0807044c   0x00000006   Data   RO        25347    .conststring        lv_image.o
-    0x08070452   0x08070452   0x00000002   PAD
-    0x08070454   0x08070454   0x00000194   Data   RO        26010    .conststring        lv_keyboard.o
-    0x080705e8   0x080705e8   0x00000006   Data   RO        26338    .conststring        lv_label.o
-    0x080705ee   0x080705ee   0x00000002   PAD
-    0x080705f0   0x080705f0   0x00000004   Data   RO        26774    .conststring        lv_led.o
-    0x080705f4   0x080705f4   0x00000005   Data   RO        27057    .conststring        lv_line.o
-    0x080705f9   0x080705f9   0x00000003   PAD
-    0x080705fc   0x080705fc   0x0000001e   Data   RO        27303    .conststring        lv_list.o
-    0x0807061a   0x0807061a   0x00000002   PAD
-    0x0807061c   0x0807061c   0x0000003d   Data   RO        27583    .conststring        lv_menu.o
-    0x08070659   0x08070659   0x00000003   PAD
-    0x0807065c   0x0807065c   0x00000077   Data   RO        27974    .conststring        lv_msgbox.o
-    0x080706d3   0x080706d3   0x00000001   PAD
-    0x080706d4   0x080706d4   0x00000017   Data   RO        28295    .conststring        lv_roller.o
-    0x080706eb   0x080706eb   0x00000001   PAD
-    0x080706ec   0x080706ec   0x00000006   Data   RO        28684    .conststring        lv_scale.o
-    0x080706f2   0x080706f2   0x00000002   PAD
-    0x080706f4   0x080706f4   0x00000007   Data   RO        29157    .conststring        lv_slider.o
-    0x080706fb   0x080706fb   0x00000001   PAD
-    0x080706fc   0x080706fc   0x00000008   Data   RO        29986    .conststring        lv_spinbox.o
-    0x08070704   0x08070704   0x00000008   Data   RO        30297    .conststring        lv_spinner.o
-    0x0807070c   0x0807070c   0x00000007   Data   RO        30869    .conststring        lv_switch.o
-    0x08070713   0x08070713   0x00000001   PAD
-    0x08070714   0x08070714   0x00000006   Data   RO        31167    .conststring        lv_table.o
-    0x0807071a   0x0807071a   0x00000002   PAD
-    0x0807071c   0x0807071c   0x00000008   Data   RO        31575    .conststring        lv_tabview.o
-    0x08070724   0x08070724   0x00000009   Data   RO        32250    .conststring        lv_textarea.o
-    0x0807072d   0x0807072d   0x00000003   PAD
-    0x08070730   0x08070730   0x00000011   Data   RO        32785    .conststring        lv_tileview.o
-    0x08070741   0x08070741   0x00000003   PAD
-    0x08070744   0x08070744   0x00000004   Data   RO        35709    .conststring        lv_win.o
-    0x08070748   0x08070748   0x00000df8   Data   RO        39559    .conststring        lv_demo_benchmark.o
-    0x08071540   0x08071540   0x00000070   Data   RO        48655    .conststring        lv_demo_widgets.o
-    0x080715b0   0x080715b0   0x00000020   Data   RO        50002    Region$$Table       anon$$obj.o
+    0x08028fc4   0x08028fc4   0x00000012   Code   RO        49928    i.lvgl_app          lvgl_app.o
+    0x08028fd6   0x08028fd6   0x00000010   Code   RO        49929    i.lvgl_init         lvgl_app.o
+    0x08028fe6   0x08028fe6   0x00000002   PAD
+    0x08028fe8   0x08028fe8   0x00000158   Code   RO           19    i.main              main_1.o
+    0x08029140   0x08029140   0x0000002e   Code   RO        22301    i.make_one_button_checked  lv_buttonmatrix.o
+    0x0802916e   0x0802916e   0x0000003a   Code   RO        34112    i.mapping_insert    lv_tlsf.o
+    0x080291a8   0x080291a8   0x00000030   Code   RO        34113    i.mapping_search    lv_tlsf.o
+    0x080291d8   0x080291d8   0x000000ec   Code   RO        23334    i.month_event_cb    lv_calendar_header_arrow.o
+    0x080292c4   0x080292c4   0x00000044   Code   RO        23586    i.month_event_cb    lv_calendar_header_dropdown.o
+    0x08029308   0x08029308   0x00000064   Code   RO        39539    i.moving_wallpaper_cb  lv_demo_benchmark.o
+    0x0802936c   0x0802936c   0x0000013c   Code   RO        39540    i.multiple_arcs_cb  lv_demo_benchmark.o
+    0x080294a8   0x080294a8   0x0000009c   Code   RO        39541    i.multiple_argb_images_cb  lv_demo_benchmark.o
+    0x08029544   0x08029544   0x000000c0   Code   RO        39542    i.multiple_labels_cb  lv_demo_benchmark.o
+    0x08029604   0x08029604   0x0000006a   Code   RO        39543    i.multiple_rectangles_cb  lv_demo_benchmark.o
+    0x0802966e   0x0802966e   0x00000002   PAD
+    0x08029670   0x08029670   0x0000009c   Code   RO        39544    i.multiple_rgb_images_cb  lv_demo_benchmark.o
+    0x0802970c   0x0802970c   0x000000f8   Code   RO        23335    i.my_constructor    lv_calendar_header_arrow.o
+    0x08029804   0x08029804   0x0000009c   Code   RO        23587    i.my_constructor    lv_calendar_header_dropdown.o
+    0x080298a0   0x080298a0   0x000000ea   Code   RO        24111    i.new_points_alloc  lv_chart.o
+    0x0802998a   0x0802998a   0x00000002   PAD
+    0x0802998c   0x0802998c   0x0000004c   Code   RO        39545    i.next_scene_timer_cb  lv_demo_benchmark.o
+    0x080299d8   0x080299d8   0x0000001c   Code   RO        15838    i.node_set_next     lv_ll.o
+    0x080299f4   0x080299f4   0x0000001a   Code   RO        15839    i.node_set_prev     lv_ll.o
+    0x08029a0e   0x08029a0e   0x00000002   PAD
+    0x08029a10   0x08029a10   0x000001c4   Code   RO         7509    i.obj_delete_core   lv_obj_tree.o
+    0x08029bd4   0x08029bd4   0x00000016   Code   RO         7510    i.obj_indev_reset   lv_obj_tree.o
+    0x08029bea   0x08029bea   0x00000006   Code   RO        34114    i.offset_to_block   lv_tlsf.o
+    0x08029bf0   0x08029bf0   0x0000004c   Code   RO        26334    i.overwrite_anim_property  lv_label.o
+    0x08029c3c   0x08029c3c   0x0000009c   Code   RO        13931    i.place_content     lv_flex.o
+    0x08029cd8   0x08029cd8   0x000000b8   Code   RO        29154    i.position_knob     lv_slider.o
+    0x08029d90   0x08029d90   0x00000064   Code   RO        24893    i.position_to_selected  lv_dropdown.o
+    0x08029df4   0x08029df4   0x00000c6c   Code   RO        48641    i.profile_create    lv_demo_widgets.o
+    0x0802aa60   0x0802aa60   0x00000088   Code   RO        32243    i.pwd_char_hider    lv_textarea.o
+    0x0802aae8   0x0802aae8   0x00000002   Code   RO        32244    i.pwd_char_hider_anim  lv_textarea.o
+    0x0802aaea   0x0802aaea   0x0000000e   Code   RO        32245    i.pwd_char_hider_anim_completed  lv_textarea.o
+    0x0802aaf8   0x0802aaf8   0x000001d8   Code   RO         7805    i.refr_area         lv_refr.o
+    0x0802acd0   0x0802acd0   0x00000164   Code   RO         7806    i.refr_area_part    lv_refr.o
+    0x0802ae34   0x0802ae34   0x00000100   Code   RO        31163    i.refr_cell_size    lv_table.o
+    0x0802af34   0x0802af34   0x00000210   Code   RO        32246    i.refr_cursor_area  lv_textarea.o
+    0x0802b144   0x0802b144   0x000000e0   Code   RO         7807    i.refr_invalid_areas  lv_refr.o
+    0x0802b224   0x0802b224   0x000002e0   Code   RO         7808    i.refr_obj          lv_refr.o
+    0x0802b504   0x0802b504   0x0000009c   Code   RO         7809    i.refr_obj_and_children  lv_refr.o
+    0x0802b5a0   0x0802b5a0   0x0000016c   Code   RO        28289    i.refr_position     lv_roller.o
+    0x0802b70c   0x0802b70c   0x000000dc   Code   RO        31164    i.refr_size_form_row  lv_table.o
+    0x0802b7e8   0x0802b7e8   0x0000018c   Code   RO         7810    i.refr_sync_areas   lv_refr.o
+    0x0802b974   0x0802b974   0x00000040   Code   RO         6452    i.refresh_children_style  lv_obj_style.o
+    0x0802b9b4   0x0802b9b4   0x000001b0   Code   RO        28290    i.release_handler   lv_roller.o
+    0x0802bb64   0x0802bb64   0x0000008c   Code   RO        14289    i.remove_concurrent_anims  lv_anim.o
+    0x0802bbf0   0x0802bbf0   0x00000072   Code   RO        34115    i.remove_free_block  lv_tlsf.o
+    0x0802bc62   0x0802bc62   0x00000072   Code   RO         6453    i.report_style_change_core  lv_obj_style.o
+    0x0802bcd4   0x0802bcd4   0x000000b4   Code   RO        27055    i.resolve_point_coord  lv_line.o
+    0x0802bd88   0x0802bd88   0x00000036   Code   RO        14290    i.resolve_time      lv_anim.o
+    0x0802bdbe   0x0802bdbe   0x000002c0   Code   RO        37403    i.rgb565_image_blend  lv_draw_sw_blend_to_argb8888.o
+    0x0802c07e   0x0802c07e   0x000003c6   Code   RO        37589    i.rgb565_image_blend  lv_draw_sw_blend_to_rgb565.o
+    0x0802c444   0x0802c444   0x00000304   Code   RO        37744    i.rgb565_image_blend  lv_draw_sw_blend_to_rgb888.o
+    0x0802c748   0x0802c748   0x000002dc   Code   RO        37404    i.rgb888_image_blend  lv_draw_sw_blend_to_argb8888.o
+    0x0802ca24   0x0802ca24   0x000003bc   Code   RO        37590    i.rgb888_image_blend  lv_draw_sw_blend_to_rgb565.o
+    0x0802cde0   0x0802cde0   0x00000220   Code   RO        37745    i.rgb888_image_blend  lv_draw_sw_blend_to_rgb888.o
+    0x0802d000   0x0802d000   0x00000050   Code   RO        39546    i.rnd_next          lv_demo_benchmark.o
+    0x0802d050   0x0802d050   0x0000000c   Code   RO        39547    i.rnd_reset         lv_demo_benchmark.o
+    0x0802d05c   0x0802d05c   0x000000b0   Code   RO        39548    i.rotated_argb_image_cb  lv_demo_benchmark.o
+    0x0802d10c   0x0802d10c   0x00000048   Code   RO        48642    i.scale1_indic1_anim_cb  lv_demo_widgets.o
+    0x0802d154   0x0802d154   0x000001c8   Code   RO        48643    i.scale2_timer_cb   lv_demo_widgets.o
+    0x0802d31c   0x0802d31c   0x00000038   Code   RO        48644    i.scale3_anim_cb    lv_demo_widgets.o
+    0x0802d354   0x0802d354   0x0000006c   Code   RO        48645    i.scale3_delete_event_cb  lv_demo_widgets.o
+    0x0802d3c0   0x0802d3c0   0x00000038   Code   RO        28670    i.scale_build_custom_label_text  lv_scale.o
+    0x0802d3f8   0x0802d3f8   0x000004ac   Code   RO        28671    i.scale_draw_indicator  lv_scale.o
+    0x0802d8a4   0x0802d8a4   0x00000318   Code   RO        28672    i.scale_draw_main   lv_scale.o
+    0x0802dbbc   0x0802dbbc   0x00000094   Code   RO        28673    i.scale_find_section_tick_idx  lv_scale.o
+    0x0802dc50   0x0802dc50   0x0000008a   Code   RO        28674    i.scale_get_center  lv_scale.o
+    0x0802dcda   0x0802dcda   0x00000126   Code   RO        28675    i.scale_get_label_coords  lv_scale.o
+    0x0802de00   0x0802de00   0x0000035e   Code   RO        28676    i.scale_get_tick_points  lv_scale.o
+    0x0802e15e   0x0802e15e   0x000000b8   Code   RO        28677    i.scale_set_arc_properties  lv_scale.o
+    0x0802e216   0x0802e216   0x000000f8   Code   RO        28678    i.scale_set_indicator_label_properties  lv_scale.o
+    0x0802e30e   0x0802e30e   0x000000c0   Code   RO        28679    i.scale_set_line_properties  lv_scale.o
+    0x0802e3ce   0x0802e3ce   0x00000098   Code   RO        28680    i.scale_store_main_line_tick_width_compensation  lv_scale.o
+    0x0802e466   0x0802e466   0x000000dc   Code   RO        28681    i.scale_store_section_line_tick_width_compensation  lv_scale.o
+    0x0802e542   0x0802e542   0x000000f0   Code   RO        25344    i.scale_update      lv_image.o
+    0x0802e632   0x0802e632   0x00000002   PAD
+    0x0802e634   0x0802e634   0x0000004c   Code   RO        39549    i.screen_sized_text_cb  lv_demo_benchmark.o
+    0x0802e680   0x0802e680   0x00000060   Code   RO        39550    i.scroll_anim       lv_demo_benchmark.o
+    0x0802e6e0   0x0802e6e0   0x00000014   Code   RO        28291    i.scroll_anim_completed_cb  lv_roller.o
+    0x0802e6f4   0x0802e6f4   0x00000012   Code   RO        39551    i.scroll_anim_y_cb  lv_demo_benchmark.o
+    0x0802e706   0x0802e706   0x00000012   Code   RO        48646    i.scroll_anim_y_cb  lv_demo_widgets.o
+    0x0802e718   0x0802e718   0x00000304   Code   RO         6068    i.scroll_area_into_view  lv_obj_scroll.o
+    0x0802ea1c   0x0802ea1c   0x00000010   Code   RO         6069    i.scroll_completed_completed_cb  lv_obj_scroll.o
+    0x0802ea2c   0x0802ea2c   0x00000084   Code   RO        31165    i.scroll_to_selected_cell  lv_table.o
+    0x0802eab0   0x0802eab0   0x0000001a   Code   RO         6070    i.scroll_x_anim     lv_obj_scroll.o
+    0x0802eaca   0x0802eaca   0x0000001a   Code   RO         6071    i.scroll_y_anim     lv_obj_scroll.o
+    0x0802eae4   0x0802eae4   0x0000016a   Code   RO         4219    i.scrollbar_init_draw_dsc  lv_obj.o
+    0x0802ec4e   0x0802ec4e   0x00000084   Code   RO        34116    i.search_suitable_block  lv_tlsf.o
+    0x0802ecd2   0x0802ecd2   0x00000012   Code   RO        26335    i.set_ofs_x_anim    lv_label.o
+    0x0802ece4   0x0802ece4   0x00000012   Code   RO        26336    i.set_ofs_y_anim    lv_label.o
+    0x0802ecf6   0x0802ecf6   0x00000010   Code   RO        28292    i.set_y_anim        lv_roller.o
+    0x0802ed06   0x0802ed06   0x00000002   PAD
+    0x0802ed08   0x0802ed08   0x0000006c   Code   RO        39552    i.shake_anim        lv_demo_benchmark.o
+    0x0802ed74   0x0802ed74   0x00000012   Code   RO        39553    i.shake_anim_y_cb   lv_demo_benchmark.o
+    0x0802ed86   0x0802ed86   0x00000002   Code   RO        48647    i.shop_chart_event_cb  lv_demo_widgets.o
+    0x0802ed88   0x0802ed88   0x000006ec   Code   RO        48648    i.shop_create       lv_demo_widgets.o
+    0x0802f474   0x0802f474   0x00000046   Code   RO        39554    i.single_rectangle_cb  lv_demo_benchmark.o
+    0x0802f4ba   0x0802f4ba   0x00000002   PAD
+    0x0802f4bc   0x0802f4bc   0x0000023c   Code   RO        48649    i.slider_event_cb   lv_demo_widgets.o
+    0x0802f6f8   0x0802f6f8   0x000000b4   Code   RO        48650    i.slideshow_anim_completed_cb  lv_demo_widgets.o
+    0x0802f7ac   0x0802f7ac   0x0000008c   Code   RO        32247    i.start_cursor_blink  lv_textarea.o
+    0x0802f838   0x0802f838   0x0000005e   Code   RO         6454    i.style_has_flag    lv_obj_style.o
+    0x0802f896   0x0802f896   0x00000002   PAD
+    0x0802f898   0x0802f898   0x00002b48   Code   RO        20068    i.style_init        lv_theme_default.o
+    0x080323e0   0x080323e0   0x00000024   Code   RO        20069    i.style_init_reset  lv_theme_default.o
+    0x08032404   0x08032404   0x0000031c   Code   RO        39555    i.summary_create    lv_demo_benchmark.o
+    0x08032720   0x08032720   0x00000104   Code   RO        48651    i.ta_event_cb       lv_demo_widgets.o
+    0x08032824   0x08032824   0x000000c2   Code   RO        39556    i.table_draw_task_event_cb  lv_demo_benchmark.o
+    0x080328e6   0x080328e6   0x00000002   PAD
+    0x080328e8   0x080328e8   0x0000003c   Code   RO        48652    i.tabview_delete_event_cb  lv_demo_widgets.o
+    0x08032924   0x08032924   0x00001000   Code   RO        20070    i.theme_apply       lv_theme_default.o
+    0x08033924   0x08033924   0x000000e8   Code   RO        32783    i.tileview_event_cb  lv_tileview.o
+    0x08033a0c   0x08033a0c   0x00000018   Code   RO        34117    i.tlsf_ffs          lv_tlsf.o
+    0x08033a24   0x08033a24   0x00000016   Code   RO        34118    i.tlsf_fls          lv_tlsf.o
+    0x08033a3a   0x08033a3a   0x00000222   Code   RO         6455    i.trans_anim_cb     lv_obj_style.o
+    0x08033c5c   0x08033c5c   0x000000d0   Code   RO         6456    i.trans_anim_completed_cb  lv_obj_style.o
+    0x08033d2c   0x08033d2c   0x00000048   Code   RO         6457    i.trans_anim_start_cb  lv_obj_style.o
+    0x08033d74   0x08033d74   0x000000b8   Code   RO         6458    i.trans_delete      lv_obj_style.o
+    0x08033e2c   0x08033e2c   0x000001c6   Code   RO        35525    i.transform_a8      lv_draw_sw_transform.o
+    0x08033ff2   0x08033ff2   0x00000230   Code   RO        35526    i.transform_argb8888  lv_draw_sw_transform.o
+    0x08034222   0x08034222   0x00000186   Code   RO         5476    i.transform_point_array  lv_obj_pos.o
+    0x080343a8   0x080343a8   0x000000ba   Code   RO        35527    i.transform_point_upscaled  lv_draw_sw_transform.o
+    0x08034462   0x08034462   0x0000022e   Code   RO        35528    i.transform_rgb565a8  lv_draw_sw_transform.o
+    0x08034690   0x08034690   0x00000208   Code   RO        35529    i.transform_rgb888  lv_draw_sw_transform.o
+    0x08034898   0x08034898   0x000000c8   Code   RO        28293    i.transform_vect_recursive  lv_roller.o
+    0x08034960   0x08034960   0x0000000a   Code   RO        11632    i.unicode_list_compare  lv_font_fmt_txt.o
+    0x0803496a   0x0803496a   0x0000007c   Code   RO        25345    i.update_align      lv_image.o
+    0x080349e6   0x080349e6   0x000001e4   Code   RO        32248    i.update_cursor_position_on_click  lv_textarea.o
+    0x08034bca   0x08034bca   0x00000210   Code   RO        29155    i.update_knob_pos   lv_slider.o
+    0x08034dda   0x08034dda   0x000001fa   Code   RO         4220    i.update_obj_state  lv_obj.o
+    0x08034fd4   0x08034fd4   0x00000070   Code   RO        23336    i.value_changed_event_cb  lv_calendar_header_arrow.o
+    0x08035044   0x08035044   0x00000082   Code   RO        23588    i.value_changed_event_cb  lv_calendar_header_dropdown.o
+    0x080350c6   0x080350c6   0x000000e8   Code   RO        21277    i.value_update      lv_arc.o
+    0x080351ae   0x080351ae   0x0000003a   Code   RO         7811    i.wait_for_flushing  lv_refr.o
+    0x080351e8   0x080351e8   0x00000026   Code   RO        39557    i.widgets_demo_cb   lv_demo_benchmark.o
+    0x0803520e   0x0803520e   0x00000018   Code   RO         9313    i.width_to_stride   lv_draw_buf.o
+    0x08035226   0x08035226   0x0000007e   Code   RO        23589    i.year_event_cb     lv_calendar_header_dropdown.o
+    0x080352a4   0x080352a4   0x00000010   Data   RO         3731    .constdata          system_stm32h7xx_dualcore_boot_cm4_cm7.o
+    0x080352b4   0x080352b4   0x00000024   Data   RO         4221    .constdata          lv_obj.o
+    0x080352d8   0x080352d8   0x00000010   Data   RO         5477    .constdata          lv_obj_pos.o
+    0x080352e8   0x080352e8   0x00000010   Data   RO         9677    .constdata          lv_draw_image.o
+    0x080352f8   0x080352f8   0x00000014   Data   RO        11633    .constdata          lv_font_fmt_txt.o
+    0x0803530c   0x0803530c   0x00003548   Data   RO        11854    .constdata          lv_font_montserrat_14.o
+    0x08038854   0x08038854   0x00007014   Data   RO        12129    .constdata          lv_font_montserrat_24.o
+    0x0803f868   0x0803f868   0x000000b6   Data   RO        16027    .constdata          lv_math.o
+    0x0803f91e   0x0803f91e   0x0000023a   Data   RO        16187    .constdata          lv_palette.o
+    0x0803fb58   0x0803fb58   0x000000b0   Data   RO        16863    .constdata          lv_style.o
+    0x0803fc08   0x0803fc08   0x0000000c   Data   RO        20071    .constdata          lv_theme_default.o
+    0x0803fc14   0x0803fc14   0x00000024   Data   RO        21278    .constdata          lv_arc.o
+    0x0803fc38   0x0803fc38   0x00000024   Data   RO        21710    .constdata          lv_bar.o
+    0x0803fc5c   0x0803fc5c   0x00000024   Data   RO        22040    .constdata          lv_button.o
+    0x0803fc80   0x0803fc80   0x00000024   Data   RO        22302    .constdata          lv_buttonmatrix.o
+    0x0803fca4   0x0803fca4   0x00000024   Data   RO        22726    .constdata          lv_calendar.o
+    0x0803fcc8   0x0803fcc8   0x00000024   Data   RO        23337    .constdata          lv_calendar_header_arrow.o
+    0x0803fcec   0x0803fcec   0x00000024   Data   RO        23590    .constdata          lv_calendar_header_dropdown.o
+    0x0803fd10   0x0803fd10   0x00000024   Data   RO        24112    .constdata          lv_chart.o
+    0x0803fd34   0x0803fd34   0x00000024   Data   RO        24569    .constdata          lv_checkbox.o
+    0x0803fd58   0x0803fd58   0x00000048   Data   RO        24894    .constdata          lv_dropdown.o
+    0x0803fda0   0x0803fda0   0x00000024   Data   RO        25346    .constdata          lv_image.o
+    0x0803fdc4   0x0803fdc4   0x000004ac   Data   RO        26009    .constdata          lv_keyboard.o
+    0x08040270   0x08040270   0x00000024   Data   RO        26337    .constdata          lv_label.o
+    0x08040294   0x08040294   0x00000024   Data   RO        26773    .constdata          lv_led.o
+    0x080402b8   0x080402b8   0x00000024   Data   RO        27056    .constdata          lv_line.o
+    0x080402dc   0x080402dc   0x0000006c   Data   RO        27302    .constdata          lv_list.o
+    0x08040348   0x08040348   0x00000144   Data   RO        27582    .constdata          lv_menu.o
+    0x0804048c   0x0804048c   0x000000fc   Data   RO        27973    .constdata          lv_msgbox.o
+    0x08040588   0x08040588   0x00000048   Data   RO        28294    .constdata          lv_roller.o
+    0x080405d0   0x080405d0   0x00000024   Data   RO        28683    .constdata          lv_scale.o
+    0x080405f4   0x080405f4   0x00000024   Data   RO        29156    .constdata          lv_slider.o
+    0x08040618   0x08040618   0x00000024   Data   RO        29985    .constdata          lv_spinbox.o
+    0x0804063c   0x0804063c   0x00000024   Data   RO        30296    .constdata          lv_spinner.o
+    0x08040660   0x08040660   0x00000024   Data   RO        30868    .constdata          lv_switch.o
+    0x08040684   0x08040684   0x00000024   Data   RO        31166    .constdata          lv_table.o
+    0x080406a8   0x080406a8   0x00000024   Data   RO        31574    .constdata          lv_tabview.o
+    0x080406cc   0x080406cc   0x00000024   Data   RO        32249    .constdata          lv_textarea.o
+    0x080406f0   0x080406f0   0x00000048   Data   RO        32784    .constdata          lv_tileview.o
+    0x08040738   0x08040738   0x00000024   Data   RO        35708    .constdata          lv_win.o
+    0x0804075c   0x0804075c   0x00000100   Data   RO        39558    .constdata          lv_demo_benchmark.o
+    0x0804085c   0x0804085c   0x00007548   Data   RO        40836    .constdata          img_benchmark_cogwheel_argb.o
+    0x08047da4   0x08047da4   0x00004e38   Data   RO        41192    .constdata          img_benchmark_cogwheel_rgb.o
+    0x0804cbdc   0x0804cbdc   0x00006418   Data   RO        48042    .constdata          img_transform_avatar_15.o
+    0x08052ff4   0x08052ff4   0x0000001c   Data   RO        48654    .constdata          lv_demo_widgets.o
+    0x08053010   0x08053010   0x000024d8   Data   RO        49371    .constdata          img_clothes.o
+    0x080554e8   0x080554e8   0x00018118   Data   RO        49898    .constdata          img_demo_widgets_avatar.o
+    0x0806d600   0x0806d600   0x00000e28   Data   RO        49907    .constdata          img_demo_widgets_needle.o
+    0x0806e428   0x0806e428   0x00001c50   Data   RO        49916    .constdata          img_lvgl_logo.o
+    0x08070078   0x08070078   0x00000004   Data   RO         4222    .conststring        lv_obj.o
+    0x0807007c   0x0807007c   0x00000004   Data   RO        21279    .conststring        lv_arc.o
+    0x08070080   0x08070080   0x00000004   Data   RO        21711    .conststring        lv_bar.o
+    0x08070084   0x08070084   0x00000004   Data   RO        22041    .conststring        lv_button.o
+    0x08070088   0x08070088   0x00000039   Data   RO        22303    .conststring        lv_buttonmatrix.o
+    0x080700c1   0x080700c1   0x00000003   PAD
+    0x080700c4   0x080700c4   0x00000027   Data   RO        22727    .conststring        lv_calendar.o
+    0x080700eb   0x080700eb   0x00000001   PAD
+    0x080700ec   0x080700ec   0x00000081   Data   RO        23338    .conststring        lv_calendar_header_arrow.o
+    0x0807016d   0x0807016d   0x00000003   PAD
+    0x08070170   0x08070170   0x000002b1   Data   RO        23591    .conststring        lv_calendar_header_dropdown.o
+    0x08070421   0x08070421   0x00000003   PAD
+    0x08070424   0x08070424   0x00000006   Data   RO        24113    .conststring        lv_chart.o
+    0x0807042a   0x0807042a   0x00000002   PAD
+    0x0807042c   0x0807042c   0x00000009   Data   RO        24570    .conststring        lv_checkbox.o
+    0x08070435   0x08070435   0x00000003   PAD
+    0x08070438   0x08070438   0x0000000e   Data   RO        24895    .conststring        lv_dropdown.o
+    0x08070446   0x08070446   0x00000002   PAD
+    0x08070448   0x08070448   0x00000006   Data   RO        25347    .conststring        lv_image.o
+    0x0807044e   0x0807044e   0x00000002   PAD
+    0x08070450   0x08070450   0x00000194   Data   RO        26010    .conststring        lv_keyboard.o
+    0x080705e4   0x080705e4   0x00000006   Data   RO        26338    .conststring        lv_label.o
+    0x080705ea   0x080705ea   0x00000002   PAD
+    0x080705ec   0x080705ec   0x00000004   Data   RO        26774    .conststring        lv_led.o
+    0x080705f0   0x080705f0   0x00000005   Data   RO        27057    .conststring        lv_line.o
+    0x080705f5   0x080705f5   0x00000003   PAD
+    0x080705f8   0x080705f8   0x0000001e   Data   RO        27303    .conststring        lv_list.o
+    0x08070616   0x08070616   0x00000002   PAD
+    0x08070618   0x08070618   0x0000003d   Data   RO        27583    .conststring        lv_menu.o
+    0x08070655   0x08070655   0x00000003   PAD
+    0x08070658   0x08070658   0x00000077   Data   RO        27974    .conststring        lv_msgbox.o
+    0x080706cf   0x080706cf   0x00000001   PAD
+    0x080706d0   0x080706d0   0x00000017   Data   RO        28295    .conststring        lv_roller.o
+    0x080706e7   0x080706e7   0x00000001   PAD
+    0x080706e8   0x080706e8   0x00000006   Data   RO        28684    .conststring        lv_scale.o
+    0x080706ee   0x080706ee   0x00000002   PAD
+    0x080706f0   0x080706f0   0x00000007   Data   RO        29157    .conststring        lv_slider.o
+    0x080706f7   0x080706f7   0x00000001   PAD
+    0x080706f8   0x080706f8   0x00000008   Data   RO        29986    .conststring        lv_spinbox.o
+    0x08070700   0x08070700   0x00000008   Data   RO        30297    .conststring        lv_spinner.o
+    0x08070708   0x08070708   0x00000007   Data   RO        30869    .conststring        lv_switch.o
+    0x0807070f   0x0807070f   0x00000001   PAD
+    0x08070710   0x08070710   0x00000006   Data   RO        31167    .conststring        lv_table.o
+    0x08070716   0x08070716   0x00000002   PAD
+    0x08070718   0x08070718   0x00000008   Data   RO        31575    .conststring        lv_tabview.o
+    0x08070720   0x08070720   0x00000009   Data   RO        32250    .conststring        lv_textarea.o
+    0x08070729   0x08070729   0x00000003   PAD
+    0x0807072c   0x0807072c   0x00000011   Data   RO        32785    .conststring        lv_tileview.o
+    0x0807073d   0x0807073d   0x00000003   PAD
+    0x08070740   0x08070740   0x00000004   Data   RO        35709    .conststring        lv_win.o
+    0x08070744   0x08070744   0x00000df8   Data   RO        39559    .conststring        lv_demo_benchmark.o
+    0x0807153c   0x0807153c   0x00000070   Data   RO        48655    .conststring        lv_demo_widgets.o
+    0x080715ac   0x080715ac   0x00000020   Data   RO        50002    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x24000000, Load base: 0x080715d0, Size: 0x00010d70, Max: 0x00020000, ABSOLUTE, COMPRESSED[0x00000224])
+    Execution Region RW_IRAM1 (Exec base: 0x24000000, Load base: 0x080715cc, Size: 0x00010d70, Max: 0x00020000, ABSOLUTE, COMPRESSED[0x00000228])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -15752,7 +15752,7 @@ Image component sizes
       2406          0          0          0          0      35508   lv_tlsf.o
         84          0          0          0          0        924   lv_utils.o
        140          6         40          0          0      47693   lv_win.o
-        40          0          0          0          0        967   lvgl_app.o
+        34          0          0          0          0        963   lvgl_app.o
        658         24          0          0          0    1557602   main_1.o
         36          8        664          0       1024        844   startup_stm32h757xx_cm7.o
        272         52          0          9          0      31260   stm32h7xx_hal.o
@@ -15771,9 +15771,9 @@ Image component sizes
        288         44         16          8          0       1542   system_stm32h7xx_dualcore_boot_cm4_cm7.o
 
     ----------------------------------------------------------------------
-    216536       4762     247232       1628      67348    7208038   Object Totals
+    216532       4762     247232       1628      67348    7208034   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-       184          0         43          7          4          0   (incl. Padding)
+       186          0         43          7          4          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -15821,13 +15821,13 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-    217104       4778     247232       1628      67348    7052378   Grand Totals
-    217104       4778     247232        548      67348    7052378   ELF Image Totals (compressed)
-    217104       4778     247232        548          0          0   ROM Totals
+    217100       4778     247232       1628      67348    7052374   Grand Totals
+    217100       4778     247232        552      67348    7052374   ELF Image Totals (compressed)
+    217100       4778     247232        552          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)               464336 ( 453.45kB)
+    Total RO  Size (Code + RO Data)               464332 ( 453.45kB)
     Total RW  Size (RW Data + ZI Data)             68976 (  67.36kB)
     Total ROM Size (Code + RO Data + RW Data)     464884 ( 453.99kB)
 
