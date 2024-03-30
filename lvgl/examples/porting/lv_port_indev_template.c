@@ -115,7 +115,9 @@ static void touchpad_read(lv_indev_t * indev_drv, lv_indev_data_t * data)
 static bool touchpad_is_pressed(void)
 {
     /*Your code comes here*/
-    if (User_Touch.Touch_State == 0x80)
+		uint8_t _temp;	//中间变量
+		HAL_I2C_Mem_Read(&hi2c2, GT911_DIV_R, GT_GSTID_REG, I2C_MEMADD_SIZE_16BIT, &_temp, 1, 0xff);
+    if (_temp& 0x80)
     {
         return true;
     }
@@ -126,12 +128,22 @@ static bool touchpad_is_pressed(void)
 static void touchpad_get_xy(int32_t * x, int32_t * y)
 {
     /*Your code comes here*/
-    int32_t x_temp;
-    int32_t y_temp;
-    x_temp = User_Touch.Touch_XY[0].X_Point;
-    y_temp = User_Touch.Touch_XY[0].Y_Point;
-    (*x) = x_temp;
-    (*y) = y_temp;
+			int32_t x_temp;
+		int32_t y_temp;
+		uint8_t _temp;
+		HAL_I2C_Mem_Read(&hi2c2, GT911_DIV_R, (GT_TPD_Sta  + X_L), I2C_MEMADD_SIZE_16BIT, &_temp, 1, 0xff);
+		x_temp  = _temp;
+		HAL_I2C_Mem_Read(&hi2c2, GT911_DIV_R, (GT_TPD_Sta  + X_H), I2C_MEMADD_SIZE_16BIT, &_temp, 1, 0xff);
+		x_temp |= (_temp<<8);
+
+		HAL_I2C_Mem_Read(&hi2c2, GT911_DIV_R, (GT_TPD_Sta  + Y_L), I2C_MEMADD_SIZE_16BIT, &_temp, 1, 0xff);
+		y_temp  = _temp;
+		HAL_I2C_Mem_Read(&hi2c2, GT911_DIV_R, (GT_TPD_Sta  + Y_H), I2C_MEMADD_SIZE_16BIT, &_temp, 1, 0xff);
+		y_temp |= (_temp<<8);
+			_temp=0;
+		HAL_I2C_Mem_Write(&hi2c2, GT911_DIV_W, GT_GSTID_REG, I2C_MEMADD_SIZE_16BIT, &_temp, 1, 0xff);
+		(*x) = x_temp;
+		(*y) = y_temp;
 }
 
 #else /*Enable this file at the top*/

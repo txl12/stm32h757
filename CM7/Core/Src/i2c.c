@@ -21,7 +21,6 @@
 #include "i2c.h"
 
 /* USER CODE BEGIN 0 */
-#include "SEGGER_RTT.h"
 
 const uint8_t GT9147_CFG_TBL[]=
 { 
@@ -99,63 +98,9 @@ void Software_Reset(uint8_t gt_SR_type)
 	}
 }
 
-/*
-	功能：gt911触摸扫描，判断当前是否被触摸
-	参数1：
-*/
-void gt911_Scanf(void)
-{
-	static uint8_t timer_=0;
-	timer_++;
-	if(timer_<10)		//防止短时间多次进入判断
-	{
-		return;
-	}
-	timer_=0;
-	
-	uint8_t _temp;	//中间变量
-	
-	GT911_ReadReg(GT_GSTID_REG, &_temp, 1);//读0x814E寄存器
-	
-	User_Touch.Touch_State = _temp;
-	
-	User_Touch.Touch_Number = (User_Touch.Touch_State & 0x0f);	//获取触摸点数
-	User_Touch.Touch_State = (User_Touch.Touch_State & 0x80);	//触摸状态
-	
-	switch(User_Touch.Touch_State)	//判断是否有触摸数据
-	{
-		case TOUCH__NO:		//没有数据
-			
-		break;
-		case TOUCH_ING:		//触摸中~后，有数据，并读出数据
-			
-			for(uint8_t i=0; i<User_Touch.Touch_Number; i++)
-			{
-				GT911_ReadReg((GT_TPD_Sta + i*8 + X_L), &_temp, 1);	//读出触摸x坐标的低8位
-				User_Touch.Touch_XY[i].X_Point  = _temp;
-				GT911_ReadReg((GT_TPD_Sta + i*8 + X_H), &_temp, 1);	//读出触摸x坐标的高8位
-				User_Touch.Touch_XY[i].X_Point |= (_temp<<8);
-				
-				GT911_ReadReg((GT_TPD_Sta + i*8 + Y_L), &_temp, 1);	//读出触摸y坐标的低8位
-				User_Touch.Touch_XY[i].Y_Point  = _temp;
-				GT911_ReadReg((GT_TPD_Sta + i*8 + Y_H), &_temp, 1);	//读出触摸y坐标的高8位
-				User_Touch.Touch_XY[i].Y_Point |= (_temp<<8);
-				
-				GT911_ReadReg((GT_TPD_Sta + i*8 + S_L), &_temp, 1);	//读出触摸大小数据的低8位
-				User_Touch.Touch_XY[i].S_Point  = _temp;
-				GT911_ReadReg((GT_TPD_Sta + i*8 + S_H), &_temp, 1);	//读出触摸大小数据的高8位
-				User_Touch.Touch_XY[i].S_Point |= (_temp<<8); 
-                
-//                SEGGER_RTT_printf(0, "touch[%d], x: %d, y: %d, s: %d\r\n", i, User_Touch.Touch_XY[i].X_Point, User_Touch.Touch_XY[i].Y_Point, User_Touch.Touch_XY[i].S_Point);
-			}
-			
-			_temp=0;
-			GT911_WriteReg(GT_GSTID_REG, &_temp, 1);	//清除数据标志位
-		break;
-	}
-}
 
-
+//HAL_StatusTypeDef res ;
+//static	uint8_t index=0;
 void gt911_Init(void)
 {
     HAL_GPIO_WritePin(LCD_TOUCH_RES_GPIO_Port, LCD_TOUCH_RES_Pin, GPIO_PIN_RESET);
@@ -206,7 +151,7 @@ void MX_I2C2_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN I2C2_Init 2 */
-  HAL_GPIO_WritePin(LCD_TOUCH_RES_GPIO_Port, LCD_TOUCH_RES_Pin, GPIO_PIN_SET);
+//  HAL_GPIO_WritePin(LCD_TOUCH_RES_GPIO_Port, LCD_TOUCH_RES_Pin, GPIO_PIN_SET);
   /* USER CODE END I2C2_Init 2 */
 
 }
@@ -238,8 +183,8 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
     */
     GPIO_InitStruct.Pin = LCD_TOUCH_SCL_Pin|LCD_TOUCH_SDA_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF4_I2C2;
     HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
 

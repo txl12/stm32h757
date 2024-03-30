@@ -137,7 +137,7 @@
             <DriverSelection>4101</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
-          <Flash2>BIN\UL2V8M.DLL</Flash2>
+          <Flash2>BIN\UL2CM3.DLL</Flash2>
           <Flash3></Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
@@ -1828,6 +1828,56 @@
               <FileType>1</FileType>
               <FilePath>..\lvgl\src\osal\lv_os_none.c</FilePath>
             </File>
+            <File>
+              <FileName>lv_sysmon.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\sysmon\lv_sysmon.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_file_explorer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\file_explorer\lv_file_explorer.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_fragment.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\fragment\lv_fragment.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_fragment_manager.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\fragment\lv_fragment_manager.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_gridnav.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\gridnav\lv_gridnav.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_ime_pinyin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\ime\lv_ime_pinyin.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_imgfont.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\imgfont\lv_imgfont.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_monkey.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\monkey\lv_monkey.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_observer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\observer\lv_observer.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_snapshot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\snapshot\lv_snapshot.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2591,7 +2641,7 @@
             <DriverSelection>4101</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
-          <Flash2>BIN\UL2V8M.DLL</Flash2>
+          <Flash2>BIN\UL2CM3.DLL</Flash2>
           <Flash3></Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
@@ -2794,7 +2844,7 @@
               <MiscControls></MiscControls>
               <Define>CORE_CM7,USE_HAL_DRIVER,STM32H757xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../CM7/Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;../lvgl;../lvgl/demos;../lvgl/examples;../lvgl/src;../user;../user/lvgl_app;..\SEGGER_RTT</IncludePath>
+              <IncludePath>../CM7/Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;../lvgl;../lvgl/demos;../lvgl/examples;../lvgl/src;../user;../user/lvgl_app;../SEGGER_RTT</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -4077,6 +4127,56 @@
               <FileName>lv_os_none.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\src\osal\lv_os_none.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_sysmon.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\sysmon\lv_sysmon.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_file_explorer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\file_explorer\lv_file_explorer.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_fragment.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\fragment\lv_fragment.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_fragment_manager.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\fragment\lv_fragment_manager.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_gridnav.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\gridnav\lv_gridnav.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_ime_pinyin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\ime\lv_ime_pinyin.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_imgfont.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\imgfont\lv_imgfont.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_monkey.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\monkey\lv_monkey.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_observer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\observer\lv_observer.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_snapshot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\others\snapshot\lv_snapshot.c</FilePath>
             </File>
           </Files>
         </Group>

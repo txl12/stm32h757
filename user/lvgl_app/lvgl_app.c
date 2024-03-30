@@ -5,7 +5,7 @@
 #include "main.h"
 #include "lv_demos.h"
 #include "i2c.h"
-#define LVGL_TICK 	10
+#define LVGL_TICK 	1
 
 static void lvgl_init( void ) 
 {
@@ -14,7 +14,7 @@ static void lvgl_init( void )
     lv_port_indev_init();
     // lv_port_indev_init();
     // lv_port_fs_init();
-    lv_demo_widgets();
+    lv_demo_benchmark();
 }
 
 int lvgl_app(void)
@@ -23,7 +23,6 @@ int lvgl_app(void)
 
 	while(1) {
 		// ??? lv_tick_inc ??? lv_timer_handler
-        gt911_Scanf();
 		lv_timer_handler();
 		HAL_Delay(LVGL_TICK);
 	}
