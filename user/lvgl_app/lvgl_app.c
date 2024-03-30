@@ -14,7 +14,7 @@ static void lvgl_init( void )
     lv_port_indev_init();
     // lv_port_indev_init();
     // lv_port_fs_init();
-    lv_demo_benchmark();
+    lv_demo_widgets();
 }
 
 int lvgl_app(void)

@@ -1878,6 +1878,96 @@
               <FileType>1</FileType>
               <FilePath>..\lvgl\src\others\snapshot\lv_snapshot.c</FilePath>
             </File>
+            <File>
+              <FileName>lv_image_buf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\lv_image_buf.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sw_mask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\sw\lv_draw_sw_mask.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_buf_vg_lite.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_buf_vg_lite.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_vg_lite_grad.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_vg_lite_grad.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_vg_lite_decoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_vg_lite_decoder.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_vector.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_vector.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_triangle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_triangle.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_mask_rect.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_mask_rect.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_line.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_line.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_layer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_layer.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_label.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_label.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_img.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_img.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_fill.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_fill.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_box_shadow.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_box_shadow.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_border.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_border.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_arc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_arc.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\sdl\lv_draw_sdl.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2827,7 +2917,7 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>2</wLevel>
+            <wLevel>1</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
@@ -4177,6 +4267,96 @@
               <FileName>lv_snapshot.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\src\others\snapshot\lv_snapshot.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_image_buf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\lv_image_buf.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sw_mask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\sw\lv_draw_sw_mask.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_buf_vg_lite.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_buf_vg_lite.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_vg_lite_grad.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_vg_lite_grad.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_vg_lite_decoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_vg_lite_decoder.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_vector.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_vector.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_triangle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_triangle.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_mask_rect.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_mask_rect.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_line.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_line.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_layer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_layer.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_label.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_label.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_img.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_img.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_fill.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_fill.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_box_shadow.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_box_shadow.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_border.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_border.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite_arc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite_arc.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_vg_lite.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\vg_lite\lv_draw_vg_lite.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_sdl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\src\draw\sdl\lv_draw_sdl.c</FilePath>
             </File>
           </Files>
         </Group>
