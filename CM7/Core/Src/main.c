@@ -78,7 +78,7 @@ void PeriphCommonClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-//	SCB->VTOR = 0X90020000;
+	SCB->VTOR = 0X90000000;
 	  /* Enable I-Cache---------------------------------------------------------*/
   SCB_EnableICache();
 
@@ -140,7 +140,7 @@ HSEM notification */
   /* USER CODE BEGIN 2 */
   gt911_Init();
   HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
-
+HAL_LTDC_ProgramLineEvent(&hltdc, 0 );			// 设置行中断，第0行
   /* USER CODE END 2 */
 
   /* Init scheduler */

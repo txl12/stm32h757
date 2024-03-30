@@ -226,7 +226,7 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
     HAL_NVIC_SetPriority(LTDC_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(LTDC_IRQn);
   /* USER CODE BEGIN LTDC_MspInit 1 */
-HAL_LTDC_ProgramLineEvent(&hltdc, 0 );			// 设置行中断，第0行
+//HAL_LTDC_ProgramLineEvent(&hltdc, 0 );			// 设置行中断，第0行
   /* USER CODE END LTDC_MspInit 1 */
   }
 }
