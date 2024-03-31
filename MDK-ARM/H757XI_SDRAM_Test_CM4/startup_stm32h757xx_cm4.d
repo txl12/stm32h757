@@ -1,1 +1,0 @@
-h757xi_sdram_test_cm4\startup_stm32h757xx_cm4.o: startup_stm32h757xx_CM4.s
