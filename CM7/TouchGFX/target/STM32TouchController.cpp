@@ -23,7 +23,9 @@
 /* USER CODE BEGIN STM32TouchController */
 
 #include <STM32TouchController.hpp>
-
+extern "C"{
+extern uint8_t touchpad_get_xy(int32_t * x, int32_t * y);
+};
 void STM32TouchController::init()
 {
     /**
@@ -44,6 +46,9 @@ bool STM32TouchController::sampleTouch(int32_t& x, int32_t& y)
      * By default sampleTouch is called every tick, this can be adjusted by HAL::setTouchSampleRate(int8_t);
      *
      */
+	if(touchpad_get_xy(&x,&y) == 1){
+	    return true;
+	}
     return false;
 }
 

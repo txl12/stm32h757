@@ -21,6 +21,7 @@
 #include "cmsis_os.h"
 #include "crc.h"
 #include "dma2d.h"
+#include "i2c.h"
 #include "ltdc.h"
 #include "gpio.h"
 #include "fmc.h"
@@ -137,6 +138,7 @@ HSEM notification */
   MX_LTDC_Init();
   MX_CRC_Init();
   MX_DMA2D_Init();
+  MX_I2C2_Init();
   MX_TouchGFX_Init();
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();

@@ -17,19 +17,55 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoScreen1ScreenNoTransition();
+        gotoMainMenuCarouselScreenNoTransition();
     }
 
-    // Screen1
-    void gotoScreen1ScreenNoTransition();
+    // MainMenuCarousel
+    void gotoMainMenuCarouselScreenNoTransition();
+
+    // MainMenuAnimatingButtons
+    void gotoMainMenuAnimatingButtonsScreenNoTransition();
+
+    // Controls
+    void gotoControlsScreenNoTransition();
+
+    // Game2D
+    void gotoGame2DScreenNoTransition();
+
+    // Game2048
+    void gotoGame2048ScreenNoTransition();
+
+    // HomeAutomation
+    void gotoHomeAutomationScreenNoTransition();
+
+    // Settings
+    void gotoSettingsScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // Screen1
-    void gotoScreen1ScreenNoTransitionImpl();
+    // MainMenuCarousel
+    void gotoMainMenuCarouselScreenNoTransitionImpl();
+
+    // MainMenuAnimatingButtons
+    void gotoMainMenuAnimatingButtonsScreenNoTransitionImpl();
+
+    // Controls
+    void gotoControlsScreenNoTransitionImpl();
+
+    // Game2D
+    void gotoGame2DScreenNoTransitionImpl();
+
+    // Game2048
+    void gotoGame2048ScreenNoTransitionImpl();
+
+    // HomeAutomation
+    void gotoHomeAutomationScreenNoTransitionImpl();
+
+    // Settings
+    void gotoSettingsScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

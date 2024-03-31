@@ -2,13 +2,43 @@
   "Application": {
     "Screens": [
       {
-        "Name": "Screen1",
+        "Name": "MainMenuCarousel",
         "Components": [
           {
-            "Type": "Box",
-            "Name": "box1",
-            "Width": 1024,
-            "Height": 600,
+            "Type": "Image",
+            "Name": "background",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "carouselmenu\\carousel_background.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "toggleMenuButton",
+            "X": 21,
+            "Y": 14,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "controls\\menu_icon_pressed.png",
+            "Released": "controls\\menu_icon.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "mcuLoad",
+            "X": 610,
+            "Y": 27,
+            "Width": 162,
+            "Height": 27,
+            "CustomContainerDefinitionName": "McuLoadWidget"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "demoHeadline",
+            "X": 35,
+            "Y": 366,
+            "Width": 730,
+            "Height": 34,
+            "TextId": "Carousel_Game_2D_Headline",
+            "TextRotation": "0",
             "Color": {
               "Red": 255,
               "Green": 255,
@@ -17,26 +47,1012 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea1",
-            "Width": 200,
-            "Height": 40,
-            "TextId": "__SingleUse_OIVN",
+            "Name": "demoText",
+            "X": 50,
+            "Y": 400,
+            "Width": 700,
+            "Height": 61,
+            "TextId": "Carousel_Game_2D_Text",
             "TextRotation": "0",
-            "Wildcard1": {}
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "ToggleMenuButtonInteraction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleMenuButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MainMenuAnimatingButtons"
+            }
+          },
+          {
+            "InteractionName": "CarouselSelectionGotoControlsScreen",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Controls"
+            }
+          },
+          {
+            "InteractionName": "CarouselSelectionGotoGame2D",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Game2D"
+            }
+          },
+          {
+            "InteractionName": "CarouselSelectionGotoGame2048",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Game2048"
+            }
+          },
+          {
+            "InteractionName": "CarouselSelectionGotoHomeAutomationScreen",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeAutomation"
+            }
+          },
+          {
+            "InteractionName": "CarouselSelectionGotoSettingsScreen",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Settings"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "MainMenuAnimatingButtons",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "animatingbuttonsmenu\\Animating_buttons_background.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "toggleMenuButton",
+            "X": 21,
+            "Y": 14,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "controls\\menu_icon_pressed.png",
+            "Released": "controls\\menu_icon.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "mcuLoad",
+            "X": 610,
+            "Y": 27,
+            "Width": 162,
+            "Height": 27,
+            "CustomContainerDefinitionName": "McuLoadWidget"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "ToggleMenuButtonInteraction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleMenuButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MainMenuCarousel"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Controls",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "controls\\controls_background.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "dots",
+            "X": 332,
+            "Y": 399,
+            "Width": 136,
+            "Height": 60,
+            "RelativeFilename": "controls\\controls_2dots.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "mcuLoad",
+            "X": 610,
+            "Y": 27,
+            "Width": 162,
+            "Height": 27,
+            "CustomContainerDefinitionName": "McuLoadWidget"
+          },
+          {
+            "Type": "Button",
+            "Name": "gotoMenuButton",
+            "X": 21,
+            "Y": 14,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "controls\\menu_icon_pressed.png",
+            "Released": "controls\\menu_icon.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "headline",
+            "X": 200,
+            "Y": 20,
+            "Width": 400,
+            "Height": 34,
+            "TextId": "Controls_headline0",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "potentiometerScreen",
+            "Y": 84,
+            "Width": 800,
+            "Height": 396,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "board",
+                "Y": 34,
+                "Width": 330,
+                "Height": 310,
+                "RelativeFilename": "controls\\board_image.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "line",
+                "X": 303,
+                "Y": 134,
+                "Width": 127,
+                "Height": 71,
+                "RelativeFilename": "controls\\control_line_indicator.png"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "brightnessScreen",
+            "Y": 84,
+            "Width": 800,
+            "Height": 396,
+            "Components": [
+              {
+                "Type": "Image",
+                "Name": "brightnessSmall",
+                "X": 55,
+                "Y": 71,
+                "Width": 52,
+                "Height": 53,
+                "RelativeFilename": "controls\\icon_brightness_small.png"
+              },
+              {
+                "Type": "Image",
+                "Name": "brightnessLarge",
+                "X": 667,
+                "Y": 55,
+                "Width": 84,
+                "Height": 84,
+                "RelativeFilename": "controls\\icon_brightness_large.png"
+              },
+              {
+                "Type": "Slider",
+                "Name": "slider",
+                "X": 17,
+                "Y": 172,
+                "Width": 766,
+                "Height": 120,
+                "IsHorizontalSlider": true,
+                "BackgroundUnselected": "controls\\slider.png",
+                "BackgroundSelected": "controls\\slider_full.png",
+                "Indicator": "controls\\slider_knop.png",
+                "BackgroundX": 13,
+                "BackgroundY": 24,
+                "IndicatorMax": 646,
+                "ValueMax": 100
+              },
+              {
+                "Type": "TextArea",
+                "Name": "brightnessPercentageText",
+                "X": 483,
+                "Y": 76,
+                "Width": 38,
+                "Height": 73,
+                "TextId": "Controls_brightness_percentage",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "brightnessText",
+                "X": 300,
+                "Y": 26,
+                "Width": 177,
+                "Height": 98,
+                "TextId": "Controls_brightness_readout",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "Wildcard1": {
+                  "UseBuffer": true,
+                  "BufferSize": 5
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "gotoMenuButtonHandler",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "gotoMenuButton"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "presenter->gotoMenuSelected();"
+            }
+          },
+          {
+            "InteractionName": "sliderInteraction",
+            "Trigger": {
+              "Type": "TriggerSliderValueChanged",
+              "TriggerComponent": "slider"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "newBrightnessValueHandler"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Game2D",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "game2d\\game_2d_frame_background.png"
+          },
+          {
+            "Type": "Container",
+            "Name": "gameArea",
+            "X": 80,
+            "Y": 115,
+            "Width": 640,
+            "Height": 290,
+            "Components": []
+          },
+          {
+            "Type": "AnimatedImage",
+            "Name": "playerCharacter",
+            "X": 93,
+            "Y": 311,
+            "Width": 70,
+            "Height": 81,
+            "FileNameFirst": "game2d\\sprite_00.png",
+            "FileNameLast": "game2d\\sprite_09.png",
+            "UpdateTicksInterval": 10,
+            "StartOnLoad": true,
+            "Moveable": true
+          },
+          {
+            "Type": "Button",
+            "Name": "flyButton",
+            "X": 80,
+            "Y": 409,
+            "Width": 70,
+            "Height": 70,
+            "Pressed": "game2d\\game2d_fly_button_pressed.png",
+            "Released": "game2d\\game2d_fly_button.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "chromArtOnOffButton",
+            "X": 160,
+            "Y": 409,
+            "Width": 70,
+            "Height": 70,
+            "Pressed": "game2d\\game2d_st_button_pressed.png",
+            "Released": "game2d\\game2d_st_button_on.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "mcuLoad",
+            "X": 626,
+            "Y": 20,
+            "Width": 162,
+            "Height": 27,
+            "CustomContainerDefinitionName": "McuLoadWidget"
+          },
+          {
+            "Type": "Button",
+            "Name": "menuButton",
+            "X": 20,
+            "Y": 20,
+            "Width": 110,
+            "Height": 29,
+            "Pressed": "game2d\\game2d_menu_button_pressed.png",
+            "Released": "game2d\\game2d_menu_button.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "chromArtDescription",
+            "X": 238,
+            "Y": 444,
+            "Width": 403,
+            "Height": 28,
+            "TextId": "Game_2d_chrom_art_description",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 123,
+              "Green": 175,
+              "Blue": 179
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "chromArtHeader",
+            "X": 238,
+            "Y": 421,
+            "Width": 310,
+            "Height": 25,
+            "TextId": "Game_2d_chrom_art_header",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 123,
+              "Green": 175,
+              "Blue": 179
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "scoreValue",
+            "X": 642,
+            "Y": 440,
+            "Width": 80,
+            "Height": 31,
+            "TextId": "Game_2d_score_value",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 248,
+              "Green": 160
+            },
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 16
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "scoreText",
+            "X": 662,
+            "Y": 420,
+            "Width": 60,
+            "Height": 23,
+            "TextId": "Game_2d_score_text",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 123,
+              "Green": 175,
+              "Blue": 182
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "gotoMenuButtonPressed",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "menuButton"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "presenter->gotoMenuSelected();"
+            }
+          },
+          {
+            "InteractionName": "chromArtButtonInteraction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "chromArtOnOffButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "chromArtButtonHandler"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Game2048",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "game2048\\game_2048_background.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "newGameButton",
+            "X": 528,
+            "Y": 106,
+            "Width": 222,
+            "Height": 62,
+            "Pressed": "game2048\\new_game_button_pressed.png",
+            "Released": "game2048\\new_game_button.png"
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "autoPlayButton",
+            "X": 528,
+            "Y": 183,
+            "Width": 222,
+            "Height": 62,
+            "Pressed": "game2048\\auto_play_button_pressed.png",
+            "Released": "game2048\\auto_play_button.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "howToPlayButton",
+            "X": 528,
+            "Y": 260,
+            "Width": 222,
+            "Height": 62,
+            "Pressed": "game2048\\how_to_play_button_pressed.png",
+            "Released": "game2048\\how_to_play_button.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "gotoMenu",
+            "X": 640,
+            "Y": 423,
+            "Width": 110,
+            "Height": 34,
+            "Pressed": "game2048\\game_2048_menu_button_pressed.png",
+            "Released": "game2048\\game_2048_menu_button.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "mcuLoad",
+            "X": 588,
+            "Y": 336,
+            "Width": 162,
+            "Height": 27,
+            "CustomContainerDefinitionName": "McuLoadWidget"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "scoreTxt",
+            "X": 547,
+            "Y": 38,
+            "Width": 142,
+            "Height": 50,
+            "TextId": "2048_score",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "deltaScoreTxt",
+            "X": 547,
+            "Y": 38,
+            "Width": 142,
+            "Height": 49,
+            "TextId": "2048_score_delta",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 40,
+              "Green": 40,
+              "Blue": 40
+            },
+            "Alpha": 0,
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Fadeable": true,
+            "Moveable": true
+          },
+          {
+            "Type": "Image",
+            "Name": "endGameStatus",
+            "X": 221,
+            "Y": 203,
+            "Width": 359,
+            "Height": 75,
+            "Visible": false,
+            "RelativeFilename": "game2048\\game_2048_you_win.png"
+          },
+          {
+            "Type": "ModalWindow",
+            "Name": "howToPlayModalWindow",
+            "X": 203,
+            "Y": 32,
+            "Width": 800,
+            "Height": 480,
+            "Visible": false,
+            "FileName": "game2048\\how_to_play_background.png",
+            "ModalX": 203,
+            "ModalY": 32,
+            "ModalWidth": 394,
+            "ModalHeight": 417,
+            "Alpha": 160,
+            "Components": [
+              {
+                "Type": "Button",
+                "Name": "closeHowToPlayButton",
+                "X": 343,
+                "Y": 6,
+                "Width": 45,
+                "Height": 45,
+                "Pressed": "game2048\\how_to_play_close_button.png",
+                "Released": "game2048\\how_to_play_close_button.png"
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "gotoMenuPressed",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "gotoMenu"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "presenter->gotoMenuSelected();"
+            }
+          },
+          {
+            "InteractionName": "newGamePressed",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "newGameButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "newGamePressed"
+            }
+          },
+          {
+            "InteractionName": "autoPlayPressed",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "autoPlayButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "autoPlayPressed"
+            }
+          },
+          {
+            "InteractionName": "howToPlayPressed",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "howToPlayButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "howToPlayPressed"
+            }
+          },
+          {
+            "InteractionName": "closeHowToPlayPressed",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "closeHowToPlayButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "closeHowToPlayPressed"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "HomeAutomation",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "homeautomation\\home_automation_background.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "gotoMenuButton",
+            "X": 21,
+            "Y": 14,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "controls\\menu_icon_pressed.png",
+            "Released": "controls\\menu_icon.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "backButton",
+            "X": 17,
+            "Y": 11,
+            "Width": 60,
+            "Height": 60,
+            "Visible": false,
+            "Pressed": "homeautomation\\home_back_button_pressed.png",
+            "Released": "homeautomation\\home_back_button.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "mcuLoad",
+            "X": 610,
+            "Y": 27,
+            "Width": 162,
+            "Height": 27,
+            "CustomContainerDefinitionName": "McuLoadWidget"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "headline",
+            "X": 200,
+            "Y": 20,
+            "Width": 400,
+            "Height": 40,
+            "TextId": "Home_headline_00",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "backButtonClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "backButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "backButtonHandler"
+            }
+          },
+          {
+            "InteractionName": "GotoMenuButtonInteraction",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "gotoMenuButton"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "presenter->gotoMenuSelected();"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Settings",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "controls\\controls_background.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "gotoMenuButton",
+            "X": 21,
+            "Y": 14,
+            "Width": 54,
+            "Height": 54,
+            "Pressed": "controls\\menu_icon_pressed.png",
+            "Released": "controls\\menu_icon.png"
+          },
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "mcuLoad",
+            "X": 610,
+            "Y": 27,
+            "Width": 162,
+            "Height": 27,
+            "CustomContainerDefinitionName": "McuLoadWidget"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "headline",
+            "X": 200,
+            "Y": 20,
+            "Width": 400,
+            "Height": 36,
+            "TextId": "Settings_headline0",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "settingsButton",
+            "X": 317,
+            "Y": 394,
+            "Width": 166,
+            "Height": 70,
+            "Pressed": "settings\\settings_button_pressed.png",
+            "Released": "settings\\settings_button.png",
+            "Fadeable": true
+          },
+          {
+            "Type": "Container",
+            "Name": "containerViewPort",
+            "Y": 84,
+            "Width": 800,
+            "Height": 396,
+            "Components": [
+              {
+                "Type": "Container",
+                "Name": "mainScreenContainer",
+                "Width": 800,
+                "Height": 396,
+                "Moveable": true,
+                "Components": [
+                  {
+                    "Type": "Image",
+                    "Name": "calendar",
+                    "X": 440,
+                    "Y": 46,
+                    "Width": 220,
+                    "Height": 240,
+                    "RelativeFilename": "settings\\settings_calendar.png"
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "mainScreenDateDayText",
+                    "X": 488,
+                    "Y": 116,
+                    "Width": 125,
+                    "Height": 92,
+                    "TextId": "Settings_main_date_day",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 27,
+                      "Green": 56,
+                      "Blue": 72
+                    },
+                    "Wildcard1": {
+                      "UseBuffer": true,
+                      "BufferSize": 5
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "mainScreenDateYearText",
+                    "X": 488,
+                    "Y": 212,
+                    "Width": 125,
+                    "Height": 35,
+                    "TextId": "Settings_main_date_year",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 27,
+                      "Green": 56,
+                      "Blue": 72
+                    },
+                    "Wildcard1": {
+                      "UseBuffer": true,
+                      "BufferSize": 5
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "mainScreenDateMonthText",
+                    "X": 460,
+                    "Y": 82,
+                    "Width": 180,
+                    "Height": 40,
+                    "TextId": "Settings_main_date_month",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "Wildcard1": {
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "settingsContainer",
+                "Width": 800,
+                "Height": 396,
+                "Moveable": true,
+                "Components": []
+              },
+              {
+                "Type": "Image",
+                "Name": "dotBackground",
+                "X": 313,
+                "Y": 315,
+                "Width": 174,
+                "Height": 60,
+                "RelativeFilename": "controls\\controls_3dots.png",
+                "Moveable": true
+              },
+              {
+                "Type": "Button",
+                "Name": "nextDoneButton",
+                "X": 594,
+                "Y": 310,
+                "Width": 166,
+                "Height": 70,
+                "Pressed": "settings\\settings_next_pressed.png",
+                "Released": "settings\\settings_next.png",
+                "Moveable": true
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "gotoMenuButtonHandler",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "gotoMenuButton"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "presenter->gotoMenuSelected();"
+            }
+          },
+          {
+            "InteractionName": "NextDoneButtonHandler",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "nextDoneButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "nextDoneButtonHandler"
+            }
+          },
+          {
+            "InteractionName": "SettingsButtonHandler",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "settingsButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "settingsButtonHandler"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "McuLoadWidget",
+        "Width": 162,
+        "Height": 27,
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "mcuLoadTxt",
+            "Width": 96,
+            "Height": 27,
+            "TextId": "Demo_View_Mcu_Load_text",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "mcuLoadValueTxt",
+            "X": 89,
+            "Width": 68,
+            "Height": 27,
+            "TextId": "Demo_View_Mcu_Load_value",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
           }
         ],
         "Interactions": []
       }
     ],
-    "CustomContainerDefinitions": [],
     "Name": "MyApplication",
     "Resolution": {
       "Width": 1024,
       "Height": 600
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Screen1",
-    "SelectedStartupLanguage": "GB",
+    "StartupScreenName": "MainMenuCarousel",
+    "SelectedStartupLanguage": "GBR",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",
     "AvailableColorDepths": [

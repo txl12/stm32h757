@@ -12,8 +12,20 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/mainmenucarousel_screen/MainMenuCarouselView.hpp>
+#include <gui/mainmenucarousel_screen/MainMenuCarouselPresenter.hpp>
+#include <gui/mainmenuanimatingbuttons_screen/MainMenuAnimatingButtonsView.hpp>
+#include <gui/mainmenuanimatingbuttons_screen/MainMenuAnimatingButtonsPresenter.hpp>
+#include <gui/controls_screen/ControlsView.hpp>
+#include <gui/controls_screen/ControlsPresenter.hpp>
+#include <gui/game2d_screen/Game2DView.hpp>
+#include <gui/game2d_screen/Game2DPresenter.hpp>
+#include <gui/game2048_screen/Game2048View.hpp>
+#include <gui/game2048_screen/Game2048Presenter.hpp>
+#include <gui/homeautomation_screen/HomeAutomationView.hpp>
+#include <gui/homeautomation_screen/HomeAutomationPresenter.hpp>
+#include <gui/settings_screen/SettingsView.hpp>
+#include <gui/settings_screen/SettingsPresenter.hpp>
 
 
 /**
@@ -36,8 +48,14 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< Screen1View,
-            touchgfx::meta::Nil
+    typedef touchgfx::meta::TypeList< MainMenuCarouselView,
+            touchgfx::meta::TypeList< MainMenuAnimatingButtonsView,
+            touchgfx::meta::TypeList< ControlsView,
+            touchgfx::meta::TypeList< Game2DView,
+            touchgfx::meta::TypeList< Game2048View,
+            touchgfx::meta::TypeList< HomeAutomationView,
+            touchgfx::meta::TypeList< SettingsView,
+            touchgfx::meta::Nil > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -49,8 +67,14 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< Screen1Presenter,
-            touchgfx::meta::Nil
+    typedef touchgfx::meta::TypeList< MainMenuCarouselPresenter,
+            touchgfx::meta::TypeList< MainMenuAnimatingButtonsPresenter,
+            touchgfx::meta::TypeList< ControlsPresenter,
+            touchgfx::meta::TypeList< Game2DPresenter,
+            touchgfx::meta::TypeList< Game2048Presenter,
+            touchgfx::meta::TypeList< HomeAutomationPresenter,
+            touchgfx::meta::TypeList< SettingsPresenter,
+            touchgfx::meta::Nil > > > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -73,7 +97,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoScreen1ScreenNoTransition();
+        app.gotoMainMenuCarouselScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)
