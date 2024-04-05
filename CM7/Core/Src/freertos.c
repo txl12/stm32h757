@@ -51,7 +51,7 @@
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
-  .stack_size = 128 * 4,
+  .stack_size = 512 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
 /* Definitions for lvgl */
@@ -59,12 +59,7 @@ osThreadId_t lvglHandle;
 const osThreadAttr_t lvgl_attributes = {
   .name = "lvgl",
   .stack_size = 1024 * 4,
-  .priority = (osPriority_t) osPriorityLow,
-};
-/* Definitions for lvgl_timer */
-osTimerId_t lvgl_timerHandle;
-const osTimerAttr_t lvgl_timer_attributes = {
-  .name = "lvgl_timer"
+  .priority = (osPriority_t) osPriorityRealtime7,
 };
 
 /* Private function prototypes -----------------------------------------------*/
@@ -74,7 +69,6 @@ const osTimerAttr_t lvgl_timer_attributes = {
 
 void StartDefaultTask(void *argument);
 void lvgl_task(void *argument);
-void lvgl_timer_callback(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -95,10 +89,6 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_SEMAPHORES */
   /* add semaphores, ... */
   /* USER CODE END RTOS_SEMAPHORES */
-
-  /* Create the timer(s) */
-  /* creation of lvgl_timer */
-  lvgl_timerHandle = osTimerNew(lvgl_timer_callback, osTimerPeriodic, NULL, &lvgl_timer_attributes);
 
   /* USER CODE BEGIN RTOS_TIMERS */
   /* start timers, add new ones, ... */
@@ -131,15 +121,16 @@ void MX_FREERTOS_Init(void) {
   * @param  argument: Not used
   * @retval None
   */
+extern void touch_poll(void );
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-	osTimerStart(lvgl_timerHandle,5);
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+		touch_poll();
+    osDelay(10);
   }
   /* USER CODE END StartDefaultTask */
 }
@@ -160,14 +151,6 @@ __weak void lvgl_task(void *argument)
     osDelay(1);
   }
   /* USER CODE END lvgl_task */
-}
-
-/* lvgl_timer_callback function */
-__weak void lvgl_timer_callback(void *argument)
-{
-  /* USER CODE BEGIN lvgl_timer_callback */
-
-  /* USER CODE END lvgl_timer_callback */
 }
 
 /* Private application code --------------------------------------------------*/

@@ -21,9 +21,13 @@
 #include "i2c.h"
 
 /* USER CODE BEGIN 0 */
+struct touch_pad gt911;
 void gt911_Init(void)
 {
-    HAL_GPIO_WritePin(LCD_TOUCH_RES_GPIO_Port, LCD_TOUCH_RES_Pin, GPIO_PIN_RESET);
+	gt911.is_pressed =0;
+	gt911.x =0;
+	gt911.y=0;
+	HAL_GPIO_WritePin(LCD_TOUCH_RES_GPIO_Port, LCD_TOUCH_RES_Pin, GPIO_PIN_RESET);
     HAL_Delay(100);
     HAL_GPIO_WritePin(LCD_TOUCH_RES_GPIO_Port, LCD_TOUCH_RES_Pin, GPIO_PIN_SET);
 }
@@ -44,7 +48,7 @@ void MX_I2C2_Init(void)
 
   /* USER CODE END I2C2_Init 1 */
   hi2c2.Instance = I2C2;
-  hi2c2.Init.Timing = 0x307075B1;
+  hi2c2.Init.Timing = 0x00B03FDB;
   hi2c2.Init.OwnAddress1 = 0;
   hi2c2.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c2.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;

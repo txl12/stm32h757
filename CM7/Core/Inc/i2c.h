@@ -39,8 +39,12 @@ extern I2C_HandleTypeDef hi2c2;
 
 #define 	GT911_DIV_W		(GT911_DIV_ID | 0)	//写地址
 #define 	GT911_DIV_R		(GT911_DIV_ID | 1)	//读地址
-
-
+struct touch_pad{
+	uint8_t is_pressed;
+	uint16_t x;
+	uint16_t y;
+};
+extern struct touch_pad gt911;
 
 //GT911 部分寄存器定义 
 #define GT_CTRL_REG 	0X8040   	//GT911控制寄存器
