@@ -32,6 +32,7 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 uint8_t touchpad_get_xy(int32_t * x, int32_t * y);
+extern 	int my_printf(const char *fmt, ...);
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

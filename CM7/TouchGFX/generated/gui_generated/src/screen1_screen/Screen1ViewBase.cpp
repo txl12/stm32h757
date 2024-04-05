@@ -23,7 +23,7 @@ Screen1ViewBase::Screen1ViewBase() :
     scrollableContainer1.setPosition(112, 0, 800, 480);
     scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     scrollableContainer1.setScrollbarsAlpha(255);
-    textArea1.setPosition(0, 0, 800, 9000);
+    textArea1.setPosition(0, 0, 800, 10000);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(121, 44, 245));
     textArea1.setLinespacing(0);
     Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_8WBP).getText());

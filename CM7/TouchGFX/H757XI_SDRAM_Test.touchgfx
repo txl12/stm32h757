@@ -42,7 +42,7 @@
                 "Type": "TextArea",
                 "Name": "textArea1",
                 "Width": 800,
-                "Height": 9000,
+                "Height": 10000,
                 "TextId": "__SingleUse_S944",
                 "TextRotation": "0",
                 "Color": {
@@ -53,7 +53,7 @@
                 "Wildcard1": {
                   "TextId": "__SingleUse_8WBP",
                   "UseBuffer": true,
-                  "BufferSize": 4096
+                  "BufferSize": 8192
                 }
               }
             ]

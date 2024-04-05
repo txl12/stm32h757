@@ -2,6 +2,7 @@
 extern "C"{
 	#include "stdio.h"
 	#include "string.h"
+	static volatile uint8_t print_init =0,reset_disp_text = 0;
 	#define BUF_SIZE  256
 	static uint16_t * text_p;
 		static uint16_t * text_p_base_add;
@@ -20,6 +21,7 @@ void my_put(const char *txt,uint32_t length){
 	info.cur_offset +=length;
 		*text_p=0;
 	}else{ 
+		reset_disp_text=1;
 		info.cur_offset=0;
 		text_p = text_p_base_add;
 		my_put(txt,length);
@@ -29,7 +31,7 @@ int my_printf(const char *fmt, ...){
    va_list args;
     uint32_t length;
     static char rt_log_buf[BUF_SIZE];
-
+if(print_init == 1){
     va_start(args, fmt);
     /* the return value of vsnprintf is the number of bytes that would be
      * written to buffer had if the size of the buffer been sufficiently
@@ -41,8 +43,9 @@ int my_printf(const char *fmt, ...){
         length = BUF_SIZE - 1;
     my_put(rt_log_buf,length);
     va_end(args);
-
-    return length;
+		    return length;
+	}
+    return 0;
 }
 };
 	static int16_t addHeigth = 0, addHeightsum = 0, scrollHeight = 0,textHeight=0;
@@ -59,13 +62,10 @@ text_p =     (uint16_t*)&textArea1Buffer;
 
 void Screen1View::terminal_print()
 {
-
-	
-//Unicode::snprintf(textArea1Buffer, 9, "New Text");
-//	textArea1Buffer[0]='a';
-//	textArea1Buffer[1]=0;
 	int16_t	nowTextHeight = textArea1.getTextHeight();
-
+if(print_init==0){
+print_init=1;
+}
 //	scrollHeight = scrollableContainer1.getHeight();
 		if (nowTextHeight > textHeight)
 	{
@@ -77,6 +77,11 @@ void Screen1View::terminal_print()
 		addHeigth = 0;
 		addHeightsum = 0;
 		nowTextHeight = 0;
+	}
+	if(reset_disp_text ==1){
+	reset_disp_text=0;
+				scrollableContainer1.doScroll(0, addHeightsum);
+				addHeightsum=0;
 	}
 	if(nowTextHeight > scrollHeight + addHeightsum){
 		addHeigth = scrollHeight + addHeightsum - nowTextHeight;
