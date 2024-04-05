@@ -2719,6 +2719,16 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>user_src</GroupName>
+          <Files>
+            <File>
+              <FileName>call_back.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\user\touchgfx\call_back.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>gui</GroupName>
           <GroupOption>
             <CommonProperty>
@@ -2790,6 +2800,11 @@
             </GroupArmAds>
           </GroupOption>
           <Files>
+            <File>
+              <FileName>CustomContainer1.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../cm7/touchgfx/gui/src/containers/customcontainer1.cpp</FilePath>
+            </File>
             <File>
               <FileName>FrontendApplication.cpp</FileName>
               <FileType>8</FileType>
@@ -2900,14 +2915,19 @@
               <FilePath>../cm7/touchgfx/generated/fonts/src/cachedfont.cpp</FilePath>
             </File>
             <File>
+              <FileName>CustomContainer1Base.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../cm7/touchgfx/generated/gui_generated/src/containers/customcontainer1base.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Font_verdana_10_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_10_4bpp_0.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_verdana_20_4bpp_0.cpp</FileName>
+              <FileName>Font_verdana_24_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_20_4bpp_0.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_24_4bpp_0.cpp</FilePath>
             </File>
             <File>
               <FileName>Font_verdana_40_4bpp_0.cpp</FileName>
@@ -2935,9 +2955,9 @@
               <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>Kerning_verdana_20_4bpp.cpp</FileName>
+              <FileName>Kerning_verdana_24_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_20_4bpp.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_24_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>Kerning_verdana_40_4bpp.cpp</FileName>
@@ -2965,9 +2985,9 @@
               <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>Table_verdana_20_4bpp.cpp</FileName>
+              <FileName>Table_verdana_24_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_20_4bpp.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_24_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>Table_verdana_40_4bpp.cpp</FileName>
@@ -2993,16 +3013,6 @@
               <FileName>VectorFontRendererBuffers.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../cm7/touchgfx/generated/fonts/src/vectorfontrendererbuffers.cpp</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>user_src</GroupName>
-          <Files>
-            <File>
-              <FileName>call_back.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\user\touchgfx\call_back.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -5451,8 +5461,23 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>user_src</GroupName>
+          <Files>
+            <File>
+              <FileName>call_back.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\user\touchgfx\call_back.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>gui</GroupName>
           <Files>
+            <File>
+              <FileName>CustomContainer1.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../cm7/touchgfx/gui/src/containers/customcontainer1.cpp</FilePath>
+            </File>
             <File>
               <FileName>FrontendApplication.cpp</FileName>
               <FileType>8</FileType>
@@ -5472,6 +5497,57 @@
               <FileName>Screen1View.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../cm7/touchgfx/gui/src/screen1_screen/screen1view.cpp</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <uGnu>2</uGnu>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
             </File>
           </Files>
         </Group>
@@ -5494,14 +5570,19 @@
               <FilePath>../cm7/touchgfx/generated/fonts/src/cachedfont.cpp</FilePath>
             </File>
             <File>
+              <FileName>CustomContainer1Base.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>../cm7/touchgfx/generated/gui_generated/src/containers/customcontainer1base.cpp</FilePath>
+            </File>
+            <File>
               <FileName>Font_verdana_10_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_10_4bpp_0.cpp</FilePath>
             </File>
             <File>
-              <FileName>Font_verdana_20_4bpp_0.cpp</FileName>
+              <FileName>Font_verdana_24_4bpp_0.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_20_4bpp_0.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/font_verdana_24_4bpp_0.cpp</FilePath>
             </File>
             <File>
               <FileName>Font_verdana_40_4bpp_0.cpp</FileName>
@@ -5529,9 +5610,9 @@
               <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>Kerning_verdana_20_4bpp.cpp</FileName>
+              <FileName>Kerning_verdana_24_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_20_4bpp.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/kerning_verdana_24_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>Kerning_verdana_40_4bpp.cpp</FileName>
@@ -5559,9 +5640,9 @@
               <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_10_4bpp.cpp</FilePath>
             </File>
             <File>
-              <FileName>Table_verdana_20_4bpp.cpp</FileName>
+              <FileName>Table_verdana_24_4bpp.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_20_4bpp.cpp</FilePath>
+              <FilePath>../cm7/touchgfx/generated/fonts/src/table_verdana_24_4bpp.cpp</FilePath>
             </File>
             <File>
               <FileName>Table_verdana_40_4bpp.cpp</FileName>
@@ -5587,16 +5668,6 @@
               <FileName>VectorFontRendererBuffers.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>../cm7/touchgfx/generated/fonts/src/vectorfontrendererbuffers.cpp</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>user_src</GroupName>
-          <Files>
-            <File>
-              <FileName>call_back.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\user\touchgfx\call_back.cpp</FilePath>
             </File>
           </Files>
         </Group>

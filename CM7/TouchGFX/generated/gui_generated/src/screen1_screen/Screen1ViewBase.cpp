@@ -13,20 +13,25 @@ Screen1ViewBase::Screen1ViewBase() :
     add(__background);
 
     box1.setPosition(0, 0, 1024, 600);
-    box1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    box1.setColor(touchgfx::Color::getColorFromRGB(117, 212, 224));
     add(box1);
 
-    box2.setPosition(0, 0, 800, 480);
-    box2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    box2.setPosition(112, 0, 800, 480);
+    box2.setColor(touchgfx::Color::getColorFromRGB(245, 230, 69));
     add(box2);
 
-    textArea1.setPosition(0, 0, 800, 480);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(222, 98, 98));
+    scrollableContainer1.setPosition(112, 0, 800, 480);
+    scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    scrollableContainer1.setScrollbarsAlpha(255);
+    textArea1.setPosition(0, 0, 800, 9000);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(121, 44, 245));
     textArea1.setLinespacing(0);
-    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_TXH1).getText());
+    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_8WBP).getText());
     textArea1.setWildcard(textArea1Buffer);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_V4JH));
-    add(textArea1);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_S944));
+    scrollableContainer1.add(textArea1);
+
+    add(scrollableContainer1);
 }
 
 Screen1ViewBase::~Screen1ViewBase()

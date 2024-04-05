@@ -10,34 +10,53 @@
             "Width": 1024,
             "Height": 600,
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 117,
+              "Green": 212,
+              "Blue": 224
             }
           },
           {
             "Type": "Box",
             "Name": "box2",
-            "Width": 800,
-            "Height": 480
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1",
+            "X": 112,
             "Width": 800,
             "Height": 480,
-            "TextId": "__SingleUse_V4JH",
-            "TextRotation": "0",
             "Color": {
-              "Red": 222,
-              "Green": 98,
-              "Blue": 98
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_TXH1",
-              "UseBuffer": true,
-              "BufferSize": 4096
+              "Red": 245,
+              "Green": 230,
+              "Blue": 69
             }
+          },
+          {
+            "Type": "ScrollableContainer",
+            "Name": "scrollableContainer1",
+            "X": 112,
+            "Width": 800,
+            "Height": 480,
+            "HorizontalScrollEnabled": true,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textArea1",
+                "Width": 800,
+                "Height": 9000,
+                "TextId": "__SingleUse_S944",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 121,
+                  "Green": 44,
+                  "Blue": 245
+                },
+                "Wildcard1": {
+                  "TextId": "__SingleUse_8WBP",
+                  "UseBuffer": true,
+                  "BufferSize": 4096
+                }
+              }
+            ]
           }
         ],
         "Interactions": [
@@ -45,7 +64,7 @@
             "InteractionName": "print",
             "Trigger": {
               "Type": "TriggerOnEveryTick",
-              "TickCount": 5
+              "TickCount": 3
             },
             "Action": {
               "Type": "ActionCustom",
@@ -55,7 +74,47 @@
         ]
       }
     ],
-    "CustomContainerDefinitions": [],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "CustomContainer1",
+        "Width": 1024,
+        "Height": 480,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "X": 112,
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 15,
+              "Green": 15,
+              "Blue": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 112,
+            "Width": 800,
+            "Height": 480,
+            "TextId": "__SingleUse_432M",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 146,
+              "Green": 224,
+              "Blue": 29
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_ZC5I",
+              "UseBuffer": true,
+              "BufferSize": 4096
+            }
+          }
+        ],
+        "Interactions": []
+      }
+    ],
     "Name": "MyApplication",
     "Resolution": {
       "Width": 1024,

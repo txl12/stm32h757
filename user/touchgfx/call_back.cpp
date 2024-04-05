@@ -11,7 +11,7 @@ uint32_t cur_offset;
 	
 };
 static struct print_info info;
-int my_put(const char *txt,uint32_t length){
+void my_put(const char *txt,uint32_t length){
 	if(info.total_size - info.cur_offset >length){
 		for(int i=0;i<length;++i){
 		*text_p++ = txt[i];
@@ -45,21 +45,53 @@ int my_printf(const char *fmt, ...){
     return length;
 }
 };
+	static int16_t addHeigth = 0, addHeightsum = 0, scrollHeight = 0,textHeight=0;
 Screen1View::Screen1View()
 {
-	
+	textHeight = textArea1.getHeight();
+	scrollHeight = scrollableContainer1.getHeight();
 text_p =     (uint16_t*)&textArea1Buffer;
 	text_p_base_add = text_p;
 	info.cur_offset =0;
 	info.total_size = TEXTAREA1_SIZE/2;
+		textArea1.setWideTextAction(WIDE_TEXT_CHARWRAP);
 }
 
 void Screen1View::terminal_print()
 {
-my_printf("123");
+
+	
 //Unicode::snprintf(textArea1Buffer, 9, "New Text");
 //	textArea1Buffer[0]='a';
 //	textArea1Buffer[1]=0;
-	textArea1.setWideTextAction(WIDE_TEXT_CHARWRAP);
+	int16_t	nowTextHeight = textArea1.getTextHeight();
+
+//	scrollHeight = scrollableContainer1.getHeight();
+		if (nowTextHeight > textHeight)
+	{
+//		memset(textBuf, 0, this->bufSize);
+		info.cur_offset=0;
+		*text_p=0;
+		text_p = text_p_base_add;
+		scrollableContainer1.doScroll(0, addHeightsum);
+		addHeigth = 0;
+		addHeightsum = 0;
+		nowTextHeight = 0;
+	}
+	if(nowTextHeight > scrollHeight + addHeightsum){
+		addHeigth = scrollHeight + addHeightsum - nowTextHeight;
+		addHeightsum = addHeightsum - addHeigth;
+		scrollableContainer1.doScroll(0, addHeigth);
+	}
+
 	textArea1.invalidate();
+}
+void Screen1View::setupScreen()
+{
+    Screen1ViewBase::setupScreen();
+}
+
+void Screen1View::tearDownScreen()
+{
+    Screen1ViewBase::tearDownScreen();
 }
