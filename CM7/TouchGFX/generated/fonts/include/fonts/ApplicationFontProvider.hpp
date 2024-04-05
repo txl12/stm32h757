@@ -13,57 +13,17 @@ class FlashDataReader;
 
 struct Typography
 {
-    static const touchgfx::FontId DEMOVIEW_MCULOAD_TEXT = 0;
-    static const touchgfx::FontId GAME_2048_TEXT = 1;
-    static const touchgfx::FontId CAROUSELHEADLINE = 2;
-    static const touchgfx::FontId CAROUSELTEXT = 3;
-    static const touchgfx::FontId ANIMATINGBUTTONSTEXT = 4;
-    static const touchgfx::FontId GAME_2D_HEADER = 5;
-    static const touchgfx::FontId GAME_2D_SCORE_VALUE = 6;
-    static const touchgfx::FontId GAME_2D_TEXT = 7;
-    static const touchgfx::FontId CONTROLS_HEADLINE = 8;
-    static const touchgfx::FontId CONTROLS_READOUT = 9;
-    static const touchgfx::FontId CONTROLS_READOUT_SUBSCRIPT_SMALL = 10;
-    static const touchgfx::FontId CONTROLS_READOUT_LARGE = 11;
-    static const touchgfx::FontId CONTROLS_READOUT_SUBSCRIPT_MEDIUM = 12;
-    static const touchgfx::FontId SETTINGS_DIGITAL_CLOCK = 13;
-    static const touchgfx::FontId SETTINGS_MAIN_DATE_YEAR = 14;
-    static const touchgfx::FontId SETTINGS_MAIN_DATE_MONTH = 15;
-    static const touchgfx::FontId SETTINGS_MAIN_DATE_DAY = 16;
-    static const touchgfx::FontId DATE_PICKER = 17;
-    static const touchgfx::FontId DATE_PICKER_SELECTED = 18;
-    static const touchgfx::FontId HOMECONTROL_LOGIN_HEADER = 19;
-    static const touchgfx::FontId HOMECONTROL_LOGIN_BANNER = 20;
-    static const touchgfx::FontId HOMECONTROL_PRECENT_VALUE = 21;
-    static const touchgfx::FontId HOMECONTROL_PERCENT_SIGN = 22;
+    static const touchgfx::FontId DEFAULT = 0;
+    static const touchgfx::FontId LARGE = 1;
+    static const touchgfx::FontId SMALL = 2;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId DEMOVIEW_MCULOAD_TEXT = 0;             // RobotoCondensed_Bold_22_4bpp
-    static const touchgfx::FontId GAME_2048_TEXT = 1;                    // Asap_Regular_42_4bpp
-    static const touchgfx::FontId CAROUSELHEADLINE = 2;                  // Asap_Bold_otf_27_4bpp
-    static const touchgfx::FontId CAROUSELTEXT = 3;                      // Asap_Regular_21_4bpp
-    static const touchgfx::FontId ANIMATINGBUTTONSTEXT = 4;              // Asap_Regular_18_4bpp
-    static const touchgfx::FontId GAME_2D_HEADER = 5;                    // Asap_Bold_otf_20_4bpp
-    static const touchgfx::FontId GAME_2D_SCORE_VALUE = 6;               // Asap_Regular_28_4bpp
-    static const touchgfx::FontId GAME_2D_TEXT = 7;                      // Asap_Regular_20_4bpp
-    static const touchgfx::FontId CONTROLS_HEADLINE = 8;                 // RobotoCondensed_Bold_30_4bpp
-    static const touchgfx::FontId CONTROLS_READOUT = 9;                  // RobotoCondensed_Regular_54_4bpp
-    static const touchgfx::FontId CONTROLS_READOUT_SUBSCRIPT_SMALL = 10;  // Roboto_Medium_30_4bpp
-    static const touchgfx::FontId CONTROLS_READOUT_LARGE = 11;            // RobotoCondensed_Regular_110_4bpp
-    static const touchgfx::FontId CONTROLS_READOUT_SUBSCRIPT_MEDIUM = 12; // RobotoCondensed_Bold_60_4bpp
-    static const touchgfx::FontId SETTINGS_DIGITAL_CLOCK = 13;            // RobotoCondensed_Bold_56_4bpp
-    static const touchgfx::FontId SETTINGS_MAIN_DATE_YEAR = 8;           // RobotoCondensed_Bold_30_4bpp
-    static const touchgfx::FontId SETTINGS_MAIN_DATE_MONTH = 8;          // RobotoCondensed_Bold_30_4bpp
-    static const touchgfx::FontId SETTINGS_MAIN_DATE_DAY = 14;            // RobotoCondensed_Bold_90_4bpp
-    static const touchgfx::FontId DATE_PICKER = 15;                       // RobotoCondensed_Regular_38_4bpp
-    static const touchgfx::FontId DATE_PICKER_SELECTED = 16;              // RobotoCondensed_Bold_42_4bpp
-    static const touchgfx::FontId HOMECONTROL_LOGIN_HEADER = 0;          // RobotoCondensed_Bold_22_4bpp
-    static const touchgfx::FontId HOMECONTROL_LOGIN_BANNER = 17;          // RobotoCondensed_Regular_22_4bpp
-    static const touchgfx::FontId HOMECONTROL_PRECENT_VALUE = 18;         // RobotoCondensed_Bold_32_4bpp
-    static const touchgfx::FontId HOMECONTROL_PERCENT_SIGN = 19;          // Roboto_Bold_22_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 20;
+    static const touchgfx::FontId DEFAULT = 0; // verdana_20_4bpp
+    static const touchgfx::FontId LARGE = 1;   // verdana_40_4bpp
+    static const touchgfx::FontId SMALL = 2;   // verdana_10_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 3;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

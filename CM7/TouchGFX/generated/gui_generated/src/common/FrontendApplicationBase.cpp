@@ -9,20 +9,8 @@
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <platform/driver/lcd/LCD16bpp.hpp>
-#include <gui/mainmenucarousel_screen/MainMenuCarouselView.hpp>
-#include <gui/mainmenucarousel_screen/MainMenuCarouselPresenter.hpp>
-#include <gui/mainmenuanimatingbuttons_screen/MainMenuAnimatingButtonsView.hpp>
-#include <gui/mainmenuanimatingbuttons_screen/MainMenuAnimatingButtonsPresenter.hpp>
-#include <gui/controls_screen/ControlsView.hpp>
-#include <gui/controls_screen/ControlsPresenter.hpp>
-#include <gui/game2d_screen/Game2DView.hpp>
-#include <gui/game2d_screen/Game2DPresenter.hpp>
-#include <gui/game2048_screen/Game2048View.hpp>
-#include <gui/game2048_screen/Game2048Presenter.hpp>
-#include <gui/homeautomation_screen/HomeAutomationView.hpp>
-#include <gui/homeautomation_screen/HomeAutomationPresenter.hpp>
-#include <gui/settings_screen/SettingsView.hpp>
-#include <gui/settings_screen/SettingsPresenter.hpp>
+#include <gui/screen1_screen/Screen1View.hpp>
+#include <gui/screen1_screen/Screen1Presenter.hpp>
 
 using namespace touchgfx;
 
@@ -33,7 +21,7 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
       model(m)
 {
     touchgfx::HAL::getInstance()->setDisplayOrientation(touchgfx::ORIENTATION_LANDSCAPE);
-    touchgfx::Texts::setLanguage(GBR);
+    touchgfx::Texts::setLanguage(GB);
     reinterpret_cast<touchgfx::LCD16bpp&>(touchgfx::HAL::lcd()).enableTextureMapperAll();
     reinterpret_cast<touchgfx::LCD16bpp&>(touchgfx::HAL::lcd()).enableDecompressorL8_All();
 }
@@ -42,93 +30,15 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
  * Screen Transition Declarations
  */
 
-// MainMenuCarousel
+// Screen1
 
-void FrontendApplicationBase::gotoMainMenuCarouselScreenNoTransition()
+void FrontendApplicationBase::gotoScreen1ScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainMenuCarouselScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMainMenuCarouselScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<MainMenuCarouselView, MainMenuCarouselPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// MainMenuAnimatingButtons
-
-void FrontendApplicationBase::gotoMainMenuAnimatingButtonsScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainMenuAnimatingButtonsScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoMainMenuAnimatingButtonsScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<MainMenuAnimatingButtonsView, MainMenuAnimatingButtonsPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// Controls
-
-void FrontendApplicationBase::gotoControlsScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoControlsScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoControlsScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<ControlsView, ControlsPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// Game2D
-
-void FrontendApplicationBase::gotoGame2DScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoGame2DScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoGame2DScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<Game2DView, Game2DPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// Game2048
-
-void FrontendApplicationBase::gotoGame2048ScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoGame2048ScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoGame2048ScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<Game2048View, Game2048Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// HomeAutomation
-
-void FrontendApplicationBase::gotoHomeAutomationScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoHomeAutomationScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoHomeAutomationScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<HomeAutomationView, HomeAutomationPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// Settings
-
-void FrontendApplicationBase::gotoSettingsScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSettingsScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoSettingsScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<SettingsView, SettingsPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<Screen1View, Screen1Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

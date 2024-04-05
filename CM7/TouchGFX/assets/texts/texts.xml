@@ -1,203 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.23.0">
   <Languages>
-    <Language Id="GBR" />
+    <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1">
-      <Text Id="Demo_View_Mcu_Load_text" Alignment="Left" TypographyId="DemoView_McuLoad_Text">
-        <Translation Language="GBR">MCU load: </Translation>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_TXH1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">123</Translation>
       </Text>
-      <Text Id="Demo_View_Mcu_Load_value" Alignment="Right" TypographyId="DemoView_McuLoad_Text">
-        <Translation Language="GBR">&lt;value&gt;%</Translation>
-      </Text>
-      <Text Id="Demo_View_Mcu_Load_value_center" Alignment="Center" TypographyId="DemoView_McuLoad_Text">
-        <Translation Language="GBR">&lt;value&gt;%</Translation>
-      </Text>
-      <Text Id="2048_score" Alignment="Right" TypographyId="Game_2048_text">
-        <Translation Language="GBR">&lt;score&gt;</Translation>
-      </Text>
-      <Text Id="2048_score_delta" Alignment="Right" TypographyId="Game_2048_text">
-        <Translation Language="GBR">+&lt;DeltaScore&gt;</Translation>
-      </Text>
-      <Text Id="Carousel_Game_2048_Headline" Alignment="Center" TypographyId="CarouselHeadline">
-        <Translation Language="GBR">2048 Puzzle</Translation>
-      </Text>
-      <Text Id="Carousel_Game_2048_Text" Alignment="Center" TypographyId="CarouselText">
-        <Translation Language="GBR">Play a simple puzzle game&#10;Shows high quality graphics and smooth animations</Translation>
-      </Text>
-      <Text Id="Carousel_Game_2D_Headline" Alignment="Center" TypographyId="CarouselHeadline">
-        <Translation Language="GBR">Bird Eat Coin</Translation>
-      </Text>
-      <Text Id="Carousel_Game_2D_Text" Alignment="Center" TypographyId="CarouselText">
-        <Translation Language="GBR">Play the Bird Eat Coin game&#10;Shows graphics performance of TouchGFX</Translation>
-      </Text>
-      <Text Id="Carousel_Controls_Headline" Alignment="Center" TypographyId="CarouselHeadline">
-        <Translation Language="GBR">External Hardware</Translation>
-      </Text>
-      <Text Id="Carousel_Controls_Text" Alignment="Center" TypographyId="CarouselText">
-        <Translation Language="GBR">Simulates input and output from &#10;external hardware components</Translation>
-      </Text>
-      <Text Id="Carousel_Home_Automation_Headline" Alignment="Center" TypographyId="CarouselHeadline">
-        <Translation Language="GBR">Home Control</Translation>
-      </Text>
-      <Text Id="Carousel_Home_Automation_Text" Alignment="Center" TypographyId="CarouselText">
-        <Translation Language="GBR">Control your home&#10;Shows vivid graphs and access control</Translation>
-      </Text>
-      <Text Id="Carousel_Settings_Headline" Alignment="Center" TypographyId="CarouselHeadline">
-        <Translation Language="GBR">Time and Calendar</Translation>
-      </Text>
-      <Text Id="Carousel_Settings_Text" Alignment="Center" TypographyId="CarouselText">
-        <Translation Language="GBR">Show widgets for adjusting time and date &#10;</Translation>
-      </Text>
-      <Text Id="Animating_Button_Game_2048_Headline" Alignment="Left" TypographyId="AnimatingButtonsText">
-        <Translation Language="GBR">2048 Puzzle</Translation>
-      </Text>
-      <Text Id="Animating_Button_Game_2d_Headline" Alignment="Left" TypographyId="AnimatingButtonsText">
-        <Translation Language="GBR">Bird Eat Coin</Translation>
-      </Text>
-      <Text Id="Animating_Button_Controls_Headline" Alignment="Left" TypographyId="AnimatingButtonsText">
-        <Translation Language="GBR">External Hardware</Translation>
-      </Text>
-      <Text Id="Animating_Button_Home_Automation_Headline" Alignment="Left" TypographyId="AnimatingButtonsText">
-        <Translation Language="GBR">Home Control</Translation>
-      </Text>
-      <Text Id="Animating_Button_Settings_Headline" Alignment="Left" TypographyId="AnimatingButtonsText">
-        <Translation Language="GBR">Time and Calendar</Translation>
-      </Text>
-      <Text Id="Game_2d_score_text" Alignment="Right" TypographyId="Game_2d_header">
-        <Translation Language="GBR">SCORE</Translation>
-      </Text>
-      <Text Id="Game_2d_score_value" Alignment="Right" TypographyId="Game_2d_score_value">
-        <Translation Language="GBR">&lt;score&gt;</Translation>
-      </Text>
-      <Text Id="Game_2d_chrom_art_header" Alignment="Left" TypographyId="Game_2d_header">
-        <Translation Language="GBR">Enable/disable Chrom-ART</Translation>
-      </Text>
-      <Text Id="Game_2d_chrom_art_description" Alignment="Left" TypographyId="Game_2d_text">
-        <Translation Language="GBR">Hardware graphics acceleration by ST</Translation>
-      </Text>
-      <Text Id="Controls_headline0" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">POTENTIOMETER LEVEL</Translation>
-      </Text>
-      <Text Id="Controls_headline1" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">SCREEN BRIGHTNESS</Translation>
-      </Text>
-      <Text Id="Controls_pot_readout" Alignment="Right" TypographyId="Controls_readout">
-        <Translation Language="GBR">&lt;readout&gt;</Translation>
-      </Text>
-      <Text Id="Controls_pot_percentage" Alignment="Left" TypographyId="Controls_readout_subscript_small">
-        <Translation Language="GBR">%</Translation>
-      </Text>
-      <Text Id="Controls_brightness_readout" Alignment="Center" TypographyId="Controls_readout_large">
-        <Translation Language="GBR">&lt;readout&gt;</Translation>
-      </Text>
-      <Text Id="Controls_brightness_percentage" Alignment="Left" TypographyId="Controls_readout_subscript_medium">
-        <Translation Language="GBR">%</Translation>
-      </Text>
-      <Text Id="Settings_headline0" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">TIME &amp; CALENDAR</Translation>
-      </Text>
-      <Text Id="Settings_headline1" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">SET TIME</Translation>
-      </Text>
-      <Text Id="Settings_headline2" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">SET DATE</Translation>
-      </Text>
-      <Text Id="Settings_headline3" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">CHOOSE CLOCK</Translation>
-      </Text>
-      <Text Id="Settings_clock_digit" Alignment="Center" TypographyId="Settings_digital_clock">
-        <Translation Language="GBR">&lt;digits&gt;</Translation>
-      </Text>
-      <Text Id="Settings_main_date_year" Alignment="Center" TypographyId="Settings_main_date_year">
-        <Translation Language="GBR">&lt;year&gt;</Translation>
-      </Text>
-      <Text Id="Settings_main_date_month" Alignment="Center" TypographyId="Settings_main_date_month">
-        <Translation Language="GBR">&lt;month&gt;</Translation>
-      </Text>
-      <Text Id="Settings_main_date_day" Alignment="Center" TypographyId="Settings_main_date_day">
-        <Translation Language="GBR">&lt;day&gt;</Translation>
-      </Text>
-      <Text Id="Settings_date_picker_text" Alignment="Center" TypographyId="Date_picker">
-        <Translation Language="GBR">&lt;text&gt;</Translation>
-      </Text>
-      <Text Id="Settings_date_picker_text_selected" Alignment="Center" TypographyId="Date_picker_selected">
-        <Translation Language="GBR">&lt;text&gt;</Translation>
-      </Text>
-      <Text Id="Home_headline_00" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">HOME CONTROL</Translation>
-      </Text>
-      <Text Id="Home_headline_01" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">LIGHT CONTROL</Translation>
-      </Text>
-      <Text Id="Home_headline_02" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">BLINDS CONTROL</Translation>
-      </Text>
-      <Text Id="Home_headline_03" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">SECURITY CONTROL</Translation>
-      </Text>
-      <Text Id="Home_headline_04" Alignment="Center" TypographyId="Controls_headline">
-        <Translation Language="GBR">STATISTICS</Translation>
-      </Text>
-      <Text Id="Login_headline" Alignment="Center" TypographyId="HomeControl_Login_Header">
-        <Translation Language="GBR">LOGIN</Translation>
-      </Text>
-      <Text Id="Login_solution_incorrect" Alignment="Center" TypographyId="HomeControl_Login_Banner">
-        <Translation Language="GBR">Login failed: Pattern was incorrect!</Translation>
-      </Text>
-      <Text Id="Login_pattern_too_short" Alignment="Center" TypographyId="HomeControl_Login_Banner">
-        <Translation Language="GBR">Login failed: Pattern was too short!</Translation>
-      </Text>
-      <Text Id="Login_hint" Alignment="Center" TypographyId="HomeControl_Login_Banner">
-        <Translation Language="GBR">HERE'S A HINT!</Translation>
-      </Text>
-      <Text Id="Login_solution_correct" Alignment="Center" TypographyId="HomeControl_Login_Banner">
-        <Translation Language="GBR">Login succeeded!</Translation>
-      </Text>
-      <Text Id="Percent" Alignment="Center" TypographyId="HomeControl_Precent_Value">
-        <Translation Language="GBR">&lt;pct&gt;</Translation>
-      </Text>
-      <Text Id="Percent_sign" Alignment="Center" TypographyId="HomeControl_Percent_Sign">
-        <Translation Language="GBR">%</Translation>
-      </Text>
-      <Text Id="Blinds_percent" Alignment="Right" TypographyId="HomeControl_Precent_Value">
-        <Translation Language="GBR">&lt;pct&gt;</Translation>
-      </Text>
-      <Text Id="Blinds_percent_sign" Alignment="Left" TypographyId="HomeControl_Percent_Sign">
-        <Translation Language="GBR">%</Translation>
-      </Text>
-      <Text Id="Game_2d_Renesas_header" Alignment="Left" TypographyId="Game_2d_header">
-        <Translation Language="GBR">Enable/disable 2D Drawing Engine</Translation>
-      </Text>
-      <Text Id="Game_2d_Renesas_description" Alignment="Left" TypographyId="Game_2d_text">
-        <Translation Language="GBR">Hardware graphics acceleration by Renesas</Translation>
+      <Text Id="__SingleUse_V4JH" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="DemoView_McuLoad_Text" Font="RobotoCondensed-Bold.ttf" Size="22" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
-    <Typography Id="Game_2048_text" Font="Asap-Regular.ttf" Size="42" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789-+" />
-    <Typography Id="CarouselHeadline" Font="Asap-Bold.otf" Size="27" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="CarouselText" Font="Asap-Regular.ttf" Size="21" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="AnimatingButtonsText" Font="Asap-Regular.ttf" Size="18" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Game_2d_header" Font="Asap-Bold.otf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Game_2d_score_value" Font="Asap-Regular.ttf" Size="28" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="1234567890-" />
-    <Typography Id="Game_2d_text" Font="Asap-Regular.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Controls_headline" Font="RobotoCondensed-Bold.ttf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Controls_readout" Font="RobotoCondensed-Regular.ttf" Size="54" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
-    <Typography Id="Controls_readout_subscript_small" Font="Roboto-Medium.ttf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Controls_readout_large" Font="RobotoCondensed-Regular.ttf" Size="110" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
-    <Typography Id="Controls_readout_subscript_medium" Font="RobotoCondensed-Bold.ttf" Size="60" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Settings_digital_clock" Font="RobotoCondensed-Bold.ttf" Size="56" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="1234567890 :" />
-    <Typography Id="Settings_main_date_year" Font="RobotoCondensed-Bold.ttf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
-    <Typography Id="Settings_main_date_month" Font="RobotoCondensed-Bold.ttf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="A-Z" />
-    <Typography Id="Settings_main_date_day" Font="RobotoCondensed-Bold.ttf" Size="90" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
-    <Typography Id="Date_picker" Font="RobotoCondensed-Regular.ttf" Size="38" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="1234567890JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC" />
-    <Typography Id="Date_picker_selected" Font="RobotoCondensed-Bold.ttf" Size="42" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="1234567890JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC" />
-    <Typography Id="HomeControl_Login_Header" Font="RobotoCondensed-Bold.ttf" Size="22" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="HomeControl_Login_Banner" Font="RobotoCondensed-Regular.ttf" Size="22" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="HomeControl_Precent_Value" Font="RobotoCondensed-Bold.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
-    <Typography Id="HomeControl_Percent_Sign" Font="Roboto-Bold.ttf" Size="22" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x00-0xff" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
   </Typographies>
 </TextDatabase>
