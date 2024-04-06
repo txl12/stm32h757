@@ -15,9 +15,10 @@
 /*********************
  *      DEFINES
  *********************/
-#define LVGL_MemoryAdd 0xc0000000
+
 #define MY_DISP_HOR_RES    1024
 #define MY_DISP_VER_RES    600
+#define LVGL_MemoryAdd  0xc0200000
 #ifndef MY_DISP_HOR_RES
     #warning Please define or replace the macro MY_DISP_HOR_RES with the actual screen width, default value 320 is used for now.
     #define MY_DISP_HOR_RES    1024

@@ -16,11 +16,11 @@ void lvgl_init( void )
     lv_port_indev_init();
     // lv_port_indev_init();
     // lv_port_fs_init();
-    lv_demo_benchmark();
+//    lv_demo_benchmark();
 //	lv_demo_keypad_encoder();
 //	lv_demo_music();
 //	lv_demo_stress();
-//	lv_demo_widgets();
+	lv_demo_widgets();
 //	lv_demo_render();
 }
 
@@ -45,9 +45,8 @@ void lvgl_task(void *argument)
   /* Infinite loop */
   for(;;)
   {
-
-lv_timer_handler();
-osDelay(LVGL_TICK);
+    lv_timer_handler();
+    osDelay(LVGL_TICK);
   }
   /* USER CODE END lvgl_task */
 }
