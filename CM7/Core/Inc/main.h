@@ -66,8 +66,6 @@ void Error_Handler(void);
 #define LCD_TOUCH_SDA_GPIO_Port GPIOH
 #define LCD_TOUCH_RES_Pin GPIO_PIN_5
 #define LCD_TOUCH_RES_GPIO_Port GPIOJ
-#define LCD_BLK_Pin GPIO_PIN_6
-#define LCD_BLK_GPIO_Port GPIOH
 #define LCD_TOUCH_INT_Pin GPIO_PIN_12
 #define LCD_TOUCH_INT_GPIO_Port GPIOB
 

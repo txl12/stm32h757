@@ -2,6 +2,11 @@
 extern "C"{
 	#include "stdio.h"
 	#include "string.h"
+	#define USE_OS 1
+	#if USE_OS == 1
+	#include "cmsis_os.h"
+	extern osMutexId_t print_MutexHandle;
+	#endif
 	static volatile uint8_t print_init =0,reset_disp_text = 0;
 	#define BUF_SIZE  256
 	static uint16_t * text_p;
@@ -30,6 +35,9 @@ void my_put(const char *txt,uint32_t length){
 int my_printf(const char *fmt, ...){
    va_list args;
     uint32_t length;
+#if USE_OS == 1
+osMutexAcquire (print_MutexHandle, osWaitForever);
+#endif
     static char rt_log_buf[BUF_SIZE];
 if(print_init == 1){
     va_start(args, fmt);
@@ -43,8 +51,14 @@ if(print_init == 1){
         length = BUF_SIZE - 1;
     my_put(rt_log_buf,length);
     va_end(args);
+#if USE_OS == 1
+osMutexRelease (print_MutexHandle);
+#endif
 		    return length;
 	}
+#if USE_OS == 1
+osMutexRelease (print_MutexHandle);
+#endif
     return 0;
 }
 };

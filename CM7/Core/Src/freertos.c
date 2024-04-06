@@ -68,6 +68,11 @@ const osThreadAttr_t core_task_attributes = {
   .stack_size = 256 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
+/* Definitions for print_Mutex */
+osMutexId_t print_MutexHandle;
+const osMutexAttr_t print_Mutex_attributes = {
+  .name = "print_Mutex"
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -89,6 +94,9 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
+  /* Create the mutex(es) */
+  /* creation of print_Mutex */
+  print_MutexHandle = osMutexNew(&print_Mutex_attributes);
 
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
@@ -136,12 +144,11 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-	static uint32_t i=0;
   /* Infinite loop */
   for(;;)
   {
     osDelay(2000);
-		my_printf("hello world %d\n",i++);
+		my_printf("cm7 tick %d\n",HAL_GetTick());
   }
   /* USER CODE END StartDefaultTask */
 }

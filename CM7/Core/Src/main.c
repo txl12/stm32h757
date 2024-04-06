@@ -23,6 +23,7 @@
 #include "dma2d.h"
 #include "i2c.h"
 #include "ltdc.h"
+#include "tim.h"
 #include "gpio.h"
 #include "fmc.h"
 #include "app_touchgfx.h"
@@ -139,11 +140,14 @@ Error_Handler();
   MX_CRC_Init();
   MX_DMA2D_Init();
   MX_I2C2_Init();
+  MX_TIM12_Init();
   MX_TouchGFX_Init();
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
+HAL_TIM_Base_Start(&htim12);
+HAL_TIM_PWM_Start(&htim12,TIM_CHANNEL_1);
+//  HAL_GPIO_WritePin(LCD_BLK_GPIO_Port, LCD_BLK_Pin, GPIO_PIN_SET);
   /* USER CODE END 2 */
 
   /* Init scheduler */

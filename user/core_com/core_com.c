@@ -15,20 +15,31 @@ void HSEM1_IRQHandler(void)
 void HAL_HSEM_FreeCallback(uint32_t SemMask)
 {
   Notif_Recieved = 1;
-	    HAL_HSEM_ActivateNotification(__HAL_HSEM_SEMID_TO_MASK(HSEM_ID_1));
+//my_printf("HAL_HSEM_FreeCallback\n");
 } 
  void core_com(void *argument)
 {
   /* USER CODE BEGIN core_com */
+	Notif_Recieved =0;
+	__HAL_HSEM_CLEAR_FLAG(__HAL_HSEM_SEMID_TO_MASK(HSEM_ID_1));
 	  HAL_NVIC_SetPriority(HSEM1_IRQn, 10, 0);
   HAL_NVIC_EnableIRQ(HSEM1_IRQn);  
+	
 	    HAL_HSEM_ActivateNotification(__HAL_HSEM_SEMID_TO_MASK(HSEM_ID_1));
   /* Infinite loop */
   for(;;)
   {
 		if(Notif_Recieved == 1){
-			Notif_Recieved=0;
-			my_printf("recieve cm4 msg:%s\n",(char*) mem.share_mem_add);
+			if(HAL_HSEM_Take(HSEM_ID_1,2) == HAL_OK){
+
+				my_printf("recieve cm4 msg:%s\n",(char*) mem.share_mem_add);
+HAL_HSEM_DeactivateNotification(__HAL_HSEM_SEMID_TO_MASK(HSEM_ID_1));
+
+				HAL_HSEM_Release(HSEM_ID_1,2);
+__HAL_HSEM_CLEAR_FLAG(__HAL_HSEM_SEMID_TO_MASK(HSEM_ID_1));
+				HAL_HSEM_ActivateNotification(__HAL_HSEM_SEMID_TO_MASK(HSEM_ID_1));
+				Notif_Recieved=0;
+			}
 		}
     osDelay(50);
   }
