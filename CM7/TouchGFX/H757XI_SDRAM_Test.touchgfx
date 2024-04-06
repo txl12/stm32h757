@@ -5,34 +5,17 @@
         "Name": "Screen1",
         "Components": [
           {
-            "Type": "Box",
-            "Name": "box1",
+            "Type": "Image",
+            "Name": "image1",
             "Width": 1024,
             "Height": 600,
-            "Color": {
-              "Red": 117,
-              "Green": 212,
-              "Blue": 224
-            }
-          },
-          {
-            "Type": "Box",
-            "Name": "box2",
-            "X": 112,
-            "Width": 800,
-            "Height": 480,
-            "Color": {
-              "Red": 245,
-              "Green": 230,
-              "Blue": 69
-            }
+            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_1024x600_puzzle.png"
           },
           {
             "Type": "ScrollableContainer",
             "Name": "scrollableContainer1",
-            "X": 112,
-            "Width": 800,
-            "Height": 480,
+            "Width": 1024,
+            "Height": 600,
             "HorizontalScrollEnabled": true,
             "VerticalScrollEnabled": true,
             "ScrollbarsVisibleOnPressed": true,
@@ -41,15 +24,16 @@
               {
                 "Type": "TextArea",
                 "Name": "textArea1",
-                "Width": 800,
+                "Width": 1024,
                 "Height": 10000,
                 "TextId": "__SingleUse_S944",
                 "TextRotation": "0",
                 "Color": {
-                  "Red": 121,
-                  "Green": 44,
-                  "Blue": 245
+                  "Red": 61,
+                  "Green": 245,
+                  "Blue": 44
                 },
+                "Alpha": 150,
                 "Wildcard1": {
                   "TextId": "__SingleUse_8WBP",
                   "UseBuffer": true,

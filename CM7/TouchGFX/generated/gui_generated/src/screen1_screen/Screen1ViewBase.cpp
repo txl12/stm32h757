@@ -3,6 +3,7 @@
 /*********************************************************************************/
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <touchgfx/Color.hpp>
+#include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 
 Screen1ViewBase::Screen1ViewBase() :
@@ -12,23 +13,20 @@ Screen1ViewBase::Screen1ViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    box1.setPosition(0, 0, 1024, 600);
-    box1.setColor(touchgfx::Color::getColorFromRGB(117, 212, 224));
-    add(box1);
+    image1.setXY(0, 0);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_BACKGROUNDS_1024X600_PUZZLE_ID));
+    add(image1);
 
-    box2.setPosition(112, 0, 800, 480);
-    box2.setColor(touchgfx::Color::getColorFromRGB(245, 230, 69));
-    add(box2);
-
-    scrollableContainer1.setPosition(112, 0, 800, 480);
+    scrollableContainer1.setPosition(0, 0, 1024, 600);
     scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     scrollableContainer1.setScrollbarsAlpha(255);
-    textArea1.setPosition(0, 0, 800, 10000);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(121, 44, 245));
+    textArea1.setPosition(0, 0, 1024, 10000);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(61, 245, 44));
     textArea1.setLinespacing(0);
     Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_8WBP).getText());
     textArea1.setWildcard(textArea1Buffer);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_S944));
+    textArea1.setAlpha(150);
     scrollableContainer1.add(textArea1);
 
     add(scrollableContainer1);

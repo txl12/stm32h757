@@ -6,6 +6,8 @@
 #include <touchgfx/hal/Types.hpp>
 #include <touchgfx/Bitmap.hpp>
 
+const uint16_t BITMAP_ALTERNATE_THEME_IMAGES_BACKGROUNDS_1024X600_PUZZLE_ID = 0;
+const uint16_t BITMAP_KEYBOARD_ID = 1;
 
 namespace BitmapDatabase
 {
