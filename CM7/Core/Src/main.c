@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "adc.h"
 #include "crc.h"
 #include "dma2d.h"
 #include "i2c.h"
@@ -63,6 +64,7 @@ uint32_t ret = 0;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void PeriphCommonClock_Config(void);
 void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
 uint32_t bsp_TestExtSDRAM(void);
@@ -111,6 +113,9 @@ int main(void)
 
   /* Configure the system clock */
   SystemClock_Config();
+
+/* Configure the peripherals common clocks */
+  PeriphCommonClock_Config();
 /* USER CODE BEGIN Boot_Mode_Sequence_2 */
 /* When system initialization is finished, Cortex-M7 will release Cortex-M4 by means of
 HSEM notification */
@@ -141,6 +146,7 @@ Error_Handler();
   MX_DMA2D_Init();
   MX_I2C2_Init();
   MX_TIM12_Init();
+  MX_ADC3_Init();
   MX_TouchGFX_Init();
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();
@@ -198,8 +204,10 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+  RCC_OscInitStruct.HSIState = RCC_HSI_DIV1;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 5;
@@ -234,7 +242,10 @@ void SystemClock_Config(void)
   }
 }
 
-/* USER CODE BEGIN 4 */
+/**
+  * @brief Peripherals Common Clock Configuration
+  * @retval None
+  */
 void PeriphCommonClock_Config(void)
 {
   RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
@@ -248,6 +259,8 @@ void PeriphCommonClock_Config(void)
     Error_Handler();
   }
 }
+
+/* USER CODE BEGIN 4 */
 
 int fputc(int ch, FILE *f)
 {
@@ -276,85 +289,6 @@ void MPU_Config(void)
 	HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
 	HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);	// Ê¹ÄÜMPU
-}
-
-uint32_t bsp_TestExtSDRAM(void)
-{
-	uint32_t i;
-	uint32_t *pSRAM;
-	uint8_t *pBytes;
-	uint32_t err;
-	const uint8_t ByteBuf[4] = {0x55, 0xA5, 0x5A, 0xAA};
-
-	/* ?SDRAM */
-	pSRAM = (uint32_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < EXT_SDRAM_SIZE / 4; i++)
-	{
-		*pSRAM++ = i;
-	}
-
-	/* ?SDRAM */
-	err = 0;
-	pSRAM = (uint32_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < EXT_SDRAM_SIZE / 4; i++)
-	{
-		if (*pSRAM++ != i)
-		{
-			err++;
-		}
-	}
-
-	if (err >  0)
-	{
-		return  (4 * err);
-	}
-
-	/* ?SDRAM ???????? */
-	pSRAM = (uint32_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < EXT_SDRAM_SIZE / 4; i++)
-	{
-		*pSRAM = ~*pSRAM;
-		pSRAM++;
-	}
-
-	/* ????SDRAM??? */
-	err = 0;
-	pSRAM = (uint32_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < EXT_SDRAM_SIZE / 4; i++)
-	{
-		if (*pSRAM++ != (~i))
-		{
-			err++;
-		}
-	}
-
-	if (err >  0)
-	{
-		return (4 * err);
-	}
-
-	/* ?????????, ????? FSMC_NBL0 ? FSMC_NBL1 ?? */
-	pBytes = (uint8_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < sizeof(ByteBuf); i++)
-	{
-		*pBytes++ = ByteBuf[i];
-	}
-
-	/* ??SDRAM??? */
-	err = 0;
-	pBytes = (uint8_t *)EXT_SDRAM_ADDR;
-	for (i = 0; i < sizeof(ByteBuf); i++)
-	{
-		if (*pBytes++ != ByteBuf[i])
-		{
-			err++;
-		}
-	}
-	if (err >  0)
-	{
-		return err;
-	}
-	return 0;
 }
 /* USER CODE END 4 */
 

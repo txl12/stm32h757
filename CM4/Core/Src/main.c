@@ -68,22 +68,7 @@ const uint32_t end_offset;
 	#include "stdarg.h"
 	#define BUF_SIZE  256
 #define my_printf(...)  sprintf((char*)SHARE_MEM_ADDR,##__VA_ARGS__)
-//int my_printf(const char *fmt, ...){
-////   va_list args;
-////    uint32_t length;
-////    va_start(args, fmt);
-////    /* the return value of vsnprintf is the number of bytes that would be
-////     * written to buffer had if the size of the buffer been sufficiently
-////     * large excluding the terminating null byte. If the output string
-////     * would be larger than the rt_log_buf, we have to adjust the output
-////     * length. */
-////    length = vsnprintf((char*)SHARE_MEM_ADDR, BUF_SIZE - 1, fmt, args);
-////    if (length > BUF_SIZE - 1)
-////        length = BUF_SIZE - 1;
-//////    my_put(rt_log_buf,length);
-////    va_end(args);
-////		    return length;
-//};
+
 /* USER CODE END 0 */
 
 /**
@@ -127,6 +112,7 @@ int main(void)
   /* Initialize all configured peripherals */
   /* USER CODE BEGIN 2 */
  *(char*)SHARE_MEM_ADDR = 0;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -138,7 +124,8 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		while(HAL_HSEM_Take(1,1) != HAL_OK){};
 		HAL_Delay(250);
-		my_printf("cm4 tick %d ",HAL_GetTick());
+
+		my_printf("cm4 tick %d",HAL_GetTick());
 		HAL_HSEM_Release(1,1);
 				HAL_Delay(250);
   }

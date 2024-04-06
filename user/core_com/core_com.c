@@ -17,6 +17,26 @@ void HAL_HSEM_FreeCallback(uint32_t SemMask)
   Notif_Recieved = 1;
 //my_printf("HAL_HSEM_FreeCallback\n");
 } 
+#include "adc.h"
+void StartDefaultTask(void *argument)
+{
+
+static	unsigned int adc_v;
+static double adcx;
+static double temp;
+ 	HAL_ADCEx_Calibration_Start(&hadc3,ADC_CALIB_OFFSET,ADC_SINGLE_ENDED);
+  for(;;)
+  {
+    osDelay(2000);
+HAL_ADC_Start(&hadc3);
+adc_v = HAL_ADC_GetValue(&hadc3);
+		adcx = (110.0-30.0)/(*(unsigned short*)(0x1FF1E840) - *(unsigned short*)(0x1FF1E820));
+		temp = adcx*(adc_v - *(unsigned short*)(0x1FF1E820))+30;
+		my_printf("cm7 tick %d,temp %lf C\n",HAL_GetTick(),temp);
+  }
+  /* USER CODE END StartDefaultTask */
+}
+
  void core_com(void *argument)
 {
   /* USER CODE BEGIN core_com */
