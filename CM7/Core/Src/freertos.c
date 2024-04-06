@@ -61,6 +61,13 @@ const osThreadAttr_t TouchGFX_attributes = {
   .stack_size = 1024 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
+/* Definitions for core_task */
+osThreadId_t core_taskHandle;
+const osThreadAttr_t core_task_attributes = {
+  .name = "core_task",
+  .stack_size = 256 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -69,6 +76,7 @@ const osThreadAttr_t TouchGFX_attributes = {
 
 void StartDefaultTask(void *argument);
 void TouchGFX_Task(void *argument);
+void core_com(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -105,6 +113,9 @@ void MX_FREERTOS_Init(void) {
   /* creation of TouchGFX */
   TouchGFXHandle = osThreadNew(TouchGFX_Task, NULL, &TouchGFX_attributes);
 
+  /* creation of core_task */
+  core_taskHandle = osThreadNew(core_com, NULL, &core_task_attributes);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -129,7 +140,7 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(25);
+    osDelay(2000);
 		my_printf("hello world %d\n",i++);
   }
   /* USER CODE END StartDefaultTask */
@@ -151,6 +162,24 @@ __weak void TouchGFX_Task(void *argument)
     osDelay(1);
   }
   /* USER CODE END TouchGFX_Task */
+}
+
+/* USER CODE BEGIN Header_core_com */
+/**
+* @brief Function implementing the core_task thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_core_com */
+__weak void core_com(void *argument)
+{
+  /* USER CODE BEGIN core_com */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END core_com */
 }
 
 /* Private application code --------------------------------------------------*/
